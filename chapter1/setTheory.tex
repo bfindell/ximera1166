@@ -1,4 +1,4 @@
-\documentclass[handout,nooutcomes]{ximera}
+\documentclass[nooutcomes]{ximera}
 %\documentclass[space,handout,nooutcomes]{ximera}
 
 \input{../preamble.tex}
@@ -15,7 +15,9 @@ Short-answer problems about sets.
 \begin{problem}
 Given two sets $X$ and $Y$, explain what is meant by $X\cup Y$.
 \begin{freeResponse}
+\begin{hint}
 $X\cup Y$ is the set of elements that are in $X$ or in $Y$ (or both, as the ``or'' is inclusive).  
+\end{hint}
 \end{freeResponse}
 \end{problem}
 
@@ -36,14 +38,14 @@ $X - Y$ is the set of elements that are in $X$ but not in $Y$.
 \begin{problem}
 Explain the difference between the symbols $\in$ and $\subset$.
 \begin{freeResponse}
-The notation $X \in Y$ would mean that $X$ is a single element in the set $Y$.  In this case, $X$ might not be a set.  The notation $X \subset Y$ would require that both $X$ and $Y$ are sets and also that every element of $X$ is also in $Y$.
+The notation $X \in Y$ means that $X$ is a single element in the set $Y$.  In this case, $X$ is probably not a set.  The notation $X \subset Y$ requires that both $X$ and $Y$ are sets and, furthermore, that every element of $X$ is also in $Y$.
 \end{freeResponse}
 \end{problem}
 
 \begin{problem}
 How is $\{\emptyset\}$ different from $\emptyset$?  
 \begin{freeResponse}
-The empty set, $\emptyset$, is a set that contains no elements.  The set $\{\emptyset\}$ contains one element that is itself a set---and that element happens to be the empty set.  
+The empty set, $\emptyset$, is a set that contains no elements.  That is, $\emptyset = \{\}$.  The set $\{\emptyset\}$ contains one element that is itself a set---and that element happens to be the empty set.  We could instead write $\{\{\}\}$, but that looks ugly.
 \end{freeResponse}
 \end{problem}
 
@@ -113,7 +115,7 @@ In each case explain your reasoning.
 Make a general rule for intersecting sets of the form $n\Z$ and
   $m\Z$. Explain why your rule works.
 \begin{freeResponse}
-The intersection of two sets is what they have in \emph{common}.  The intersection of set of multiples of $n$ and the set of multiples of $m$ are, in fact, called \emph{common multiples}, and they are all multiples of the least common multiple of $n$ and $m$.  
+The intersection of two sets is what they have in \emph{common}.  The intersection of the set of multiples of $n$ and the set of multiples of $m$ are called \emph{common multiples} (surprise!), and they are all multiples of the least common multiple of $n$ and $m$.  
 \end{freeResponse}
 \end{problem}
 
