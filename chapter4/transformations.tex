@@ -1,0 +1,127 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+%\usepackage{tikz}
+
+
+\title{Toward Congruence and Similarity}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Short-answer problems about transformations. 
+\end{abstract}
+\maketitle
+
+\begin{question}
+What is your name?
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+What is required to specify a translation?  
+\begin{freeResponse}
+\begin{hint}
+A vector.  Or (equivalently) a magnitude and a direction.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+What is required to specify a rotation? 
+\begin{freeResponse}
+\begin{hint}
+A center and an angle (assuming an agreement about the direction of rotation).  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+What is required to specify a reflection?  
+\begin{freeResponse}
+\begin{hint}
+A line.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+Sometimes a sequence of transformations can be described as a single translation, rotation, or reflection.  
+
+\begin{question}
+What kind of transformation is a translation followed by a translation?  Explain.  Be sure to consider any special cases.  
+\begin{freeResponse}
+\begin{hint}
+Usually a translation.  If the vectors are opposites of each other, the result is the identity transformation (which can be thought of as a translation by a vector of magnitude $0$).
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+What kind of transformation is a rotation followed by a rotation?  Explain.  Be sure to consider any special cases.   
+\begin{freeResponse}
+\begin{hint}
+Usually a rotation.  If the angles sum to a multiple of $360^\circ$, then the result is a translation.  If the centers of rotation are also the same, the result is the identity transformation (which can be thought of as a rotation of $0^\circ$).
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+What kind of transformation is a reflection followed by another reflection?  Explain.  Be sure to consider any special cases.  
+\begin{freeResponse}
+\begin{hint}
+You are doing this for homework.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Will the letter F look like an F after a reflection?  What about after a sequence of two reflections?  What about after a sequence of 73 or 124 reflections?  Explain your reasoning.  
+\begin{freeResponse}
+\begin{hint}
+Ignoring which side is up, after a reflection (or more generally an odd number of reflections), the F will look like a ``backwards F''.  After an even number of reflections, the F will look like a typical F.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+How will your answer to the previous problem change if you use a capital D?  Explain.  
+\begin{freeResponse}
+\begin{hint}
+Ignoring which side is up, the D will always look like a D.  Because of its line symmetry, a reflection doesn't appear to reverse its ``orientation.''  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Given a figure and its image after a translation, how do find the direction and distance of the translation?    How many points and images do you need?  
+\begin{freeResponse}
+\begin{hint}
+Draw a vector from any point to its image.  The vector provides both the direction and the distance.  Any point and its image will do.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Given a figure and its image after a reflection, how do you find the line of reflection?  How many points and images do you need?  
+\begin{freeResponse}
+\begin{hint}
+Draw a segment from a point to its image.  The perpendicular bisector of that segment is the line of reflection.  Any point and its image will do.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Given a figure and its image after a rotation, how do you find the center and the angle of the rotation?  How many points and images do you need?  
+\begin{freeResponse}
+\begin{hint}
+Draw a segment from a point $P$ to its image $P'$.  The center of rotation is somewhere on the perpendicular bisector of that segment.  Draw a segment from a second point $Q$ to its image $Q'$.  The center of rotation is also somewhere on the the perpendicular bisector of that segment.  As long as the segments $\overline{PP'}$ and $\overline{QQ'}$ are not parallel, the two perpendicular bisectors will intersect at a point $C$, which is the unique center of the rotation.  
+
+To find the angle of rotation, measure $\angle PCP'$ or $\angle QCQ'$.
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+
+\end{document}
