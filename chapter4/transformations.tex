@@ -6,7 +6,7 @@
 %\usepackage{tikz}
 
 
-\title{Toward Congruence and Similarity}
+\title{Transformations}
 \author{Bart Snapp and Brad Findell}
 \begin{document}
 \begin{abstract}
@@ -20,31 +20,47 @@ What is your name?
 \end{freeResponse}
 \end{question}
 
+%\begin{question}
+%What is required to specify a translation?  
+%\begin{freeResponse}
+%\begin{hint}
+%A vector.  Or (equivalently) a magnitude and a direction.  
+%\end{hint}
+%\end{freeResponse}
+%\end{question}
+
+%\begin{question}
+%What is required to specify a rotation? 
+%\begin{freeResponse}
+%\begin{hint}
+%A center and an angle (assuming an agreement about the direction of rotation).  
+%\end{hint}
+%\end{freeResponse}
+%\end{question}
+
+%\begin{question}
+%What is required to specify a reflection?  
+%\begin{freeResponse}
+%\begin{hint}
+%A line.  
+%\end{hint}
+%\end{freeResponse}
+%\end{question}
+
 \begin{question}
-What is required to specify a translation?  
-\begin{freeResponse}
-\begin{hint}
-A vector.  Or (equivalently) a magnitude and a direction.  
-\end{hint}
-\end{freeResponse}
+To specify a translation, we need a $\answer[format=string]{vector}$.  Equivalently, we need a magnitude (or length) and a $\answer[format=string]{direction}$.  
 \end{question}
 
 \begin{question}
-What is required to specify a rotation? 
-\begin{freeResponse}
-\begin{hint}
-A center and an angle (assuming an agreement about the direction of rotation).  
-\end{hint}
-\end{freeResponse}
+To specify a rotation, we need a $\answer[format=string]{center}$ and an $\answer[format=string]{angle}$ (assuming an agreement about the direction of rotation).  
 \end{question}
 
 \begin{question}
-What is required to specify a reflection?  
-\begin{freeResponse}
-\begin{hint}
-A line.  
-\end{hint}
-\end{freeResponse}
+To specify a reflection, we need a $\answer[format=string]{line}$.  
+\end{question}
+
+\begin{question}
+A transformation that does nothing is call the $\answer[format=string]{identity transformation}$.  (Hint: Two words.)
 \end{question}
 
 Sometimes a sequence of transformations can be described as a single translation, rotation, or reflection.  
@@ -80,7 +96,7 @@ You are doing this for homework.
 Will the letter F look like an F after a reflection?  What about after a sequence of two reflections?  What about after a sequence of 73 or 124 reflections?  Explain your reasoning.  
 \begin{freeResponse}
 \begin{hint}
-Ignoring which side is up, after a reflection (or more generally an odd number of reflections), the F will look like a ``backwards F''.  After an even number of reflections, the F will look like a typical F.  
+Ignoring which side is up, after a reflection the F will look like a ``backwards F''.  More generally, after an odd number of reflections, the F will look like a backwards F.  After an even number of reflections, the F will look like a typical F.  
 \end{hint}
 \end{freeResponse}
 \end{question}
@@ -119,6 +135,8 @@ Given a figure and its image after a rotation, how do you find the center and th
 Draw a segment from a point $P$ to its image $P'$.  The center of rotation is somewhere on the perpendicular bisector of that segment.  Draw a segment from a second point $Q$ to its image $Q'$.  The center of rotation is also somewhere on the the perpendicular bisector of that segment.  As long as the segments $\overline{PP'}$ and $\overline{QQ'}$ are not parallel, the two perpendicular bisectors will intersect at a point $C$, which is the unique center of the rotation.  
 
 To find the angle of rotation, measure $\angle PCP'$ or $\angle QCQ'$.
+
+Two points and their images are enough, (as long as the segments $\overline{PP'}$ and $\overline{QQ'}$ are not parallel). 
 \end{hint}
 \end{freeResponse}
 \end{question}
