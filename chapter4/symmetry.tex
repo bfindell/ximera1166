@@ -3,8 +3,7 @@
 
 \input{../preamble.tex}
 
-\usepackage{helvet}
-\usepackage{tikz}
+%\usepackage{tikz}
 
 
 \title{Symmetry}
@@ -16,19 +15,12 @@ Short-answer questions about symmetry.
 \maketitle
 
 \begin{question}
-What is your name?
-\begin{freeResponse}
-\end{freeResponse}
-\end{question}
-
-\begin{question}
 Categorize the capital letters of the alphabet by their symmetries.  Use the following font: 
 \begin{image}
 \includegraphics{alphabet.png}
 \end{image}
 \begin{freeResponse}
 \begin{hint}
-
 %\begin{tikzpicture}
 %  \node {\scalebox{10}{\textsf{K}}};
 %\end{tikzpicture}
@@ -53,6 +45,19 @@ If the K has horizontal line symmetry in the font, then all the letters in COKE 
 \end{question}
 
 \begin{question}
+Indicate the number of symmetries of the following figures: 
+\begin{enumerate}
+\item An equilateral triangle $\answer{6}$
+\item An isosceles triangle that is not equilateral $\answer{2}$
+\item A square $\answer{8}$
+\item A rectangle that is not a square $\answer{4}$
+\item A rhombus that is not a square $\answer{4}$
+\item A (non-special) parallelogram $\answer{2}$
+\item A regular $n-$gon $\answer{2n}$
+\end{enumerate}
+\end{question}
+
+\begin{question}
 Describe all of the symmetries of the following figures: 
 \begin{enumerate}
 \item An equilateral triangle
@@ -61,12 +66,58 @@ Describe all of the symmetries of the following figures:
 \item A rectangle that is not a square
 \item A rhombus that is not a square
 \item A (non-special) parallelogram
-\item A regular $n-$gon
+\item A regular $n$-gon
 \end{enumerate}
 \begin{freeResponse}
 \begin{hint}
 \end{hint}
 \end{freeResponse}
+\end{question}
+
+
+\begin{question}
+We often say a figure is ``symmetric'' when we notice that it has symmetry, but now we want to be more precise:  
+
+A \textbf{symmetry} of a figure is a \wordChoice{\choice{reflection}\choice{rotation}\choice[correct]{transformation}\choice{translation}} 
+that maps a figure 
+\wordChoice{\choice{to its opposite}\choice[correct]{onto itself}\choice{to another figure}}.  
+\end{question}
+
+\begin{question}
+Explain why a sequence of two symmetries of a figure must also be a symmetry of that figure.  
+\begin{freeResponse}
+\begin{hint}
+If a transformation T1 maps a figure onto itself and another transformation T2 maps the figure onto itself, then T1 followed by T2 also maps the figure onto itself.  
+
+The first transformation leaves the figure unchanged and the second transformation leaves the figure unchanged, so the sequence of two transformations leaves the figure unchanged.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Explain why the identity transformation should be considered a symmetry of \emph{any} figure.   
+\begin{freeResponse}
+\begin{hint}
+The identity transformation satisfies the definition of a symmetry: It maps the figure onto itself. 
+
+If a figure has reflection symmetry $R_k$ about a line $k$, then $R_k$ followed by $R_k$ is the identity transformation.  And by the previous result, this sequence of symmetries must also be a symmetry.  
+
+If a figure has rotational symmetry $R_\alpha$ by some angle $\alpha$ about some center, then it must also have 
+
+Note: If the identity transformation is the \emph{only} transformation of a figure, we usually say the figure is asymmetric or has no symmetry.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+
+Symmetries of polygons.  
+
+\begin{question}
+Suppose that quadrilateral $ABCD$ has exactly one rotation symmetry (other than the identity transformation) and no reflection symmetry.  What kind(s) of quadrilateral could it be?  Explain your reasoning.  
+\end{question}
+
+\begin{question}
+Suppose that quadrilateral $ABCD$ has exactly one reflection symmetry and no rotation symmetry (other than the identity transformation).  What kind(s) of quadrilateral could it be?  Explain your reasoning.  
 \end{question}
 
 \begin{question}
