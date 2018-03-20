@@ -6,11 +6,11 @@
 %\usepackage{tikz}
 
 
-\title{Transformations}
+\title{Similarity}
 \author{Bart Snapp and Brad Findell}
 \begin{document}
 \begin{abstract}
-Short-answer problems about transformations. 
+Short-answer problems about similarity. 
 \end{abstract}
 \maketitle
 
@@ -30,8 +30,8 @@ Short-answer problems about transformations.
 %
 
 \begin{question}
-Under a dilation about center $O$ and scale factor $r>0$, the image of $P$ is 
-a point $Q$ so that $Q$ lies on $\overrightarrow{OP}$ and $\answer[format=string]{OQ=rOP}$.  The image of $O$ is $\answer[format=string]{O}$. 
+\textbf{Definition.} Under a \textbf{dilation} about center $O$ and scale factor $r>0$, the image of $P$ is 
+a point $Q$ so that $Q$ lies on $\overrightarrow{OP}$ and $OQ=\answer[format=string]{rOP}$.  The image of $O$ is $\answer[format=string]{O}$. 
 \end{question}
 
 
@@ -65,6 +65,7 @@ Explain why when given a right triangle, the altitude of the
   similar to the original right triangle.
 \begin{freeResponse}
 \begin{hint}
+Each of the two smaller triangles has a has a right angle and shares an acute angle with the original triangle.  So the triangles are congruent by AA similarity.  
 \end{hint}
 \end{freeResponse}
 \end{question}
@@ -95,21 +96,22 @@ A \textit{Pythagorean Triple}\index{Pythagorean Triple} is a set
   your reasoning and justify all claims.
 \begin{freeResponse}
 \begin{hint}
+
 \end{hint}
 \end{freeResponse}
 \end{question}
 
 \begin{question}
 Here is a right triangle, \textbf{not} drawn to scale:
-\[
+\begin{image}
 \includegraphics{origamiSimQ.pdf}
-\]
-Solve for all unknowns in the following cases.
+\end{image}
+Solve for all unknowns in the following cases.  Note:  To enter, say, $\sqrt{3}$, type \texttt{sqrt(3)}.
 \begin{enumerate}
 \item $a = 3$, $b = \answer{1}$, $c = \answer{\sqrt{10}}$, $d = 12$, $e = 5$, $f = \answer{4 \sqrt{10}}$
 \item $a = \answer{12/5}$, $b = 3$, $c = \answer{3\sqrt{41}/5}$, $d =8$, $e = 13$, $f = \answer{2\sqrt{41}}$
-\item $a = 7$, $b = 4$, $c = ?$, $d =?$, $e = 11$, $f = ?$
-\item $a = 5$, $b = 2$, $c = ?$, $d =6$, $e = ?$, $f = ?$
+\item $a = 7$, $b = 4$, $c = \answer{\sqrt{65}}$, $d =\answer{49/4}$, $e = 11$, $f = \answer{7\sqrt{65}/4}$
+\item $a = 5$, $b = 2$, $c = \answer{\sqrt{29}}$, $d =6$, $e = \answer{22/5}$, $f = \answer{6\sqrt{29}/5}$
 \end{enumerate}
 In each case explain your reasoning.
 \end{question}
@@ -120,29 +122,28 @@ Suppose you have two similar triangles. What can you say about
   explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
+If the triangles are similar with a scale factor of $r$, then the ratio of their areas is $r^2$. 
 \end{hint}
 \end{freeResponse}
 \end{question}
 
 \begin{question}
 During a solar eclipse we see that the apparent diameter of the
-  Sun and Moon are nearly equal. If the Moon is around $240000$ miles
+  Sun and Moon are nearly equal. If the Moon is around $240,000$ miles
   from Earth, the Moon's diameter is about $2000$ miles, and the Sun's
-  diameter is about $865000$ miles how far is the Sun from the Earth?
-\begin{enumerate}
-\item Draw a relevant (and helpful) picture showing the important
-  points of this problem.
-\item Solve this problem, be sure to explain your reasoning.
-\end{enumerate}
-\begin{freeResponse}
-\begin{hint}
-\end{hint}
-\end{freeResponse}
+  diameter is about $865,000$ miles how far is the Sun from the Earth?
+%\begin{enumerate}
+%\item Draw a relevant (and helpful) picture showing the important
+%  points of this problem.
+%\item Solve this problem, be sure to explain your reasoning.
+%\end{enumerate}
+
+Distance to sun $\approx \answer{865000/2000*240000}$
 \end{question}
 
 \begin{question}
-When jets fly above $8000$ meters in the air they form a vapor
-  trail. Cruising altitude for a commercial airliner is around $10000$
+When jets fly above $8,000$ meters in the air they form a vapor
+  trail. Cruising altitude for a commercial airliner is around $10,000$
   meters. One day I reached my arm into the sky and measured the
   length of the vapor trail with my hand---my hand could just span the
   entire trail. If my hand spans $9$ inches and my arm extends $25$
@@ -171,7 +172,6 @@ David proudly owns a 42 inch (measured diagonally) flat screen
   points of this problem.
 \item Solve this problem, be sure to explain your reasoning.
 \end{enumerate}
-
 \begin{freeResponse}
 \begin{hint}
 \end{hint}
@@ -188,7 +188,6 @@ You love IMAX movies. While the typical IMAX screen is 72 feet
   points of this problem.
 \item Solve this problem, be sure to explain your reasoning.
 \end{enumerate}
-
 \begin{freeResponse}
 \begin{hint}
 \end{hint}
@@ -244,7 +243,6 @@ meters tall.
 Explain how to use the notion of similar triangles to multiply
   numbers with your answer expressed as a segment of the appropriate
   length.
-
 \begin{freeResponse}
 \begin{hint}
 \end{hint}
@@ -255,8 +253,6 @@ Explain how to use the notion of similar triangles to multiply
 Explain how to use the notion of similar triangles to divide
   numbers with your answer expressed as a segment of the appropriate
   length.
-
-
 \begin{freeResponse}
 \begin{hint}
 \end{hint}
@@ -281,9 +277,9 @@ Consider the following combinations of S's and A's. Which of
 
 \begin{question}
 Explain how the following picture ``proves'' the Pythagorean Theorem.
-\[
+\begin{image}
 \includegraphics[scale=0.8]{pbpdilation.pdf}
-\]
+\end{image}
 \begin{freeResponse}
 \begin{hint}
 \end{hint}
