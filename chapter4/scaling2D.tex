@@ -1,0 +1,114 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+%\usepackage{tikz}
+
+
+\title{Scaling}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Short-answer problems about scaling. 
+\end{abstract}
+\maketitle
+
+
+
+%\textbf{Definition.} Under a \textbf{dilation} about center $O$ and scale factor $r>0$, the image of $P$ is 
+%a point $Q$ so that $Q$ lies on \wordChoice{\choice{segment}\choice[correct]{ray}\choice{line}} 
+%$\answer[format=string]{OP}$ % $\overrightarrow{OP}$ 
+%and $OQ=\answer[format=string]{rOP}$.  The image of $O$ is $\answer[format=string]{O}$. 
+
+\section{Length and Area Under Scaling}
+In this section, we explore what happens to length, area, and other measures under scaling.  
+ 
+In a previous section, we defined similarity in terms of basic rigid motions and dilations, and we showed that this definition leads to well-known results about similarity, such as the AA criterion for triangle similarity and consistent ratios of lengths between and within similar figures. A key feature of this discussion was the notion of ``scale factor,'' which describes what happens to lengths under a dilation.  From the definition of a dilation, it is clear that segments on lines through the center of dilation scale by the scale factor.  We used the side-splitter theorems to show that other segments are scaled by the same scale factor.  
+
+\begin{question}
+Two students claims that a $3\times 5$ rectangle and a $4\times 6$ rectangle are similar.  
+
+Fred says that that they are similar because the angles are the same.  How do you respond?  
+\begin{freeResponse}
+\begin{hint}
+Angles are enough to determine similarity of triangles.  But similarity requires a consistent scale factor.  For these rectangles the height is scaled by $4/3$ whereas the base is scaled by $6/5$.  
+\end{hint}
+\end{freeResponse}
+
+Ned says that they are similar because you can do the same thing (i.e., add 1) to ``both sides'' of the $3\times 5$ rectangle to get the $4\times 6$ rectangle.  How do you respond?  
+\begin{freeResponse}
+\begin{hint}
+Similarity requires consistent scaling, which is a multiplicative (not additive) relationship.  
+\end{hint}
+\end{freeResponse}
+\end{question}
+
+
+\begin{question}
+Complete the following sentences using words such as filling, falling, covering, wrapping, hiding, surrounding, or traveling:  
+
+Area vs. perimeter can be thought of as $\answer[format=string]{covering}$ vs. $\answer[format=string]{surrounding}$, respectively. 
+
+Volume vs. surface area can be thought of as $\answer[format=string]{filling}$ vs. $\answer[format=string]{wrapping}$, respectively. 
+\end{question}
+
+
+To explore how measures of figures change under scaling and non-scaling transformations, here are some useful strategies: 
+\begin{itemize}
+\item Cutting the figures and rearranging the pieces.  
+\item Using ``rep-tiles.'' 
+\item Using known formulas for perimeters, areas, volumes, or surface areas. 
+\item Approximating with segments, squares, or cubes.  
+\end{itemize}
+
+% What about angles, perimeter, surface area, weight, and temperature
+% Scaling versus stretching (other examples of non-scaling)
+% Aspect ratio
+
+
+\begin{question}
+To estimate the length of a curve, imagine approximating it with many small segments.  Now apply a similarity transformation with a scale factor of $k$.  Each segment will scale by $\answer{k}$, so the length of the curve will be $\answer{k}$ times the original length.  
+\end{question}
+
+\begin{question}
+To estimate the area of a non-polygonal region, imagine covering it approximately with a grid of squares of side length $s$.   Piecing together partial squares, suppose you count $n$ squares.  Your area estimate is then $\answer{ns^2}$.  
+
+Now apply a similarity transformation of scale factor $k$ to both the region and the grid.  Each square in the scaled grid will have 
+area $\answer{(sk)^2}$, and piecing together partial squares there will be $\answer{n}$ squares.  Thus, we estimate the area of the scaled region to be $\answer{n(sk)^2}$, which is $\answer{k^2}$ times the area of the original region.  
+\end{question}
+
+\begin{question}
+When $n$ copies of a plane figure can form a figure similar to the original, the figure is called a rep-$n$-tile.  Explain briefly why any parallelogram is a rep-4-tile and also a rep-9-tile.  Generalize.  
+\begin{freeResponse}
+\begin{hint}
+If a parallelogram is scaled by a factor of 2, then 4 original parallelograms can make the larger parallelogram.  If a parallelogram is scaled by a factor of 3, then 9 original parallelograms can make the larger parallelogram.  (Draw pictures.)
+\end{hint}
+\end{freeResponse}
+
+In general, if a parallelogram is scaled by a factor of $k$, then $\answer{k^2}$ copies of the original parallelogram can make the scaled version.  
+\end{question}
+
+\begin{question}
+Use formulas to determine what happens to the perimeter and area of a rectangle when it is scaled by $k$.  
+
+Begin with a rectangle of base $b$ and height $h$.  After scaling the rectangle by $k$, the base will be $\answer{kb}$ and the height will be $\answer{kh}$.  
+
+The original perimeter is $\answer{2b + 2h}$.  After scaling, the perimeter will be $\answer{2bk + 2hk}$, which is precisely $\answer{k}$ times the original perimeter.  
+
+The original area is $\answer{bh}$.  After scaling, the area will be $\answer{(kb)(kh)}$, which is precisely $\answer{k^2}$ times the original area.  
+\end{question}
+
+
+\begin{question}
+Use formulas to determine what happens to the circumference and area of a circle when it is scaled by $k$.  
+
+Begin with a circle of radius $r$.  After scaling the circle by $k$, its radius will be $\answer{kr}$.  
+
+The original circumference is $\answer{2\pi r}$.  After scaling, the circumference will be $\answer{2\pi kr}$, which is precisely $\answer{k}$ times the original circumference.  
+
+The original area is $\answer{\pi r^2}$.  After scaling, the area will be $\answer{\pi (kr)^2}$, which is precisely $\answer{k^2}$ times the original area.  
+\end{question}
+
+
+\end{document}
