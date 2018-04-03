@@ -69,13 +69,30 @@ With a little algebraic manipulation, the equation $3\textrm{ ft} = 1 \textrm{ y
 \]
 In both equations, the 1 on the right is ``dimensionless'' in the sense that it is without units.  Think of it as a scale factor of 1, which leaves lengths unchanged.  These equations are useful for demonstrating the conversion from feet to yards and vice versa:  
 
+%\[
+%21\textrm{ feet} = 21\textrm{ \cancel{feet}} \cdot \frac{{1 \textrm{ yard}}}{3\textrm{ \cancel{feet}}} = 7\textrm{ yards}
+%\]
+%
+%\[
+%7\textrm{ yards} = 7\textrm{ \cancel{yards}} \cdot \frac{{3 \textrm{ feet}}}{1\textrm{ \cancel{yard}}} = 
+% 21\textrm{ feet}
+%\]
+
+%\begin{align*}
+%21\textrm{ feet} &= 21\; \textrm{feet} \\
+%21\textrm{ feet} &= 21\textrm{ feet} \\
+%21\textrm{ feet} &= 21\ \textrm{feet} \\
+%21\textrm{ feet} &= 21\, \textrm{feet} \\
+%21\textrm{ feet} &= 21\: \textrm{feet} 
+%\end{align*}
+
 \[
-21\textrm{ feet} = 21\textrm{ \cancel{feet}} \cdot \frac{{1 \textrm{ yard}}}{3\textrm{ \cancel{feet}}} = 7\textrm{ yards}
+21\;\textrm{feet} = 21\;\cancel{\textrm{feet}} \cdot \frac{{1\;\textrm{yard}}}{3\;\cancel{\textrm{feet}}} = 7\;\textrm{yards}
 \]
 
 \[
 7\textrm{ yards} = 7\textrm{ \cancel{yards}} \cdot \frac{{3 \textrm{ feet}}}{1\textrm{ \cancel{yard}}} = 
- 21\textrm{ feet}
+21\textrm{ feet}
 \]
 
 These examples illustrate an \emph{algebra of units}, in which units behave much like algebraic variables.  In both conversions, we multiply a quantity by a dimensionless 1, so that the calculation doesn't change the amount that the quantity represents.  The cancellation of units helps to confirm that we are doing the calculation correctly.  
@@ -93,9 +110,11 @@ Let's try another problem.
 
 \begin{question}
 At Big State University, the student-professor ratio is 8 to 1.  Write an equation relating the number of students, $s$, to the number of professors, $p$.  
+
+Answer:  $s = \answer{8p}$.  
 \end{question}
 
-In response to this question, it is tempting to write $8s = p$, and this turns out to be a very common incorrect answer among students.  But let's try some specific numbers:  If there are 160 students, then there should be 20 professors, but the equation says that $p = 8s = 8\cdot 160 = 1280$, which would mean 1280 professors.  Clearly the equation is backwards: It caused us to multiply the number of students by 8 when we should have divided.  
+In response to this question, it is tempting to write $8s = p$ or its equivalent, $s=p/8$, and these turn out to be very common incorrect answers among students.  But let's try some specific numbers:  If there are 160 students, then there should be 20 professors, but the equation says that $p = 8s = 8\cdot 160 = 1280$, which would mean 1280 professors.  Clearly the equation is backwards: It caused us to multiply the number of students by 8 when we should have divided.  
 
 But here is another way of thinking about this incorrect answer.  If ``students'' and ``professors'' were units (like yards and feet), then the equation would be correct. Here is a picture to help:  
 
@@ -142,7 +161,7 @@ If professors and students are units of measurement with this consistent relatio
  160\textrm{ students}
 \]
 
-The above question states, however, that the letters are to be the \emph{numbers} of students and professors, not units of measurement.  So let's repeat the previous calculation generally, where $p$ represents the number of professors and $s$ represents the number of students:  
+The above question states, however, that the letters are to be the \emph{numbers} of students and professors, not units of measurement.  So let's repeat the previous calculation generally, with $p$ representing the number of professors and $s$ representing the number of students:  
 \[
 p\textrm{ professors} = p\textrm{ \cancel{professors}} \cdot \frac{{8 \textrm{ students}}}{1\textrm{ \cancel{professor}}} = 
  8p\textrm{ students} = s \textrm{ students}
@@ -201,10 +220,21 @@ Use the conversions above to convert 1 meter to inches and to yards.
 \begin{question}
 College and school tracks used to be 1/4 mile around, or 440 yards, so that a half-mile race was two laps, and a one-mile race was four laps.  Today, most college and school tracks have been converted to metric, with one lap measuring 400 meters, which is close to 440 yards.  In high-school track, the ``mile'' is usually run as 1600 meters.  
 
-The 1600 meters race is $\answer{1760-100/2.54/36*1600}$ yards \wordChoice{\choice[correct]{shorter}\choice{longer}} than 1 mile.  
+The 1600 meters race is $\answer{10.21872266}$ yards \wordChoice{\choice[correct]{shorter}\choice{longer}} than 1 mile.  
 
 A four-minute miler should run 1600 meters about $\answer{1.4}$ seconds (to the closest 0.1 seconds)  \wordChoice{\choice[correct]{faster}\choice{slower}} than four minutes.  
 \end{question}
+
+
+\section{Square Units and Cubic Units}
+Because $3\textrm{ ft} = 1 \textrm{ yd}$, it is tempting to conclude that $3\textrm{ square ft} = 1 \textrm{ square yds}$.  But what is a square foot?  What is a square yard?  
+
+
+
+
+\begin{problem}
+Convert 25 yards to meters (and 25 meters to yards) using ``2.54 cm in each inch'' as the only Metric-English unit conversion.  Now convert 25 square yards to square meters and 25 square meters to square yards.  Do the same with cubic yards and cubic meters.
+\end{problem}
 
 
 \end{document}
