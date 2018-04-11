@@ -1,0 +1,176 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Circle Intersections}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+These problems provide practice solving systems of equations involving circles. 
+\end{abstract}
+\maketitle
+
+To solve the systems of equations below, we use two common solution methods: $\answer[format=string]{substitution}$ and $\answer[format=string]{elimination}$.  In interpreting the solutions below, you are encouraged to used Desmos (see https://www.desmos.com/) or GeoGebra Classic (see https://www.geogebra.org/).  
+
+\subsection{A Line and a Circle}
+When the two equations are of a circle and of a line, a common approach uses substitution.  Solve the line for one of the variables (say, $y$) and then substitute into the equation of the circle.  This approach yields a \wordChoice{\choice{linear},\choice[correct]{quadratic},\choice{exponential},\choice{radical}} equation in \wordChoice{\choice{0},\choice[correct]{1},\choice{2}} variable(s), which can be solved with the $\answer[format=string]{quadratic}$ formula.  
+
+\begin{problem}
+Solve the following equations simultaneously.  Interpret the solutions.  
+\[
+(x-3)^2+(y-2)^2 = 14, \qquad  x - y = -4
+\]
+\[
+x  = \answer{1/2} \pm \answer{\sqrt{3}/2}, y = \answer{9/2} \pm \answer{\sqrt{3}/2}
+\]
+\begin{hint}
+The two distinct solutions indicate that line intersects the circle twice in the $xy$-plane.  
+\end{hint}
+\end{problem}
+
+
+\begin{problem}
+Solve the following equations simultaneously.  Interpret the solutions.  
+\[
+(x-3)^2+(y-3)^2 = 8, \qquad x - y = -4
+\]
+\[
+x  = \answer{1} \pm \answer{0}, y = \answer{5} \pm \answer{0}
+\]
+\begin{hint}
+The single solution indicates that line is tangent to the circle in the $xy$-plane.  
+\end{hint}
+\end{problem}
+
+
+\begin{problem}
+Solve the following equations simultaneously.  Interpret the solutions.  
+\[
+(x-3)^2+(y-2)^2 = 12, \qquad x - y = -4
+\]
+\[
+x  = \answer{1/2} \pm \answer{i/2}, y = \answer{9/2} \pm \answer{i/2}
+\]
+\begin{hint}
+The (nonreal) complex solutions indicate that the line does not intersect the circle in the $xy$-plane.  
+\end{hint}
+\end{problem}
+
+\subsection{Two Circles}
+Given equations of two circles, to find their intersections, first use the method of elimination.  Subtract one equation from the other to eliminate the squared terms.  The result will (usually) be an equation of a \wordChoice{\choice[correct]{line},\choice{parabola},\choice{circle}}.  Then proceed as before, using the equation of the line and the equation of either circle.  
+
+\begin{problem}
+Solve the following equations simultaneously.  Interpret the solutions.  
+\[
+(x-2)^2+(y-1)^2 = 3, \qquad x^2+y^2 = 2
+\]
+The elimination step yields the line $y = \answer{-2x+2}$.  Then substitution yields the following solutions:  
+\[
+x  = \answer{4/5} \pm \answer{\sqrt{6}/5}, y = \answer{2/5} \mp \answer{2\sqrt{6}/5}
+\]
+\begin{hint}
+The two distinct solutions indicate that circles intersect twice in the $xy$-plane.  Note that the line contains both points of intersection of the circles.  
+\end{hint}
+\end{problem}
+
+
+%\begin{problem}
+%Solve the following equations simultaneously.  Interpret the solutions.  
+%\[
+%(x - 2)^2 + (y - 1)^2 =1, \qquad x^2 + y^2 = 1
+%\]
+%
+%\[
+%x  = \answer{1} \pm \answer{i\sqrt{5}/10}, y = \answer{1/2} \mp \answer{2i\sqrt{5}/10}
+%\]
+%\begin{hint}
+%The two complex solutions indicate that circles do not intersect in the $xy$-plane.  
+%\end{hint}
+%\end{problem}
+
+
+%\begin{problem}
+%Solve the following equations simultaneously.  Interpret the solutions.  
+%\[
+%(x-3)^2+(y-2)^2 = 4, \qquad (x-1)^2+(y-1)^2 = 9
+%\]
+%The elimination step yields the line $y = \answer{-2x+8}$.  Then substitution yields the solutions.  
+%\[
+%x  = \answer{3} \pm \answer{2/\sqrt{5}}, y = \answer{2} \pm \answer{4/\sqrt{5}}
+%\]
+%\begin{hint}
+%The two distinct solutions indicate that circles intersect twice in the $xy$-plane.  Note that the line contains both points of intersection of the circles.  
+%\end{hint}
+%\end{problem}
+
+
+%\begin{problem}
+%Solve the following equations simultaneously.  Interpret the solutions.  
+%\[
+%(x - 3)^2 + (y - 2)^2 =4, \qquad (x + 1)^2 + (y + 1)^2 = 4
+%\]
+%
+%\[
+%x  = \answer{1} \pm \answer{9i/10}, y = \answer{1/2} \pm \answer{6i/5}
+%\]
+%\begin{hint}
+%The two complex solutions indicate that circles do not intersect in the $xy$-plane.  
+%\end{hint}
+%\end{problem}
+%
+%\begin{problem}
+%Solve the following equations simultaneously.  Interpret the solutions.  
+%\[
+%(x-3)^2+(y-2)^2 = 4, \qquad (x-1)^2+(y-1)^2 = 19
+%\]
+%
+%\[
+%x  = \answer{5} \pm \answer{i/\sqrt{5}}, y = \answer{3} \pm \answer{2i/\sqrt{5}}
+%\]
+%\begin{hint}
+%The two complex solutions indicate that circles do not intersect in the $xy$-plane.  
+%\end{hint}
+%\end{problem}
+
+
+\subsection{Summary}
+Finding the intersection of a line and a circle or the intersection of two circles (usually) leads to quadratic equations in one variable, which can be solved using the quadratic formula, which will reveal 0, 1, or 2 real solutions.  
+
+Note: When the solutions to the quadratic are (nonreal) complex numbers, we say that there are 0 real solutions.  
+
+\begin{question}
+If there are 2 real solutions to the quadratic, then
+\begin{multipleChoice}
+\choice{the figures do not intersect in the $xy$-plane.}
+\choice{the figures are tangent in the $xy$-plane.}
+\choice[correct]{the figures intersect twice in the $xy$-plane.}
+\choice{none of these.}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}
+If there is 1 real solution to the quadratic, then
+\begin{multipleChoice}
+\choice{the figures do not intersect in the $xy$-plane.}
+\choice[correct]{the figures are tangent in the $xy$-plane.}
+\choice{the figures intersect twice in the $xy$-plane.}
+\choice{none of these.}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}
+If there are 0 real solutions to the quadratic, then
+\begin{multipleChoice}
+\choice[correct]{the figures do not intersect in the $xy$-plane.}
+\choice{the figures are tangent in the $xy$-plane.}
+\choice{the figures intersect twice in the $xy$-plane.}
+\choice{none of these.}
+\end{multipleChoice}
+\end{question}
+
+
+\end{document}
+
+
