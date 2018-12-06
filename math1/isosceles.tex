@@ -1,0 +1,283 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{The Isosceles Triangle Theorem}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Proofs. 
+\end{abstract}
+\maketitle
+
+
+Prove that the base angles of an isosceles triangle are congruent.   
+
+% Isosceles triangle ABC, marked
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+
+(a) Angle bisector; (b) Median
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+% Isosceles Triangle with Angle Bisector
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+(c) Altitude; (d) Overspecified perpendicular bisector
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+
+
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+
+% With a perpendicular bisector that misses
+(e) Using symmetry; (f) perpendicular bisector that misses vertex; 
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+
+
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.06,2.2);
+\draw [line width=0.8pt] (0.4471,1.1376) -- (0.6128,1.0623);
+\draw [line width=0.8pt] (1.06,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.6128,1.1376) -- (1.4471,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (0.99,2.4)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.06,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.24,2.45) node {$C$};
+\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{image}
+
+
+
+\end{document}
