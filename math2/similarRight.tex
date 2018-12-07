@@ -3,7 +3,7 @@
 
 \input{../preamble.tex}
 
-\title{Proofs for Math 2}
+\title{Similar Right Triangles}
 \author{Brad Findell}
 \begin{document}
 \begin{abstract}
@@ -16,42 +16,43 @@ Proofs.
 Adapted from Ohio's 2017 Geometry released item 17. 
 
 \begin{image}
-\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.764,-1.0163902439024128) rectangle (2.895512195121952,3.4930731707317237);
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0.2504192795811872,0.) -- (0.25041927958118726,0.2504192795811872) -- (0.,0.2504192795811872) -- (0.,0.) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.2457077610931195,1.1314383583603207) -- (1.037346325809722,0.9925307348380557) -- (1.176253949331987,0.7841692995546581) -- (1.3846153846153846,0.9230769230769231) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.176253949331987,0.7841692995546581) -- (1.315161572854252,0.5758078642712605) -- (1.5235230081376496,0.7147154877935256) -- (1.3846153846153846,0.9230769230769231) -- cycle; 
+%\clip(-0.75,-1) rectangle (2.9,3.5);
+\clip(-2,-1) rectangle (4,3.5);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0.,0.) -- (0.,0.25) -- (0.25,0.25) -- (0.25,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2457,1.1314) -- (1.0373,0.9925) -- (1.1762,0.7842) -- (1.3846,0.9231) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.1762,0.7842) -- (1.3152,0.5758) -- (1.5235,0.7147) -- (1.3846,0.9231) -- cycle; 
 \draw [line width=0.8pt] (0.,0.)-- (2.,0.);
 \draw [line width=0.8pt] (0.,3.)-- (0.,0.);
 \draw [line width=0.8pt] (0.,3.)-- (2.,0.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (1.3846153846153846,0.9230769230769231);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (1.3846,0.9231);
 \begin{scriptsize}
-\draw [fill=qqqqff] (0.,0.) circle (1.5pt);
-\draw[color=qqqqff] (-0.31541463414634285,0.22312195121953501) node {$A$};
-\draw [fill=qqqqff] (2.,0.) circle (1.5pt);
-\draw[color=qqqqff] (2.210829268292683,0.24673170731709593) node {$B$};
-\draw [fill=qqqqff] (0.,3.) circle (1.5pt);
-\draw[color=qqqqff] (0.22760975609755987,3.2215609756097727) node {$C$};
-\draw [fill=uuuuuu] (1.3846153846153846,0.9230769230769231) circle (1.5pt);
-\draw[color=uuuuuu] (1.5497560975609752,1.2619512195122158) node {$D$};
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.3154,0.2231) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.2108,0.2467) node {$B$};
+\draw [fill=qqqqff] (0.,3.) circle (1.2pt);
+\draw[color=qqqqff] (0.2276,3.2215) node {$C$};
+\draw [fill=uuuuuu] (1.3846,0.9231) circle (1.2pt);
+\draw[color=uuuuuu] (1.5497,1.2619) node {$D$};
 \end{scriptsize}
 \end{tikzpicture}
 \end{image}
 
-\begin{image}
-\includegraphics{Q17.png}
-\end{image}
+%\begin{image}
+%\includegraphics{Q17.png}
+%\end{image}
 Complete the following proof that $\triangle DAC$ is similar to $\triangle DBA$: 
 
 \begin{enumerate}
-\item $\triangle ABC\sim \triangle DBA$ by the AA criterion because they share $\angle B$ and they each have a right angle. 
+\item $\triangle ABC\sim \triangle \answer[format=string]{DBA}$ by AA because they share $\angle B$ and they each have a right angle. 
 
-\item $\triangle ABC\sim \triangle DAC$ by the AA criterion because they share $\angle C$ and they each have a right angle. 
+\item $\triangle ABC\sim \triangle \answer[format=string]{DAC}$ by AA because they share $\angle C$ and they each have a right angle. 
 
-\item $\triangle DAC\sim \triangle DBA$ because they are both similar to
+\item $\triangle DAC\sim \triangle \answer[format=string]{DBA}$ because they are both similar to
 $\triangle ABC$.
 \end{enumerate}
 \end{problem}
