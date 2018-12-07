@@ -172,7 +172,7 @@ In the figure below, $\overline{AB}$ is a diameter of a circle with center $P$. 
 \end{image}
 
 
-\item Natalia sees that $\triangle APB$ and $\triangle BPC$ are $\answer[format=string]{isosceles}$ triangles, so she marks the figure to show congruent angles. 
+\item Natalia sees that $\triangle APB$ and $\triangle BPC$ are $\answer[format=string]{isosceles}$ triangles, so she marks the figure to show angles that must congruent. (Note: Do we need a statement or citation of the theorem?)
 
 \item In order to do some algebra with these congruent angles, Natalia labels their measures $x$ and $y$, as shown in the picture on the right.  
 
@@ -182,9 +182,53 @@ In the figure below, $\overline{AB}$ is a diameter of a circle with center $P$. 
 \answer{x+(x+y)+y} = 180^\circ
 \]
 
-Note: Need a question about dividing the equation by 2.   
-\item Since $m\angle B = \answer{x+y}$, she concludes that $m\angle B = 90^\circ$.
+(Note: Need a question about dividing the equation by 2.)  
+\item Since $m\angle B = \answer{x+y}$, she concludes that $m\angle B = 90^\circ$.  (Note: Should call it $\angle ABC$ because of the new segment, or maybe note this earlier.)
 \end{enumerate}
+\end{problem}
+
+\begin{problem}
+
+New problem about relationship between inscribed angle and central angle. 
+
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.3926,0.}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-4.5,-3.8) rectangle (4.5,3.8);
+\draw [shift={(-3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0.:1.115) arc (0.:28.155:1.115) -- cycle;
+\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-151.845:1.115) arc (-151.845:-123.690:1.115) -- cycle;
+\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-123.690:0.892) arc (-123.690:-61.845:0.892) -- cycle;
+\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq] (-123.690:0.669) arc (-123.690:-61.85:0.669);
+\draw [shift={(3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (118.155:0.892) arc (118.155:180.:0.892) -- cycle;
+\draw [shift={(3.6056,0.)},line width=0.8pt,color=qqwuqq] (118.155:0.669) arc (118.155:180.:0.669);
+\draw [line width=0.8pt] (0.,0.) circle (3.606cm);
+\draw [line width=0.8pt] (-3.6056,0.)-- (2.,3.);
+\draw [line width=0.8pt] (2.,3.)-- (3.6056,0.);
+\draw [line width=0.8pt] (-3.6056,0.)-- (0.,0.);
+\draw [line width=0.8pt] (-1.8028,0.2006) -- (-1.8028,-0.2006);
+\draw [line width=0.8pt] (0.,0.)-- (3.6056,0.);
+\draw [line width=0.8pt] (1.8028,0.2006) -- (1.8028,-0.2006);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (0.833,1.611) -- (1.167,1.389);
+\draw (-2.2,0.35) node {$x$};
+\draw (0.95,2.1) node {$x$};
+\draw (1.95,1.85) node {$y$};
+\draw (2.6,0.6) node {$y$};
+\draw (0.55,0.3) node {$z$};
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=qqqqff] (-3.60,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+\draw [fill=qqqqff] (3.60,0.) circle (1.2pt);
+\draw[color=qqqqff] (3.90,0) node {$C$};
+%\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
 \end{problem}
 
 \end{document}
