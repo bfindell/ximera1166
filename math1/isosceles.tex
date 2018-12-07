@@ -11,15 +11,64 @@ Proofs.
 \end{abstract}
 \maketitle
 
+% How to translate part of a TikZ image
+%
+%\begin{scope}[shift={(2,0)}]
+%  ... insert graphic here
+%\end{scope}
+%
+% This figure shows an $\answer[format=string]{angle bisector}$ 
+
+
+%\begin{image}
+%% Isosceles triangle ABC, marked
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\clip(-1.4,-0.4) rectangle (3.4,2.6);
+%%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+%\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+%\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+%\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+%\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+%\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+%\begin{scriptsize}
+%\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+%\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+%\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+%\draw[color=qqqqff] (1.14,2.45) node {$C$};
+%%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+%\end{scriptsize}
+%\end{tikzpicture}
+%\end{image}
+
+
 \begin{problem}
 Prove that the base angles of an isosceles triangle are congruent.   
 
-% Isosceles triangle ABC, marked
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\clip(-0.4,-0.4) rectangle (5.4,2.6);
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
@@ -49,17 +98,14 @@ Prove that the base angles of an isosceles triangle are congruent.
 %\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 %\draw[color=qqqqff] (0.97,-0.2) node {$D$};
 \end{scriptsize}
-\end{tikzpicture}
-\end{image}
+%\end{tikzpicture}
 
-
-(a) Angle bisector; (b) Median
-\begin{image}
-\definecolor{qqqqff}{rgb}{0.,0.,1.}
-\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\begin{scope}[shift={(3,0)}]
 % Isosceles Triangle with Angle Bisector
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
 \draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
 \draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
@@ -89,13 +135,64 @@ Prove that the base angles of an isosceles triangle are congruent.
 \draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 \draw[color=qqqqff] (0.97,-0.2) node {$D$};
 \end{scriptsize}
+\end{scope}
 \end{tikzpicture}
-This figure shows an $\answer[format=string]{angle bisector}$. 
+\end{image}
 
+Beginning with the given figure on the left, Morgan draws $\overline{CD}$ and marks the figure intending that this new segment is a(n) \wordChoice{\choice{median}\choice[correct]{angle bisector}\choice{perpendicular bisector}\choice{altitude}}.
+
+Based on the marked figure, Morgan claims that the $\triangle ACD\cong \triangle\answer[format=string]{BCD}$ by \wordChoice{\choice[correct]{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
+
+Finally, Morgan concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
+ 
+\end{problem}
+
+\begin{problem}
+Prove that the base angles of an isosceles triangle are congruent.   
+
+\begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\clip(-0.4,-0.4) rectangle (5.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+%\end{tikzpicture}
+
+\begin{scope}[shift={(3,0)}]
+% Isosceles triangle with median
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
@@ -125,17 +222,66 @@ This figure shows an $\answer[format=string]{angle bisector}$.
 \draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 \draw[color=qqqqff] (0.97,-0.2) node {$D$};
 \end{scriptsize}
+\end{scope}
 \end{tikzpicture}
-This figure shows an $\answer[format=string]{median}$. 
+
 \end{image}
 
+Beginning with the given figure on the left, Deja draws $\overline{CD}$ and marks the figure intending that this new segment is a(n) \wordChoice{\choice[correct]{median}\choice{angle bisector}\choice{perpendicular bisector}\choice{altitude}}.
 
-(c) Altitude; (d) Overspecified perpendicular bisector
+Based on the marked figure, Deja claims that the $\triangle ACD\cong \triangle\answer[format=string]{BCD}$ by \wordChoice{\choice{SAS}\choice[correct]{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
+
+Finally, Deja concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
+ 
+
+\end{problem}
+
+\begin{problem}
+Prove that the base angles of an isosceles triangle are congruent.   
+
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\clip(-0.4,-0.4) rectangle (5.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+%\end{tikzpicture}
+
+\begin{scope}[shift={(3,0)}]
+% Isosceles triangle with altitude
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
@@ -165,13 +311,67 @@ This figure shows an $\answer[format=string]{median}$.
 \draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 \draw[color=qqqqff] (0.97,-0.2) node {$D$};
 \end{scriptsize}
+\end{scope}
 \end{tikzpicture}
+\end{image}
+
+Beginning with the given figure on the left, Elle draws $\overline{CD}$ and marks the figure intending that this new segment is a(n) \wordChoice{\choice{median}\choice{angle bisector}\choice{perpendicular bisector}\choice[correct]{altitude}}.
+
+Based on the marked figure, Deja claims that the $\triangle ACD\cong \triangle\answer[format=string]{BCD}$ by \wordChoice{\choice{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice[correct]{HL}}. 
+
+Finally, Deja concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
+ 
+
+\end{problem}
 
 
+\begin{problem}
+Simon and Taylor are trying to prove that the base angles of an isosceles triangle are congruent.   
+
+\begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\clip(-0.4,-0.75) rectangle (8.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+\draw (1,-0.6) node[align=center] {Given figure};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+%\end{tikzpicture}
+
+\begin{scope}[shift={(3,0)}]
+% Isosceles triangle with overspecified perpendicular bisector
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
 \draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
 \draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
@@ -200,18 +400,112 @@ This figure shows an $\answer[format=string]{median}$.
 \draw[color=qqqqff] (1.14,2.45) node {$C$};
 \draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 \draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\draw (1,-0.6) node[align=center] {Simon's figure};
 \end{scriptsize}
+\end{scope}
+%\end{tikzpicture}
+
+\begin{scope}[shift={(6,0)}]
+% Isosceles triangle with a perpendicular bisector that misses vertex
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.06,2.2);
+\draw [line width=0.8pt] (0.4471,1.1376) -- (0.6128,1.0623);
+\draw [line width=0.8pt] (1.06,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.6128,1.1376) -- (1.4471,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (0.99,2.4)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.06,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.24,2.45) node {$C$};
+\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\draw (1,-0.6) node[align=center] {Taylor's figure};
+\end{scriptsize}
+\end{scope}
 \end{tikzpicture}
 \end{image}
 
+Beginning with the given figure on the left, Simon draws $\overline{CD}$ and marks the second figure intending that this new segment is a perpendicular bisector of $\overline{AB}$.
 
-% With a perpendicular bisector that misses
-(e) Using symmetry; (f) perpendicular bisector that misses vertex; 
+Taylor claims that a perpendicular bisector of a side of a triangle usually misses the opposite vertex.  So without using properties of isosceles triangles, the figure must allow for that possibility.  
+
+Choose the best response to their argument: 
+\begin{multipleChoice}
+\choice{Simon is correct, and $\triangle ACD\cong \triangle BCD$ by SAS.} 
+\choice{Simon is correct, and $\triangle ACD\cong \triangle BCD$ by SSS}
+\choice[correct]{Taylor is correct, and the perpendicular bisector cannot be used to complete this proof.}
+\choice{Neither of them are correct.}  
+\end{multipleChoice} 
+\end{problem}
+
+
+\begin{problem}
+Prove that the base angles of an isosceles triangle are congruent.   
+
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\clip(-0.4,-0.75) rectangle (5.4,2.6);
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,2.2);
+\draw [line width=0.8pt] (0.4171,1.1376) -- (0.5828,1.0623);
+\draw [line width=0.8pt] (1.,2.2)-- (2.,0.);
+\draw [line width=0.8pt] (1.5828,1.1376) -- (1.4171,1.0623);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+%\draw [line width=0.8pt] (1.,2.2)-- (1.,0.); % segment CD
+%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+\draw (1,-0.6) node[align=center] {Given figure};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\end{scriptsize}
+%\end{tikzpicture}
+
+\begin{scope}[shift={(3,0)}]
+% Isosceles triangle using symmetry 
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
 \draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
 %\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
@@ -241,46 +535,19 @@ This figure shows an $\answer[format=string]{median}$.
 %\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 %\draw[color=qqqqff] (0.97,-0.2) node {$D$};
 \end{scriptsize}
+\end{scope}
 \end{tikzpicture}
-
-
-\definecolor{qqqqff}{rgb}{0.,0.,1.}
-\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.4,-0.4) rectangle (2.4,2.6);
-%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
-%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
-%\draw [shift={(1.,2.2)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
-\draw [line width=0.8pt] (0.,0.)-- (1.06,2.2);
-\draw [line width=0.8pt] (0.4471,1.1376) -- (0.6128,1.0623);
-\draw [line width=0.8pt] (1.06,2.2)-- (2.,0.);
-\draw [line width=0.8pt] (1.6128,1.1376) -- (1.4471,1.0623);
-\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
-\draw [line width=0.8pt] (0.99,2.4)-- (1.,0.); % segment CD
-%\draw [line width=0.8pt] (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
-%\draw [line width=0.8pt] (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
-\draw [line width=0.8pt] (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
-\draw [line width=0.8pt] (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
-\draw [line width=0.8pt] (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
-\draw [line width=0.8pt] (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
-\draw [line width=0.8pt] (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
-\draw [line width=0.8pt] (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
-\begin{scriptsize}
-\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
-\draw[color=qqqqff] (-0.18,-0.13) node {$A$};
-\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
-\draw[color=qqqqff] (2.18,-0.13) node {$B$};
-\draw [fill=qqqqff] (1.06,2.2) circle (1.2pt);
-\draw[color=qqqqff] (1.24,2.45) node {$C$};
-\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
-\draw[color=qqqqff] (0.97,-0.2) node {$D$};
-\end{scriptsize}
-\end{tikzpicture}
-
 \end{image}
 
+Examining the given figure on the left, Lissy notices symmetry in the triangle and claims that the triangle is congruent to itself by a \wordChoice{\choice{translation}\choice[correct]{reflection}\choice{rotation}}.  
+
+Based on the marked figure, Lissy claims that the $\triangle ACB\cong \triangle\answer[format=string]{BCA}$ by \wordChoice{\choice[correct]{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
+
+Finally, Lissy concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
+ 
+
 \end{problem}
+
+
 
 \end{document}
