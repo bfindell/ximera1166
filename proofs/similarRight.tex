@@ -11,9 +11,56 @@ Proofs updated.
 \end{abstract}
 \maketitle
 
+\begin{problem}
+Adapted from Ohio's 2017 Geometry released item 17.
+ 
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+\definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.75,-1) rectangle (2.9,3.5);
+\clip(-2,-1) rectangle (4,3.5);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0.,0.) -- (0.,0.25) -- (0.25,0.25) -- (0.25,0.) -- cycle;
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2457,1.1314) -- (1.0373,0.9925) -- (1.1762,0.7842) -- (1.3846,0.9231) -- cycle;
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.1762,0.7842) -- (1.3152,0.5758) -- (1.5235,0.7147) -- (1.3846,0.9231) -- cycle;
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt] (0.,3.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,3.)-- (2.,0.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (1.3846,0.9231);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.3154,0.2231) node {$A$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.2108,0.2467) node {$B$};
+\draw [fill=qqqqff] (0.,3.) circle (1.2pt);
+\draw[color=qqqqff] (0.2276,3.2215) node {$C$};
+\draw [fill=uuuuuu] (1.3846,0.9231) circle (1.2pt);
+\draw[color=uuuuuu] (1.5497,1.2619) node {$D$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+ 
+%\begin{image}
+%\includegraphics{Q17.png}
+%\end{image}
+Complete the following proof that $\triangle DAC$ is similar to $\triangle DBA$:
+% The 2017 EOC item prompts for ``AA postulate,'' but AA is not a postulate.
+ 
+\begin{enumerate}
+\item $\triangle ABC\sim \triangle \answer[format=string]{DBA}$ by \wordChoice{\choice[correct]{AA similarity}\choice{CPCTC}\choice{right triangle similarity}} because they share $\angle B$ and they each have a right angle.
+ 
+\item $\triangle ABC\sim \triangle DAC$ for the same reason because they share \wordChoice{\choice{$\angle A$}\choice{$\angle B$}\choice[correct]{$\angle C$}} and they each have a right angle.
+ 
+\item $\triangle DAC\sim \triangle \answer[format=string]{DBA}$ because they are both similar to
+$\triangle ABC$.
+\end{enumerate}
+ 
+\end{problem}
+
 
 \begin{problem}
-Adapted from Ohio's 2017 Geometry released item 17. 
+A different proof, also adapted from Ohio's 2017 Geometry released item 17. 
 
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
@@ -49,12 +96,13 @@ Complete the following proof that $\triangle DAC$ is similar to $\triangle DBA$:
 % The 2017 EOC item prompts for ``AA postulate,'' but AA is not a postulate.
 
 \begin{enumerate}
-\item $\triangle ABC\sim \triangle \answer[format=string]{DBA}$ by \wordChoice{\choice[correct]{AA similarity}\choice{CPCTC}\choice{right triangle similarity}} because they share $\angle B$ and they each have a right angle. 
+\item $\angle B$ and $\angle BAD$ are complementary because they are acute angles in a right triangle. 
 
-\item $\triangle ABC\sim \triangle DAC$ for the same reason because they share \wordChoice{\choice{$\angle A$}\choice{$\angle B$}\choice[correct]{$\angle C$}} and they each have a right angle. 
+\item $\angle DAC$ and $\angle BAD$ are complementary because they are adjacent angles that form $\angle BAC$, which is right.  
 
-\item $\triangle DAC\sim \triangle \answer[format=string]{DBA}$ because they are both similar to
-$\triangle ABC$.
+\item $\angle B \cong \angle DAC$ because they are both complementary to $\angle BAD$.  
+
+\item $\triangle DAC\sim \triangle \answer[format=string]{DBA}$ by \wordChoice{\choice[correct]{AA similarity}\choice{CPCTC}\choice{right triangle similarity}} because $\angle B \cong \angle DAC$ and they each have a right angle.
 \end{enumerate}
 
 \end{problem}
