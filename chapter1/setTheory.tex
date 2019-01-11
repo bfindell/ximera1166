@@ -11,37 +11,37 @@ Short-answer problems about sets.
 \end{abstract}
 \maketitle
 
-\begin{question}
-What is your name?
-\begin{freeResponse}
-\end{freeResponse}
-\end{question}
-
 \begin{problem}
-Given two sets $X$ and $Y$, explain what is meant by $X\cup Y$.
-\begin{freeResponse}
-\begin{hint}
-$X\cup Y$ is the set of elements that are in $X$ or in $Y$ (or both, as the ``or'' is inclusive).  
-\end{hint}
-\end{freeResponse}
+Given two sets $X$ and $Y$, $X\cup Y$ is the set of elements that are
+\begin{multipleChoice}
+\choice{in $X$ or in $Y$ (but not in both).}
+\choice[correct]{in $X$ or in $Y$ (or both, as the ``or'' is inclusive).}  
+\choice{in $X$ and in $Y$.}
+\choice{in $X$ but not in $Y$.}
+\choice{in $Y$ but not in $X$.} 
+\end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-Given two sets $X$ and $Y$, explain what is meant by $X\cap Y$.
-\begin{freeResponse}
-\begin{hint}
-$X\cap Y$ is the set of elements that are in $X$ and in $Y$.  
-\end{hint}
-\end{freeResponse}
+Given two sets $X$ and $Y$, $X\cap Y$ is the set of elements that are 
+\begin{multipleChoice}
+\choice{in $X$ or in $Y$ (but not in both).}
+\choice{in $X$ or in $Y$ (or both, as the ``or'' is inclusive).}  
+\choice[correct]{in $X$ and in $Y$.}
+\choice{in $X$ but not in $Y$.}
+\choice{in $Y$ but not in $X$.} 
+\end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-Given two sets $X$ and $Y$, explain what is meant by $X - Y$.
-\begin{freeResponse}
-\begin{hint}
-$X - Y$ is the set of elements that are in $X$ but not in $Y$.  
-\end{hint}
-\end{freeResponse}
+Given two sets $X$ and $Y$, $X - Y$ is the set of elements that are 
+\begin{multipleChoice}
+\choice{in $X$ or in $Y$ (but not in both).}
+\choice{in $X$ or in $Y$ (or both, as the ``or'' is inclusive).}  
+\choice{in $X$ and in $Y$.}
+\choice[correct]{in $X$ but not in $Y$.}
+\choice{in $Y$ but not in $X$.} 
+\end{multipleChoice}
 \end{problem}
 
 \begin{problem}
@@ -77,6 +77,12 @@ If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``e
 \begin{image}
   \includegraphics{set4.png}
 \end{image}
+\begin{multipleChoice}
+\choice[correct]{Yes.}
+\choice{No.}
+\choice{Not enough information.}
+\end{multipleChoice}
+
 Explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
@@ -86,23 +92,13 @@ Yes.  The picture is accurate because no right triangles are also equilateral tr
 \end{problem}
 
 \begin{problem}
-If $X = \{1,2,3,4,5\}$ and $Y = \{3,4,5,6\}$ find:
+If $X = \{1,2,3,4,5\}$ and $Y = \{3,4,5,6\}$ find the following: (List elements in ascending order, separated by commas, with no spaces.)
 \begin{enumerate}
-\item $X\cup Y$
-\item $X\cap Y$
-\item $X-Y$
-\item $Y-X$
+\item $X\cup Y = \{\answer[format=string]{1,2,3,4,5,6}\}$
+\item $X\cap Y = \{\answer[format=string]{3,4,5}\}$
+\item $X-Y = \{\answer[format=string]{1,2}\}$
+\item $Y-X = \{\answer[format=string]{6}\}$
 \end{enumerate}
-\begin{freeResponse}
-\begin{hint}
-\begin{enumerate}
-\item $X\cup Y = \{1,2,3,4,5,6\}$
-\item $X\cap Y = \{3,4,5\}$
-\item $X-Y = \{1,2\}$
-\item $Y-X = \{6\}$
-\end{enumerate}
-\end{hint}
-\end{freeResponse}
 \end{problem}
 
 \begin{problem}
@@ -110,26 +106,14 @@ Let $n\Z$ represent the integer multiples of $n$. So for example:
 \[
 3\Z = \{\dots,-12,-9,-6,-3,0,3,6,9,12,\dots\}
 \]
-Compute the following:
+Compute the following (use capital $Z$ for $\Z$):
 \begin{enumerate}
-\item $3\Z\cap 4\Z$
-\item $2\Z\cap 5\Z$
-\item $3\Z\cap 6\Z$
-\item $4\Z\cap 6\Z$
-\item $4\Z\cap 10\Z$
+\item $3\Z\cap 4\Z = \answer{12Z}$ 
+\item $2\Z\cap 5\Z = \answer{10Z}$
+\item $3\Z\cap 6\Z = \answer{6Z}$
+\item $4\Z\cap 6\Z = \answer{12Z}$
+\item $4\Z\cap 10\Z = \answer{20Z}$
 \end{enumerate}
-In each case explain your reasoning. 
-\begin{freeResponse}
-\begin{hint}
-\begin{enumerate}
-\item $3\Z\cap 4\Z = 12\Z$
-\item $2\Z\cap 5\Z = 10\Z$
-\item $3\Z\cap 6\Z = 6\Z$
-\item $4\Z\cap 6\Z = 12\Z$
-\item $4\Z\cap 10\Z = 20\Z$
-\end{enumerate}
-\end{hint}
-\end{freeResponse}
 \end{problem}
 
 \begin{problem}
@@ -144,29 +128,27 @@ The intersection of two sets is what they have in \emph{common}.  The intersecti
 
 \begin{problem}
 If $X\cup Y = X$, what can we say about the relationship between the sets $X$ and $Y$? Explain your reasoning.
-\begin{freeResponse}
-\begin{hint}
-$Y\subset X$ because every element of $Y$ must already be in $X$.  
-\end{hint}
-\end{freeResponse}
+
+% $Y\subset X$ because every element of $Y$ must already be in $X$.  
+\wordChoice{\choice{$X\subset Y$}\choice{$X=Y$}\choice[correct]{$Y\subset X$}\choice{$X=\emptyset$}}
+because every element of \wordChoice{\choice{$X$}\choice[correct]{$Y$}} must be in \wordChoice{\choice[correct]{$X$}\choice{$Y$}}.
+
 \end{problem}
 
 \begin{problem}
 If $X\cap Y = X$, what can we say about the relationship between the sets $X$ and $Y$? Explain your reasoning.
-\begin{freeResponse}
-\begin{hint}
-$X\subset Y$ because every element of $X$ must already be in $Y$.  
-\end{hint}
-\end{freeResponse}
+
+% $X\subset Y$ because every element of $X$ must already be in $Y$. 
+\wordChoice{\choice[correct]{$X\subset Y$}\choice{$X=Y$}\choice{$Y\subset X$}\choice{$X=\emptyset$}}
+because every element of \wordChoice{\choice[correct]{$X$}\choice{$Y$}} must be in \wordChoice{\choice{$X$}\choice[correct]{$Y$}}.
 \end{problem}
 
 \begin{problem}
 If $X-Y =\emptyset$, what can we say about the relationship between the sets $X$ and $Y$? Explain your reasoning.
-\begin{freeResponse}
-\begin{hint}
-$X\subset Y$ because that would mean $X$ contains no elements that are not also in $Y$.
-\end{hint}
-\end{freeResponse}
+
+% $X\subset Y$ because that would mean $X$ contains no elements that are not also in $Y$.
+\wordChoice{\choice[correct]{$X\subset Y$}\choice{$X=Y$}\choice{$Y\subset X$}\choice{$X=\emptyset$}}
+because every element of \wordChoice{\choice[correct]{$X$}\choice{$Y$}} must be in \wordChoice{\choice{$X$}\choice[correct]{$Y$}}.
 \end{problem}
 
 
