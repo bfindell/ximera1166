@@ -4,12 +4,15 @@
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows}
 \usepackage{framed}
+\usepackage{amsmath}
 \pgfplotsset{compat=1.16}
 
 \def\fixnote#1{\begin{framed}{\textcolor{red}{Fix note: #1}}\end{framed}}  % Allows insertion of red notes about needed edits
 %\def\fixnote#1{}
 
 \def\detail#1{{\textcolor{blue}{Detail: #1}}}   
+
+\pdfOnly{\renewenvironment{image}[1][]{\begin{center}}{\end{center}}}
 
 \graphicspath{
   {./}
@@ -20,11 +23,50 @@
 }
 
 
+
+%%% This set of code is all of our user defined commands
+\newcommand{\bysame}{\mbox{\rule{3em}{.4pt}}\,}
 \newcommand{\N}{\mathbb N}
-\newcommand{\W}{\mathbb W}
 \newcommand{\C}{\mathbb C}
+\newcommand{\W}{\mathbb W}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\A}{\mathbb A}
+\newcommand{\D}{\mathcal D}
+\newcommand{\F}{\mathcal F}
+\newcommand{\ph}{\varphi}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\aph}{\alpha}
+\newcommand{\QM}{\begin{center}{\huge\textbf{?}}\end{center}}
+
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\a}{\wedge}
+\renewcommand{\v}{\vee}
+\renewcommand{\l}{\ell}
+\newcommand{\mat}{\mathsf}
+\renewcommand{\vec}{\mathbf}
+\renewcommand{\subset}{\subseteq}
+\renewcommand{\supset}{\supseteq}
+%\renewcommand{\emptyset}{\varnothing}
+%\newcommand{\xto}{\xrightarrow}
+%\renewcommand{\qedsymbol}{$\blacksquare$}
+%\newcommand{\bibname}{References and Further Reading}
+%\renewcommand{\bar}{\protect\overline}
+%\renewcommand{\hat}{\protect\widehat}
+%\renewcommand{\tilde}{\widetilde}
+%\newcommand{\tri}{\triangle}
+%\newcommand{\minipad}{\vspace{1ex}}
+%\newcommand{\leftexp}[2]{{\vphantom{#2}}^{#1}{#2}}
+
+%% More user defined commands
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\theta}{\vartheta} %% only for kmath
+\renewcommand{\l}{\ell}
+\renewcommand{\d}{\, d}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
 
 
+\usepackage{bigstrut}
