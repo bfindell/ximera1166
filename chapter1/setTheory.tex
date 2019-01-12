@@ -65,20 +65,114 @@ The empty set, $\emptyset$, is a set that contains no elements.  That is, $\empt
 \end{problem}
 
 \begin{problem}
+Consider the following Venn diagrams:  
+
+\definecolor{ffffff}{rgb}{1.,1.,1.}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.4]
+%\clip(-7,-4.2) rectangle (10,4.2);
+\clip(-7,-14.2) rectangle (27,4.2);
+\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
+\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw (0.,0.) circle (3.cm);
+\draw (4.,0.) circle (3.cm);
+\draw (-5.,4.)-- (-5.,-4.);
+\draw (-5.,-4.)-- (9.,-4.);
+\draw (9.,-4.)-- (9.,4.);
+\draw (9.,4.)-- (-5.,4.);
+\draw (-2,2.2) node[anchor=north west] {X};
+\draw (5.1,2.2) node[anchor=north west] {Y};
+\draw (-7,4) node[anchor=north west] {(A)};
+
+\begin{scope}[shift={(17,0)}]
+\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
+%\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw (0.,0.) circle (3.cm);
+\draw (4.,0.) circle (3.cm);
+\draw (-5.,4.)-- (-5.,-4.);
+\draw (-5.,-4.)-- (9.,-4.);
+\draw (9.,-4.)-- (9.,4.);
+\draw (9.,4.)-- (-5.,4.);
+\draw (-2,2.2) node[anchor=north west] {X};
+\draw (5.1,2.2) node[anchor=north west] {Y};
+\draw (-7,4) node[anchor=north west] {(B)};
+\end{scope}
+
+\begin{scope}[shift={(0,-10)}]
+%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
+%\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw (0.,0.) circle (3.cm);
+\draw (4.,0.) circle (3.cm);
+\draw (-5.,4.)-- (-5.,-4.);
+\draw (-5.,-4.)-- (9.,-4.);
+\draw (9.,-4.)-- (9.,4.);
+\draw (9.,4.)-- (-5.,4.);
+\draw (-2,2.2) node[anchor=north west] {X};
+\draw (5.1,2.2) node[anchor=north west] {Y};
+\draw (-7,4) node[anchor=north west] {(C)};
+\end{scope}
+
+\begin{scope}[shift={(17,-10)}]
+\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
+\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+\draw (0.,0.) circle (3.cm);
+\draw (4.,0.) circle (3.cm);
+\draw (-5.,4.)-- (-5.,-4.);
+\draw (-5.,-4.)-- (9.,-4.);
+\draw (9.,-4.)-- (9.,4.);
+\draw (9.,4.)-- (-5.,4.);
+\draw (-2,2.2) node[anchor=north west] {X};
+\draw (5.1,2.2) node[anchor=north west] {Y};
+\draw (-7,4) node[anchor=north west] {(D)};
+\end{scope}
+
+\end{tikzpicture}
+
+For each set expression below, identify the Venn diagram above in which the region is shaded: 
+\begin{enumerate}
+\item $X\cap Y$ is figure $\answer{C}$
+\item $X\cup Y$ is figure $\answer{B}$. 
+\item $X - Y$ is figure $\answer{D}$
+\end{enumerate}
+
+\end{problem}
+
+
+\begin{problem}
 Draw a Venn diagram for the set of elements that are in $X$ or $Y$ \emph{but not both}. 
 How does it differ from the Venn diagram for $X\cup Y$?  
 \begin{freeResponse}
 \begin{hint}
-Same as the Venn diagram for $X\cup Y$, except that the $X\cap Y$ part is not shaded.  
+The elements in $X$ or $Y$ \emph{but not both} is shown in figure (A) from the previous problem.  
+% Same as the Venn diagram for $X\cup Y$, except that the $X\cap Y$ part is not shaded.  
 \end{hint}
 \end{freeResponse}
 \end{problem}
 
 \begin{problem}
-If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``equilateral triangles'' does the picture below show the relationship between these two sets?
+Consider the following image: 
 \begin{image}
   \includegraphics{set4.png}
 \end{image}
+If the above Venn diagram shows the relationship between sets $X$ and $Y$, then $X\cap Y =$ \wordChoice{\choice{$0$}\choice[correct]{$\emptyset$}\choice{$X\cup Y$}} and the sets are said to be $\answer[format=string]{disjoint}$.
+
+If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``equilateral triangles'' does the picture below show the relationship between these two sets?
 \begin{multipleChoice}
 \choice[correct]{Yes.}
 \choice{No.}
@@ -108,7 +202,7 @@ Let $n\mathbb Z$ represent the integer multiples of $n$. So for example:
 \[
 3\mathbb Z = \{\dots,-12,-9,-6,-3,0,3,6,9,12,\dots\}
 \]
-Compute the following (use capital $Z$ for $\Z$):
+Compute the following (use capital $Z$ for $\mathbb Z$):
 \begin{enumerate}
 \item $3\mathbb Z\cap 4\mathbb Z = \answer{12Z}$ 
 \item $2\mathbb Z\cap 5\mathbb Z = \answer{10Z}$
@@ -134,8 +228,8 @@ Compute the following (use capital $Z$ for $\Z$):
 %\end{problem}
 
 \begin{problem}
-Make a general rule for intersecting sets of the form $n\Z$ and
-  $m\Z$. Explain why your rule works.
+Make a general rule for intersecting sets of the form $n\mathbb Z$ and
+  $m\mathbb Z$. Explain why your rule works.
 \begin{freeResponse}
 \begin{hint}
 The intersection of two sets is what they have in \emph{common}.  The intersection of the set of multiples of $n$ and the set of multiples of $m$ are called \emph{common multiples} (surprise!), and they are all multiples of the least common multiple of $n$ and $m$.  
