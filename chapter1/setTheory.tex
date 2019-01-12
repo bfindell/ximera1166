@@ -50,7 +50,8 @@ Given two sets $X$ and $Y$, $X - Y$ is the set of elements that are
 Explain the difference between the symbols $\in$ and $\subset$.
 \begin{freeResponse}
 \begin{hint}
-The notation $X \in Y$ means that $X$ is a single element in the set $Y$.  In this case, $X$ is probably not a set.  The notation $X \subset Y$ requires that both $X$ and $Y$ are sets and, furthermore, that every element of $X$ is also in $Y$.
+The symbol $\in$ means ``is an element of,'' whereas $\subset$ means ``is a subset of.'' \\
+The notation $X \in Y$ means that $X$ is a single element in the set $Y$.  In this case, $X$ is typically not a set.  The notation $X \subset Y$, in contrast, requires that both $X$ and $Y$ are sets and, furthermore, that every element of $X$ is also in $Y$.
 \end{hint}
 \end{freeResponse}
 \end{problem}
@@ -144,7 +145,7 @@ Consider the following Venn diagrams:
 
 \end{tikzpicture}
 
-For each set expression below, identify the Venn diagram above in which the region is shaded: 
+For each set expression below, identify the Venn diagram above in which the corresponding region is shaded: 
 \begin{enumerate}
 \item $X\cap Y$ is figure $\answer{C}$
 \item $X\cup Y$ is figure $\answer{B}$. 
@@ -159,33 +160,71 @@ Draw a Venn diagram for the set of elements that are in $X$ or $Y$ \emph{but not
 How does it differ from the Venn diagram for $X\cup Y$?  
 \begin{freeResponse}
 \begin{hint}
-The elements in $X$ or $Y$ \emph{but not both} is shown in figure (A) from the previous problem.  
+A Venn diagram for elements in $X$ or $Y$ \emph{but not both} is shown in figure (A) from the previous problem.  
 % Same as the Venn diagram for $X\cup Y$, except that the $X\cap Y$ part is not shaded.  
 \end{hint}
 \end{freeResponse}
 \end{problem}
 
 \begin{problem}
-Consider the following image: 
-\begin{image}
-  \includegraphics{set4.png}
-\end{image}
-If the above Venn diagram shows the relationship between sets $X$ and $Y$, then $X\cap Y =$ \wordChoice{\choice{$0$}\choice[correct]{$\emptyset$}\choice{$X\cup Y$}} and the sets are said to be $\answer[format=string]{disjoint}$.
+Consider the following Venn diagrams: 
 
-If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``equilateral triangles'' does the picture below show the relationship between these two sets?
+\definecolor{ffffff}{rgb}{1.,1.,1.}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.4]
+%\clip(-7,-4.2) rectangle (10,4.2);
+\clip(-7,-4.2) rectangle (27,4.2);
+\draw (-1.,0.) circle (2.5cm);
+\draw (5,0.) circle (2.5cm);
+\draw (-5.,4.)-- (-5.,-4.);
+\draw (-5.,-4.)-- (9.,-4.);
+\draw (9.,-4.)-- (9.,4.);
+\draw (9.,4.)-- (-5.,4.);
+\draw (-2.2,2.2) node[anchor=north west] {X};
+\draw (5.1,2.2) node[anchor=north west] {Y};
+\draw (-7,4) node[anchor=north west] {(A)};
+
+\begin{scope}[shift={(17,0)}]
+\draw (3.3,-0.7) circle (1.6cm);
+\draw (4.,0.) circle (3.cm);
+\draw (-5.,4.)-- (-5.,-4.);
+\draw (-5.,-4.)-- (9.,-4.);
+\draw (9.,-4.)-- (9.,4.);
+\draw (9.,4.)-- (-5.,4.);
+\draw (2.1,0.5) node[anchor=north west] {X};
+\draw (5.1,2.2) node[anchor=north west] {Y};
+\draw (-7,4) node[anchor=north west] {(B)};
+\end{scope}
+
+\end{tikzpicture}
+
+
+
+%\begin{image}
+%  \includegraphics{set4.png}
+%\end{image}
+\begin{enumerate}
+\item If Venn diagram (A) above shows the relationship between sets $X$ and $Y$, then $X\cap Y =$ \wordChoice{\choice{$0$}\choice[correct]{$\emptyset$}\choice{$X\cup Y$}} and the sets are said to be $\answer[format=string]{disjoint}$.
+
+\item If Venn diagram (A) above shows the relationship between sets $X$ and $Y$, then we say that \wordChoice{\choice{$X$ and $Y$ are disjoint}\choice[correct]{$X\subset Y$}\choice{$Y\subset X$}}.
+
+\item If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``equilateral triangles'' which diagram above show the relationship between these two sets?
 \begin{multipleChoice}
-\choice[correct]{Yes.}
-\choice{No.}
+\choice[correct]{Diagram (A).}
+\choice{Diagram (B).}
+\choice{Neither of these.}
 \choice{Not enough information.}
 \end{multipleChoice}
 
 Explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
-Yes.  The picture is accurate because no right triangles are also equilateral triangles.  
+Diagram (A) is accurate because no right triangles are also equilateral triangles.  
 \end{hint}
 \end{freeResponse}
+\end{enumerate}
 \end{problem}
+
 
 \begin{problem}
 If $X = \{1,2,3,4,5\}$ and $Y = \{3,4,5,6\}$ find the following: (List elements in ascending order, separated by commas, with no spaces.)
