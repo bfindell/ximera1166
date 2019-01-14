@@ -47,11 +47,11 @@ Given two sets $X$ and $Y$, $X - Y$ is the set of elements that are
 \end{problem}
 
 \begin{problem}
-Explain the difference between the symbols $\in$ and $\subset$.
+Explain the difference between the symbols $\in$ and $\subseteq$.
 \begin{freeResponse}
 \begin{hint}
-The symbol $\in$ means ``is an element of,'' whereas $\subset$ means ``is a subset of.'' 
-The notation $X \in Y$ means that $X$ is a single element in the set $Y$.  In this case, $X$ is typically not a set.  The notation $X \subset Y$, in contrast, requires that both $X$ and $Y$ are sets and, furthermore, that every element of $X$ is also in $Y$.
+The symbol $\in$ means ``is an element of,'' whereas $\subseteq$ means ``is a subset of.'' 
+The notation $X \in Y$ means that $X$ is a single element in the set $Y$.  In this case, $X$ is typically not a set.  The notation $X \subseteq Y$, in contrast, requires that both $X$ and $Y$ are sets and, furthermore, that every element of $X$ is also in $Y$.
 \end{hint}
 \end{freeResponse}
 \end{problem}
@@ -198,17 +198,16 @@ Consider the following Venn diagrams:
 
 \end{tikzpicture}
 
-
-
 %\begin{image}
 %  \includegraphics{set4.png}
 %\end{image}
 \begin{enumerate}
-\item If Venn diagram (A) above shows the relationship between sets $X$ and $Y$, then $X\cap Y =$ \wordChoice{\choice{$0$}\choice[correct]{$\emptyset$}\choice{$X\cup Y$}} and the sets are said to be $\answer[format=string]{disjoint}$.
+\item If Venn diagram (A) above shows the relationship between sets $X$ and $Y$, then $X\cap Y =$ \wordChoice{\choice{$0$}\choice[correct]{$\emptyset$}\choice{$X\cup Y$}} and the sets are said to be 
+\wordChoice{\choice[correct]{disjoint}\choice{empty}\choice{subsets}}.  
 
-\item If Venn diagram (B) above shows the relationship between sets $X$ and $Y$, then we say that \wordChoice{\choice{$X$ and $Y$ are disjoint}\choice[correct]{$X\subset Y$}\choice{$Y\subset X$}}.
+\item If Venn diagram (B) above shows the relationship between sets $X$ and $Y$, then we say that \wordChoice{\choice{$X$ and $Y$ are disjoint}\choice[correct]{$X\subseteq Y$}\choice{$Y\subseteq X$}}.
 
-\item If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``equilateral triangles'' which diagram above show the relationship between these two sets?
+\item If we let $X$ be the set of ``right triangles'' and we let $Y$ be the set of ``equilateral triangles'' which diagram above shows the relationship between these two sets?
 \begin{multipleChoice}
 \choice[correct]{Diagram (A).}
 \choice{Diagram (B).}
@@ -279,8 +278,8 @@ The intersection of two sets is what they have in \emph{common}.  The intersecti
 \begin{problem}
 If $X\cup Y = X$, what can we say about the relationship between the sets $X$ and $Y$? Explain your reasoning.
 
-% $Y\subset X$ because every element of $Y$ must already be in $X$.  
-\wordChoice{\choice{$X\subset Y$}\choice{$X=Y$}\choice[correct]{$Y\subset X$}\choice{$X=\emptyset$}}
+% $Y\subseteq X$ because every element of $Y$ must already be in $X$.  
+\wordChoice{\choice{$X\subseteq Y$}\choice{$X=Y$}\choice[correct]{$Y\subseteq X$}\choice{$X=\emptyset$}}
 because every element of \wordChoice{\choice{$X$}\choice[correct]{$Y$}} must be in \wordChoice{\choice[correct]{$X$}\choice{$Y$}}.
 
 \end{problem}
@@ -288,16 +287,16 @@ because every element of \wordChoice{\choice{$X$}\choice[correct]{$Y$}} must be 
 \begin{problem}
 If $X\cap Y = X$, what can we say about the relationship between the sets $X$ and $Y$? Explain your reasoning.
 
-% $X\subset Y$ because every element of $X$ must already be in $Y$. 
-\wordChoice{\choice[correct]{$X\subset Y$}\choice{$X=Y$}\choice{$Y\subset X$}\choice{$X=\emptyset$}}
+% $X\subseteq Y$ because every element of $X$ must already be in $Y$. 
+\wordChoice{\choice[correct]{$X\subseteq Y$}\choice{$X=Y$}\choice{$Y\subseteq X$}\choice{$X=\emptyset$}}
 because every element of \wordChoice{\choice[correct]{$X$}\choice{$Y$}} must be in \wordChoice{\choice{$X$}\choice[correct]{$Y$}}.
 \end{problem}
 
 \begin{problem}
 If $X-Y =\emptyset$, what can we say about the relationship between the sets $X$ and $Y$? Explain your reasoning.
 
-% $X\subset Y$ because that would mean $X$ contains no elements that are not also in $Y$.
-\wordChoice{\choice[correct]{$X\subset Y$}\choice{$X=Y$}\choice{$Y\subset X$}\choice{$X=\emptyset$}}
+% $X\subseteq Y$ because that would mean $X$ contains no elements that are not also in $Y$.
+\wordChoice{\choice[correct]{$X\subseteq Y$}\choice{$X=Y$}\choice{$Y\subseteq X$}\choice{$X=\emptyset$}}
 because every element of \wordChoice{\choice[correct]{$X$}\choice{$Y$}} must be in \wordChoice{\choice{$X$}\choice[correct]{$Y$}}.
 \end{problem}
 
