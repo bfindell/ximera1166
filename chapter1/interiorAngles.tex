@@ -33,7 +33,7 @@ Be sure to measure interior angle as an amount of turning between the two sides 
 \end{problem}
 
 \begin{problem}
-Use the measurements from the previous problem, to computer the measure of the marked angle below.  
+Use the measurements from the previous problem to answer the following questions: 
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.3921,0.}
 \definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
@@ -64,13 +64,22 @@ Use the measurements from the previous problem, to computer the measure of the m
 \end{scriptsize}
 \end{tikzpicture}
 \end{image}
-The marked angle should measure $\answer[tolerance=1.3]{79}$ degrees.  
 
-% Compare to the measure of A B and C
+\begin{enumerate}
+\item The marked angle should measure $\answer[tolerance=1.3]{79}$ degrees.  
+\item $m\angle A + m\angle B + m\angle D = \answer[tolerance=1.3]{79}$ degrees.  
+\item What do you notice?  
+\begin{freeResponse}
+\begin{hint}
+They should be the same because, in both cases, adding the interior angle at $C$ should give $360^\circ$.  
+\end{hint}
+\end{freeResponse}
+\end{enumerate}
+
 \end{problem}
 
 \begin{problem}
-In order to explain why the sum of the interior angles should be $360^\circ$, Bart and Brad each \emph{triangulated} the figure as shown below.  
+In order to reason about the sum of the interior angles, Bart and Brad each \emph{triangulated} the figure as shown below.  
 
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.3921,0.}
@@ -99,7 +108,7 @@ In order to explain why the sum of the interior angles should be $360^\circ$, Ba
 \draw[color=qqqqff] (6.35,8.16) node {$D$};
 %\draw [fill=uuuuuu] (3.95,8.) circle (1.0pt);
 %\draw[color=uuuuuu] (3.90,7.8) node {$E$};
-\draw (3.9,7.5) node[align=center] {Brad's figure};
+\draw (3.9,7.5) node[align=center] {Brad's triangulation};
 \end{scriptsize}
 
 \begin{scope}[shift={(6,0)}]
@@ -125,12 +134,14 @@ In order to explain why the sum of the interior angles should be $360^\circ$, Ba
 \draw[color=qqqqff] (6.35,8.16) node {$D$};
 %\draw [fill=uuuuuu] (3.95,8.) circle (1.0pt);
 %\draw[color=uuuuuu] (3.90,7.8) node {$E$};
-\draw (3.9,7.5) node[align=center] {Bart's figure};
+\draw (3.9,7.5) node[align=center] {Bart's triangulation};
 \end{scriptsize}
 \end{scope}
 \end{tikzpicture}
 \end{image}
 
+Both Bart and Brad claim that because in a triangle the sum of the interior angles is $\answer{180}$ degrees, and this quadrilateral is cut into $\answer{2}$ triangles, the angle sum in this quadrilateral should be $\answer{360}$ degrees.  
+What is your judgment?   
 \begin{multipleChoice}
 \choice{They are both correct.}
 \choice{Only Brad is correct.}
@@ -141,7 +152,7 @@ In order to explain why the sum of the interior angles should be $360^\circ$, Ba
 Explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
-In Bart's triangulation, the interior angles of the quadrilateral are composed only of interior angles of the triangular pieces.  But in Brad's figure, a new angle has been created between $A$ and $D$, and part of interior angle $C$ has been lost.  
+In Bart's triangulation, the interior angles of the quadrilateral are composed only of interior angles of the triangles.  But in Brad's triangulation, a new angle has been created with a vertex between $A$ and $D$, and part of interior angle $C$ has been lost.  
 \end{hint}
 \end{freeResponse}
 \end{problem}
