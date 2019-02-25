@@ -14,38 +14,6 @@ Short-answer problems about transformations.
 \end{abstract}
 \maketitle
 
-\begin{question}
-What is your name?
-\begin{freeResponse}
-\end{freeResponse}
-\end{question}
-
-%\begin{question}
-%What is required to specify a translation?  
-%\begin{freeResponse}
-%\begin{hint}
-%A vector.  Or (equivalently) a magnitude and a direction.  
-%\end{hint}
-%\end{freeResponse}
-%\end{question}
-
-%\begin{question}
-%What is required to specify a rotation? 
-%\begin{freeResponse}
-%\begin{hint}
-%A center and an angle (assuming an agreement about the direction of rotation).  
-%\end{hint}
-%\end{freeResponse}
-%\end{question}
-
-%\begin{question}
-%What is required to specify a reflection?  
-%\begin{freeResponse}
-%\begin{hint}
-%A line.  
-%\end{hint}
-%\end{freeResponse}
-%\end{question}
 
 \begin{question}
 To specify a translation, we need a $\answer[format=string]{vector}$.  Equivalently, we need a magnitude (or length) and a $\answer[format=string]{direction}$.  
@@ -67,29 +35,30 @@ Sometimes a sequence of transformations can be described as a single translation
 
 \begin{question}
 What kind of transformation is a translation followed by a translation?  Explain.  Be sure to consider any special cases.  
-\begin{freeResponse}
-\begin{hint}
-Usually a translation.  If the vectors are opposites of each other, the result is the identity transformation (which can be thought of as a translation by a vector of magnitude $0$).
-\end{hint}
-\end{freeResponse}
+
+Answer: Usually a $\answer[format=string]{translation}$.  If the vectors are opposites of each other, the result 
+is the $\answer[format=string]{identity transformation}$ (two words).  
+\begin{feedback}[correct]
+The identity transformation can be thought of as a translation by a vector of magnitude $0$.
+\end{feedback}
 \end{question}
 
 \begin{question}
 What kind of transformation is a rotation followed by a rotation?  Explain.  Be sure to consider any special cases.   
-\begin{freeResponse}
-\begin{hint}
-Usually a rotation.  If the angles sum to a multiple of $360^\circ$, then the result is a translation.  If the centers of rotation are also the same, the result is the identity transformation (which can be thought of as a rotation of $0^\circ$).
-\end{hint}
-\end{freeResponse}
+
+Answer: Usually a $\answer[format=string]{rotation}$.  If the angles sum to a multiple of $360^\circ$ and the centers are different, then the result is a $\answer[format=string]{translation}$.  If the centers of rotation are the same \textbf{and} the angles sum to a multiple of $360^\circ$, the result is the $\answer[format=string]{identity transformation}$ (two words).  
+\begin{feedback}[correct]
+The identity transformation can be thought of as a rotation by an of $0^\circ$.
+\end{feedback}
 \end{question}
 
 \begin{question}
 What kind of transformation is a reflection followed by another reflection?  Explain.  Be sure to consider any special cases.  
-\begin{freeResponse}
-\begin{hint}
-You are doing this for homework.  
-\end{hint}
-\end{freeResponse}
+
+Answer: If the reflection lines intersect, the result is a $\answer{rotation}$.  If the reflection lines are parallel, the result is a $\answer{translation}$. If the reflection lines are the same line, the result is the $\answer[format=string]{identity transformation}$.
+\begin{feedback}[correct]
+If the lines intersect, the center of the resulting rotation is the intersection of the lines.  If the lines are parallel, the resulting translation vector is perpendicular to the two lines. 
+\end{feedback}
 \end{question}
 
 \begin{question}
@@ -123,7 +92,7 @@ Draw a vector from any point to its image.  The vector provides both the directi
 Given a figure and its image after a reflection, how do you find the line of reflection?  How many points and images do you need?  
 \begin{freeResponse}
 \begin{hint}
-Draw a segment from a point to its image.  The perpendicular bisector of that segment is the line of reflection.  Any point and its image will do.  
+Draw a segment from a point to its image.  The perpendicular bisector of that segment is the line of reflection.  Any point and its image will do---except a point that does not move under the reflection.  
 \end{hint}
 \end{freeResponse}
 \end{question}
