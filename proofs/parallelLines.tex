@@ -1,0 +1,106 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Parallel Lines}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Proofs updated. 
+\end{abstract}
+\maketitle
+
+Parallel postulate (uniqueness of parallels):  Given a line and a point not on the line, there is exactly one line through the given point parallel to the given line.  
+
+Theorems to prove: 
+\begin{enumerate}
+\item A $180^\circ$ rotation about a point on a line takes the line to itself. 
+\item A $180^\circ$ rotation about a point not on a line takes the line to a parallel line.
+\item If two parallel lines are cut by a transversal alternate interior (and corresponding angles) are congruent.
+\item If two lines are cut by a transversal so that alternate interior (or  corresponding) angles are congruent, then the lines are parallel. 
+\end{enumerate}
+
+
+\begin{problem}
+Given that parallel lines $m$ and $n$ are cut by transversal $k$, prove that alternate interior angles are congruent.  
+
+\begin{image}
+\definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.2,1.7) rectangle (7.8,6.9);
+\draw [line width=0.8pt,domain=-0.22:7.8] plot(\x,{(-0.--4.*\x)/2.});
+\draw [line width=0.8pt,domain=-0.22:7.8] plot(\x,{(-10.--4.*\x)/2.});
+\draw [line width=0.8pt,domain=-0.22:7.8] plot(\x,{(--10.--1.*\x)/3.});
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.5pt);
+\draw [fill=qqqqff] (2.,4.) circle (1.5pt);
+\draw[color=qqqqff] (2.1,3.8) node {$B$};
+\draw[color=qqqqff] (1.7,3.7) node {$1$};
+\draw[color=qqqqff] (2.35,4.3) node {$2$};
+\draw[color=black] (0.77,2.21) node {$m$};
+\draw [fill=qqqqff] (5.,5.) circle (1.5pt);
+\draw[color=qqqqff] (5.1,4.8) node {$C$};
+\draw[color=qqqqff] (4.65,4.7) node {$3$};
+\draw[color=qqqqff] (4.8,5.2) node {$4$};
+\draw[color=black] (3.8,2.19) node {$n$};
+\draw[color=black] (0.82,3.91) node {$k$};
+\draw [fill=qqqqff] (3.5,4.5) circle (1.5pt);
+\draw[color=qqqqff] (3.64,4.79) node {$P$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+\begin{enumerate}
+\item Let $B$ and $C$ be the intersections of transversal $k$ with lines $m$ and $n$, respectively. Let $P$ be the midpoint of $\overline{BC}$
+\item Rotate $180^\circ$ about $P$, which takes $k$ to itself.  
+\item The rotation maps $B$ to $C$ and $C$ to $B$ because distances are preserved.  
+\item The rotation maps $m$ to a parallel line through $C$, which must be \wordChoice{\choice{$k$}\choice{$m$}\choice[correct]{$n$}} by the uniqueness of parallels.
+\item The rotation maps $n$ to \wordChoice{\choice{$k$}\choice[correct]{$m$}\choice{$n$}} by the same reasoning.
+\item The rotation swaps $\angle 2$ and \wordChoice{\choice{$\angle 1$}\choice{$\angle 2$}\choice[correct]{$\angle 3$}\choice{$\angle 4$}}.  These alternate interior angles must be congruent because the rotation preserves angle measures. 
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Given that parallel lines $m$ and $n$ are cut by transversal $k$, prove that corresponding angles are congruent.  
+
+\begin{image}
+\definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.2,1.7) rectangle (7.8,6.9);
+\draw [line width=0.8pt,domain=-0.22:7.8] plot(\x,{(-0.--4.*\x)/2.});
+\draw [line width=0.8pt,domain=-0.22:7.8] plot(\x,{(-10.--4.*\x)/2.});
+\draw [line width=0.8pt,domain=-0.22:7.8] plot(\x,{(--10.--1.*\x)/3.});
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.5pt);
+\draw [fill=qqqqff] (2.,4.) circle (1.5pt);
+\draw[color=qqqqff] (2.1,3.8) node {$B$};
+\draw[color=qqqqff] (1.7,3.7) node {$1$};
+\draw[color=qqqqff] (2.35,4.3) node {$2$};
+\draw[color=black] (0.77,2.21) node {$m$};
+\draw [fill=qqqqff] (5.,5.) circle (1.5pt);
+\draw[color=qqqqff] (5.1,4.8) node {$C$};
+\draw[color=qqqqff] (4.65,4.7) node {$3$};
+\draw[color=qqqqff] (4.8,5.2) node {$4$};
+\draw[color=black] (3.8,2.19) node {$n$};
+\draw[color=black] (0.82,3.91) node {$k$};
+%\draw [fill=qqqqff] (3.5,4.5) circle (1.5pt);
+%\draw[color=qqqqff] (3.64,4.79) node {$P$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+\begin{enumerate}
+\item Let $B$ and $C$ be the intersections of transversal $k$ with lines $m$ and $n$, respectively. 
+\item Translate to the right along line $k$ by distance $BC$, which takes $k$ to itself.
+\item The translation maps $B$ to $C$, and it maps $m$ to \wordChoice{\choice{$k$}\choice{$m$}\choice[correct]{$n$}} because the translation maintains parallels, and there is a unique parallel to $m$ through $C$.
+\item The translation maps $\angle 1$ to \wordChoice{\choice{$\angle 1$}\choice{$\angle 2$}\choice[correct]{$\angle 3$}\choice{$\angle 4$}}.  These corresponding angles must be congruent because the translation preserves angle measures. 
+\end{enumerate}
+
+\end{problem}
+
+
+\end{document}

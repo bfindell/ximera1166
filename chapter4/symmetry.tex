@@ -19,20 +19,18 @@ Categorize the capital letters of the alphabet by their symmetries.  Use the fol
 \begin{image}
 \includegraphics{alphabet.png}
 \end{image}
-\begin{freeResponse}
-\begin{hint}
 %\begin{tikzpicture}
 %  \node {\scalebox{10}{\textsf{K}}};
 %\end{tikzpicture}
 \begin{itemize}
-\item Vertical line symmetry:  A, H, I, M, O, T, U, V, W, X, Y
-\item Horizontal line symmetry:  B, C, D, E H, I, K, O, X  
-\item $180^\circ$ rotational symmetry: H, I, N, O, S, X, Z
-\item None: F, G, J, L, P, Q, R.  
+\item Vertical line symmetry:  $\answer{AHIMOTUVWXY}$
+\item Horizontal line symmetry:  $\answer{BCDEHIKOX}$  
+\item $180^\circ$ rotational symmetry: $\answer{HINOSXZ}$
+\item None: $\answer{FGJLPQR}$
 \end{itemize}
-Notes:  (1) In many fonts that look much the same, the K has no symmetry.  (2) In this font, the O is slightly taller than it is wide.  If it were a circle, there would be more symmetry.  (See later problem.)
-\end{hint}
-\end{freeResponse}
+\begin{feedback}[correct]
+Notes:  (1) In many fonts that look much the same, B and K have no symmetry.  (2) In this font, the O is slightly taller than it is wide.  If it were a circle, there would be more symmetry.  (See later problem.)
+\end{feedback}
 \end{question}
 
 \begin{question}
@@ -66,17 +64,20 @@ The first transformation leaves the figure unchanged and the second transformati
 
 \begin{question}
 Explain why the identity transformation should be considered a symmetry of \emph{any} figure.   
+
 \begin{freeResponse}
 \begin{hint}
 Some possible explanations: 
 \begin{itemize}
-\item The identity transformation satisfies the definition of a symmetry: It maps the figure onto itself. 
-\item If a figure has reflection symmetry $R_k$ about a line $k$, then $R_k$ followed by $R_k$ is the identity transformation.  And by the previous result, this sequence of symmetries must also be a symmetry.  
-\item If a figure has rotational symmetry $R_\alpha$ by some angle $\alpha$ about some center, then it must also have a rotational symmetry $R_{-\alpha}$ by the angle $-\alpha$ about the same center.  $R_\alpha$ followed by $R_{-\alpha}$ is the identity transformation.  And by the previous result, this sequence of symmetries must also be a symmetry.  
+\item The identity transformation satisfies the definition of a symmetry: It maps the figure onto $\answer[format=string]{itself}$. 
+\item If a figure has reflection symmetry $R_k$ about a line $k$, then $R_k$ followed by $R_k$ is the $\answer[format=string]{identity transformation}$.  And by the previous result, this sequence of symmetries must also be a symmetry.  
+\item If a figure has rotational symmetry $R_\alpha$ by some angle $\alpha$ about some center, then it must also have a rotational symmetry $R_{-\alpha}$ by the angle $-\alpha$ about the same center.  $R_\alpha$ followed by $R_{-\alpha}$ is the $\answer[format=string]{identity transformation}$.  And by the previous result, this sequence of symmetries must also be a symmetry.  
 \end{itemize}
 \end{hint}
 \end{freeResponse}
-Note: If the identity transformation is the \emph{only} symmetry of a figure, we usually say the figure is asymmetric or has no symmetry.  
+\begin{feedback}
+Note: Sometimes we say the identity transformation is the \emph{trivial} symmetry.  If the identity transformation is the \emph{only} symmetry of a figure, we usually say the figure is asymmetric or has no (nontrivial) symmetry.  
+\end{feedback}
 \end{question}
 
 \begin{question}
@@ -89,7 +90,7 @@ It is reasonable to call the identity transformation a rotation because it is a 
 Indicate the number of rotation and reflection symmetries of the following figures (including the identity rotation): 
 \begin{enumerate}
 \item An equilateral triangle: $\answer{3}$ rotation(s) and $\answer{3}$ reflection(s). 
-\item An isosceles triangle that is not equilateral: $\answer{1}$ rotation(s) and $\answer{1}$ reflection(s).
+\item An isosceles triangle that is not equilateral: $\answer{0}$ rotation(s) and $\answer{1}$ reflection(s).
 \item A square: $\answer{4}$ rotation(s) and $\answer{4}$ reflection(s).
 \item A rectangle that is not a square: $\answer{2}$ rotation(s) and $\answer{2}$ reflection(s).
 \item A rhombus that is not a square: $\answer{2}$ rotation(s) and $\answer{2}$ reflection(s).
@@ -118,7 +119,7 @@ Symmetries of polygons.
 Suppose that quadrilateral $ABCD$ has exactly one rotation symmetry (other than the identity transformation) and no reflection symmetry.  What kind(s) of quadrilateral could it be?  Explain your reasoning.  
 \begin{freeResponse}
 \begin{hint}
-If a rotation of $\alpha$ is a symmetry of a figure, then a rotation of $2\alpha$ must also be a symmetry.  Thus, for the quadrilateral to have only one (non-identity) rotation symmetry, it must be that $2\alpha = 360^\circ$, so that $\alpha = 180^\circ$.  A $180^\circ$ rotation will swap opposite vertices, which implies that the center of rotation is the midpoint of each diagonal, so that the diagonals must bisect each other.  Thus, quadrilateral $ABCD$ is a parallelogram.  It has to be a non-special parallelogram or it would have additional symmetry.  
+If a rotation of $\alpha$ is a symmetry of a figure, then a rotation of $2\alpha$ must also be a symmetry.  Thus, for the quadrilateral to have only one (non-identity) rotation symmetry, it must be that $2\alpha = 360^\circ$, so that $\alpha = 180^\circ$.  That rotation will swap opposite vertices, which implies that the center of rotation is the midpoint of each diagonal, so that the diagonals must bisect each other.  Thus, quadrilateral $ABCD$ is a parallelogram.  It has to be a non-special parallelogram or it would have additional symmetry.  
 \end{hint}
 \end{freeResponse}
 \end{question}
@@ -127,7 +128,8 @@ If a rotation of $\alpha$ is a symmetry of a figure, then a rotation of $2\alpha
 Suppose that quadrilateral $ABCD$ has exactly one reflection symmetry and no rotation symmetry (other than the identity transformation).  What kind(s) of quadrilateral could it be?  Explain your reasoning.  
 \begin{freeResponse}
 \begin{hint}
-A parallelogram has $180^\circ$ rotational symmetry, so quadrilateral $ABCD$ cannot be a parallelogram, which also excludes the special cases: rhombus, rectangle, and square.  If the line of symmetry goes through two vertices, it must be a kite that is not a rhombus.  If the line of symmetry goes through two sides, it must be an isosceles trapezoid.  
+A parallelogram has $180^\circ$ rotational symmetry, so quadrilateral $ABCD$ cannot be a parallelogram, which also excludes the special cases: rhombus, rectangle, and square.  If the line of symmetry goes through two vertices, 
+it must be a(n) $\answer[format=string]{kite}$ that is not a rhombus.  If the line of symmetry goes through two sides, it must be a(n) $\answer[format=string]{isosceles trapezoid}$.  
 \end{hint}
 \end{freeResponse}
 \end{question}
