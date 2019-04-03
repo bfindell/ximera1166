@@ -1,0 +1,81 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Introduction}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Online proof project description. 
+\end{abstract}
+\maketitle
+
+Student performance is generally quite poor on Ohio's end-of-course exams for Algebra 1, Geometry, Math 1, and Math 2, especially on items involving proof.  In response to concerns that the items are too difficult, the following pages provide examples of more accessible computer-scorable proof items, mostly in Geometry.  The proofs are written to focus on the most important steps and reasons in the argument.
+
+For the convenience of teachers using an integrated curriculum, items are separated into two groups: those appropriate for Math 1, and those appropriate for Math 2, according to Ohio's assessments.  
+
+\fixnote{This is work in progress. Draft items are first written as complete proofs in order to consider which expressions, words, or phrases students might be prompted to enter. \\ \\  Questions to reviewers are written in red. Please send comments to Brad Findell, \texttt{findell.2@osu.edu}, Department of Mathematics, The Ohio State University.}
+
+
+\section{The Ximera Environment}
+Students complete the proofs by filling in blanks, pulling down menus, and selecting correct answers.  
+In Ximera, some answers are checked automatically when they are chosen.  Others answers require pressing Enter, clicking the blue question mark, or clicking the blue "Check Work" button. Give it a try!  
+
+\begin{example}
+  Some problems are multiple-choice:
+  \begin{multipleChoice}
+    \choice{Don't pick me.}
+    \choice{Not me either.}
+    \choice[correct]{Pick me!}
+    \choice{Also an incorrect choice}
+  \end{multipleChoice}
+  \begin{feedback}
+    Click on the choice that says ``Pick me!''
+  \end{feedback}
+\end{example}
+
+
+\begin{example}
+  Some problems are select-all that are correct:
+  \begin{selectAll}
+    \choice{Don't pick me.}
+    \choice[correct]{Pick me!}
+    \choice[correct]{Pick me too!}
+    \choice[correct]{I'm a correct choice too.}
+  \end{selectAll}
+  \begin{feedback}
+    Click on the choices ``Pick me!'' ``Pick me too!'' and ``I'm a correct choice too.''
+  \end{feedback}
+\end{example}
+
+\begin{example}
+  Some problems use \wordChoice{\choice{purple haze}\choice{purple rain}\choice[correct]{pull-down menus}}.
+\end{example}
+
+\begin{example}
+Some problems are fill in the blank: 
+  $3\times 2 = \answer{6}$   
+  \begin{hint}
+    $3 \times 2$ is the number of objects in $3$ groups of $2$ objects
+  \end{hint}
+  \begin{hint}
+    \begin{image}
+      \begin{tikzpicture}
+	    \clip(-2,-0.4) rectangle (5,1.4);
+        \draw (0,0) circle (0.3);
+        \draw (1,0) circle (0.3);
+        \draw (2,0) circle (0.3);
+        \draw (0,1) circle (0.3);
+        \draw (1,1) circle (0.3);
+        \draw (2,1) circle (0.3);
+      \end{tikzpicture}
+    \end{image}
+  \end{hint}
+  \begin{hint}
+    $3\times 2=6$
+  \end{hint}
+\end{example}
+
+
+\end{document}
