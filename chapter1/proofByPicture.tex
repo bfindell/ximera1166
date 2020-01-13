@@ -16,15 +16,15 @@ Short-answer proofs by pictures.
 Explain how the following picture ``proves'' that
   the area of a right triangle is half the base times the height.
 \begin{image}
-\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{qqwuqq}{rgb}{0.,0.392,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.1,-0.1) rectangle (3.1,4.1);
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0.2828,0.) -- (0.2828,0.2828) -- (0.,0.2828) -- (0.,0.) -- cycle; 
-\draw [line width=0.8pt] (0.,4.)-- (0.,0.);
-\draw [line width=0.8pt] (0.,0.)-- (3.,0.);
-\draw [line width=0.8pt] (3.,0.)-- (0.,4.);
-\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,4.)-- (3.,4.);
-\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.,4.)-- (3.,0.);
+\clip(-0.1,-0.1) rectangle (4.1,3.1);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0.28,0.) -- (0.28,0.28) -- (0.,0.28) -- (0.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,3.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (4.,0.);
+\draw [line width=0.8pt] (4.,0.)-- (0.,3.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,3.)-- (4.,3.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (4.,3.)-- (4.,0.);
 \end{tikzpicture}
 %\includegraphics{pbpAreaRight.png}
 \end{image}
@@ -42,7 +42,7 @@ Suppose you know that the area of a \textbf{right} triangle is
   height.
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.392,0.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-0.5,-0.05) rectangle (5,2.55);
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.1954) -- (2.8046,0.1954) -- (2.8046,0.) -- (3.,0.) -- cycle; 
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.1954,0.) -- (3.1954,0.1954) -- (3.,0.1954) -- (3.,0.) -- cycle; 
