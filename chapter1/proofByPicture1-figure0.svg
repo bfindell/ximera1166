@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="340.954pt" height="85.836pt" viewBox="0 0 340.954 85.836">
+<g enable-background="new">
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" d="M 7.93706 0 L 7.93706 7.93706 L 0 7.93706 L 0 0 Z " fill="#006400" fill-opacity=".1"/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#006400" d="M 7.93706 0 L 7.93706 7.93706 L 0 7.93706 L 0 0 Z "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M 0 85.04042 L 0 0 "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M 0 0 L 113.38724 0 "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M 113.38724 0 L 0 85.04042 "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".79701" stroke-linecap="round" stroke-dasharray="1.99255,1.99255" stroke-linejoin="round" fill="none" stroke="#000000" d="M 0 85.04042 L 113.38724 85.04042 "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".79701" stroke-linecap="round" stroke-dasharray="1.99255,1.99255" stroke-linejoin="round" fill="none" stroke="#000000" d="M 113.38724 85.04042 L 113.38724 0 "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".3985" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M -113.18797 0 C -113.18797 .11003 -113.2772 .19925 -113.38724 .19925 C -113.49727 .19925 -113.58649 .11003 -113.58649 0 C -113.58649 -.11003 -113.49727 -.19925 -113.38724 -.19925 C -113.2772 -.19925 -113.18797 -.11003 -113.18797 0 Z M -113.38724 0 "/>
+<path transform="matrix(1,0,0,-1,113.784,85.437999)" stroke-width=".3985" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#ffffff" d="M 226.97373 0 C 226.97373 .11003 226.8845 .19925 226.77448 .19925 C 226.66445 .19925 226.57523 .11003 226.57523 0 C 226.57523 -.11003 226.66445 -.19925 226.77448 -.19925 C 226.8845 -.19925 226.97373 -.11003 226.97373 0 Z M 226.77448 0 "/>
+</g>
+</svg>

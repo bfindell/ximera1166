@@ -19,6 +19,7 @@
 *.xref
 *.lg
 #*.svg
+*.pdf
 *.md5
 *.dpth
 *.ps
