@@ -18,7 +18,7 @@
 *.tmp
 *.xref
 *.lg
-*.svg
+#*.svg
 *.md5
 *.dpth
 *.ps
