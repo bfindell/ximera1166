@@ -63,7 +63,29 @@ Suppose you know that the area of a \textbf{right} triangle is
 
 \begin{freeResponse}
 \begin{hint}
-The whole triangle is made up of two right triangles.  Call the bases of the small right triangles $b_1$ and $b_2$, and call the base of the large (combined) triangle $b$.  Then $b=b_1+b_2$, and the three triangles all have the same height, $h$.   The area of the whole triangle is the sum of the areas of the two right triangles:  
+The whole triangle is made up of two right triangles.  Call the bases of the small right triangles $b_1$ and $b_2$, and call the base of the large (combined) triangle $b$.  
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.392,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.5,-0.05) rectangle (5,2.55);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.1954) -- (2.8046,0.1954) -- (2.8046,0.) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.1954,0.) -- (3.1954,0.1954) -- (3.,0.1954) -- (3.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (3.,2.5);
+\draw [line width=0.8pt] (3.,2.5)-- (4.,0.);
+\draw [line width=0.8pt] (4.,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.,0.);
+\draw [line width=0.8pt] (3.,0.)-- (4.,0.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.,0.)-- (3.,2.5);
+\draw [color=white] (-4.,0.) circle (0.1pt);
+\draw [color=white] (8.,0.) circle (0.1pt);
+\draw[color=black] (1.6,-0.2) node {$b_1$};
+\draw[color=black] (3.5,-0.2) node {$b_2$};
+\draw[color=black] (2.8,1.2) node {$h$};
+\end{tikzpicture}
+%\includegraphics{pbpDisTri.png}
+\end{image}
+
+Then $b=b_1+b_2$, and the three triangles all have the same height, $h$.   The area of the whole triangle is the sum of the areas of the two right triangles:  
 \[
 \mathrm{area} =  \frac{hb_1}{2}+ \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2} = \answer{bh/2}
 \]
@@ -98,6 +120,54 @@ times the height. Is this correct reasoning? If so, give a complete
 explanation. If not, give correct reasoning based on \textit{Geometry
   Giorgio's} picture.
 \begin{freeResponse}
+\begin{hint}
+First try some numbers.  
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.5,-0.05) rectangle (5.25,2.65);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,2.5)-- (5.,2.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (5.,2.5)-- (5.,0.);
+\draw [line width=0.8pt] (5.,2.5)-- (2.,0.);
+\draw [line width=0.8pt] (5.,2.5)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.,0.)-- (5.,0.);
+\draw[color=black] (1.1,-0.2) node {$4$};
+\draw[color=black] (3.5,-0.2) node {$6$};
+\draw[color=black] (5.2,1.3) node {$5$};
+%\draw[step=0.5,black,thin,xshift=0.5,yshift=0.5] (0.0,0.0) grid (5.0,2.5);
+\draw [color=white] (-4.,0.) circle (0.2pt);
+\draw [color=white] (8.,0.) circle (0.2pt);
+\end{tikzpicture}
+%\includegraphics{triangleArea.png}
+\end{image}
+Find the area of this triangle (which is much less than half the rectangle).  Then generalize the approach. 
+\end{hint}
+
+\begin{hint}
+Maybe a grid will help.    
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.5,-0.05) rectangle (5.25,2.65);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,2.5)-- (5.,2.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (5.,2.5)-- (5.,0.);
+\draw [line width=0.8pt] (5.,2.5)-- (2.,0.);
+\draw [line width=0.8pt] (5.,2.5)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.,0.)-- (5.,0.);
+\draw[color=black] (1.1,-0.2) node {$4$};
+\draw[color=black] (3.5,-0.2) node {$6$};
+\draw[color=black] (5.2,1.3) node {$5$};
+\draw[step=0.5,black,thin,xshift=0.5,yshift=0.5] (0.0,0.0) grid (5.0,2.5);
+\draw [color=white] (-4.,0.) circle (0.2pt);
+\draw [color=white] (8.,0.) circle (0.2pt);
+\end{tikzpicture}
+%\includegraphics{triangleArea.png}
+\end{image}
+\end{hint}
+
+
 \begin{hint}
 The triangle is not half the rectangle.  Furthermore, the rectangle does not have the same base as the triangle, so ``base times height'' is unclear.  The following picture allows us to distinguish these bases:  
 \begin{image}

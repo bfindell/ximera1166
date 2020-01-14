@@ -68,82 +68,82 @@ Given two sets $X$ and $Y$, $X - Y$ is the set of elements that are
 \begin{problem}
 Consider the following Venn diagrams:  
 
-\definecolor{ffffff}{rgb}{1.,1.,1.}
-\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
-\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.4]
-%\clip(-7,-4.2) rectangle (10,4.2);
-\clip(-7,-14.2) rectangle (27,4.2);
-\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
-\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
-\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw (0.,0.) circle (3.cm);
-\draw (4.,0.) circle (3.cm);
-\draw (-5.,4.)-- (-5.,-4.);
-\draw (-5.,-4.)-- (9.,-4.);
-\draw (9.,-4.)-- (9.,4.);
-\draw (9.,4.)-- (-5.,4.);
-\draw (-2,2.2) node[anchor=north west] {X};
-\draw (5.1,2.2) node[anchor=north west] {Y};
-\draw (-7,4) node[anchor=north west] {(A)};
-
-\begin{scope}[shift={(17,0)}]
-\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
-\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
-%\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-%\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw (0.,0.) circle (3.cm);
-\draw (4.,0.) circle (3.cm);
-\draw (-5.,4.)-- (-5.,-4.);
-\draw (-5.,-4.)-- (9.,-4.);
-\draw (9.,-4.)-- (9.,4.);
-\draw (9.,4.)-- (-5.,4.);
-\draw (-2,2.2) node[anchor=north west] {X};
-\draw (5.1,2.2) node[anchor=north west] {Y};
-\draw (-7,4) node[anchor=north west] {(B)};
-\end{scope}
-
-\begin{scope}[shift={(0,-10)}]
+%\definecolor{ffffff}{rgb}{1.,1.,1.}
+%\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+%\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.4]
+%%\clip(-7,-4.2) rectangle (10,4.2);
+%\clip(-7,-14.2) rectangle (27,4.2);
 %\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
 %\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
 %\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
 %\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw (0.,0.) circle (3.cm);
-\draw (4.,0.) circle (3.cm);
-\draw (-5.,4.)-- (-5.,-4.);
-\draw (-5.,-4.)-- (9.,-4.);
-\draw (9.,-4.)-- (9.,4.);
-\draw (9.,4.)-- (-5.,4.);
-\draw (-2,2.2) node[anchor=north west] {X};
-\draw (5.1,2.2) node[anchor=north west] {Y};
-\draw (-7,4) node[anchor=north west] {(C)};
-\end{scope}
-
-\begin{scope}[shift={(17,-10)}]
-\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+%%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw (0.,0.) circle (3.cm);
+%\draw (4.,0.) circle (3.cm);
+%\draw (-5.,4.)-- (-5.,-4.);
+%\draw (-5.,-4.)-- (9.,-4.);
+%\draw (9.,-4.)-- (9.,4.);
+%\draw (9.,4.)-- (-5.,4.);
+%\draw (-2,2.2) node[anchor=north west] {X};
+%\draw (5.1,2.2) node[anchor=north west] {Y};
+%\draw (-7,4) node[anchor=north west] {(A)};
+%
+%\begin{scope}[shift={(17,0)}]
+%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
 %\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
-\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw (0.,0.) circle (3.cm);
+%\draw (4.,0.) circle (3.cm);
+%\draw (-5.,4.)-- (-5.,-4.);
+%\draw (-5.,-4.)-- (9.,-4.);
+%\draw (9.,-4.)-- (9.,4.);
+%\draw (9.,4.)-- (-5.,4.);
+%\draw (-2,2.2) node[anchor=north west] {X};
+%\draw (5.1,2.2) node[anchor=north west] {Y};
+%\draw (-7,4) node[anchor=north west] {(B)};
+%\end{scope}
+%
+%\begin{scope}[shift={(0,-10)}]
+%%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+%%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
+%%\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
 %\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
 %\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
-\draw (0.,0.) circle (3.cm);
-\draw (4.,0.) circle (3.cm);
-\draw (-5.,4.)-- (-5.,-4.);
-\draw (-5.,-4.)-- (9.,-4.);
-\draw (9.,-4.)-- (9.,4.);
-\draw (9.,4.)-- (-5.,4.);
-\draw (-2,2.2) node[anchor=north west] {X};
-\draw (5.1,2.2) node[anchor=north west] {Y};
-\draw (-7,4) node[anchor=north west] {(D)};
-\end{scope}
-
-\end{tikzpicture}
+%\draw (0.,0.) circle (3.cm);
+%\draw (4.,0.) circle (3.cm);
+%\draw (-5.,4.)-- (-5.,-4.);
+%\draw (-5.,-4.)-- (9.,-4.);
+%\draw (9.,-4.)-- (9.,4.);
+%\draw (9.,4.)-- (-5.,4.);
+%\draw (-2,2.2) node[anchor=north west] {X};
+%\draw (5.1,2.2) node[anchor=north west] {Y};
+%\draw (-7,4) node[anchor=north west] {(C)};
+%\end{scope}
+%
+%\begin{scope}[shift={(17,-10)}]
+%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (0.,0.) circle (3.cm);
+%%\draw [color=cqcqcq,fill=cqcqcq,fill opacity=1.0] (4.,0.) circle (3.cm);
+%\draw [shift={(0.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw [shift={(4.,0.)},color=ffffff,fill=ffffff,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(0.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=-0.842:0.842,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%%\draw [shift={(4.,0.)},color=cqcqcq,fill=cqcqcq,fill opacity=1.0]  plot[domain=2.301:3.983,variable=\t]({3.*cos(\t r)},{3.*sin(\t r)});
+%\draw (0.,0.) circle (3.cm);
+%\draw (4.,0.) circle (3.cm);
+%\draw (-5.,4.)-- (-5.,-4.);
+%\draw (-5.,-4.)-- (9.,-4.);
+%\draw (9.,-4.)-- (9.,4.);
+%\draw (9.,4.)-- (-5.,4.);
+%\draw (-2,2.2) node[anchor=north west] {X};
+%\draw (5.1,2.2) node[anchor=north west] {Y};
+%\draw (-7,4) node[anchor=north west] {(D)};
+%\end{scope}
+%
+%\end{tikzpicture}
 
 For each set expression below, identify the Venn diagram above in which the corresponding region is shaded: 
 \begin{enumerate}
@@ -169,34 +169,34 @@ A Venn diagram for elements in $X$ or $Y$ \emph{but not both} is shown in figure
 \begin{problem}
 Consider the following Venn diagrams: 
 
-\definecolor{ffffff}{rgb}{1.,1.,1.}
-\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
-\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.4]
-%\clip(-7,-4.2) rectangle (10,4.2);
-\clip(-7,-4.2) rectangle (27,4.2);
-\draw (-1.,0.) circle (2.5cm);
-\draw (5,0.) circle (2.5cm);
-\draw (-5.,4.)-- (-5.,-4.);
-\draw (-5.,-4.)-- (9.,-4.);
-\draw (9.,-4.)-- (9.,4.);
-\draw (9.,4.)-- (-5.,4.);
-\draw (-2.2,2.2) node[anchor=north west] {X};
-\draw (5.1,2.2) node[anchor=north west] {Y};
-\draw (-7,4) node[anchor=north west] {(A)};
-
-\begin{scope}[shift={(17,0)}]
-\draw (3.3,-0.7) circle (1.6cm);
-\draw (4.,0.) circle (3.cm);
-\draw (-5.,4.)-- (-5.,-4.);
-\draw (-5.,-4.)-- (9.,-4.);
-\draw (9.,-4.)-- (9.,4.);
-\draw (9.,4.)-- (-5.,4.);
-\draw (2.1,0.5) node[anchor=north west] {X};
-\draw (5.1,2.2) node[anchor=north west] {Y};
-\draw (-7,4) node[anchor=north west] {(B)};
-\end{scope}
-
-\end{tikzpicture}
+%\definecolor{ffffff}{rgb}{1.,1.,1.}
+%\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+%\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.4]
+%%\clip(-7,-4.2) rectangle (10,4.2);
+%\clip(-7,-4.2) rectangle (27,4.2);
+%\draw (-1.,0.) circle (2.5cm);
+%\draw (5,0.) circle (2.5cm);
+%\draw (-5.,4.)-- (-5.,-4.);
+%\draw (-5.,-4.)-- (9.,-4.);
+%\draw (9.,-4.)-- (9.,4.);
+%\draw (9.,4.)-- (-5.,4.);
+%\draw (-2.2,2.2) node[anchor=north west] {X};
+%\draw (5.1,2.2) node[anchor=north west] {Y};
+%\draw (-7,4) node[anchor=north west] {(A)};
+%
+%\begin{scope}[shift={(17,0)}]
+%\draw (3.3,-0.7) circle (1.6cm);
+%\draw (4.,0.) circle (3.cm);
+%\draw (-5.,4.)-- (-5.,-4.);
+%\draw (-5.,-4.)-- (9.,-4.);
+%\draw (9.,-4.)-- (9.,4.);
+%\draw (9.,4.)-- (-5.,4.);
+%\draw (2.1,0.5) node[anchor=north west] {X};
+%\draw (5.1,2.2) node[anchor=north west] {Y};
+%\draw (-7,4) node[anchor=north west] {(B)};
+%\end{scope}
+%
+%\end{tikzpicture}
 
 %\begin{image}
 %  \includegraphics{set4.png}
