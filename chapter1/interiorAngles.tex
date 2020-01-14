@@ -81,64 +81,64 @@ They should be the same because, in both cases, adding the interior angle at $C$
 \begin{problem}
 In order to reason about the sum of the interior angles, Bart and Brad each \emph{triangulated} the figure as shown below.  
 
-\begin{image}
-\definecolor{qqwuqq}{rgb}{0.,0.3921,0.}
-\definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
-\definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-%\clip(0.245,6.95) rectangle (8.0,12.83);
-%\draw [shift={(4.4,8.7)},color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0,0) -- (-21.25:0.399) arc (-21.25:57.75:0.3997) -- cycle;
-\draw (1.5,8.)-- (5.46,10.38);
-\draw (5.46,10.38)-- (4.4,8.7);
-\draw (4.4,8.7)-- (6.2,8.);
-\draw (6.2,8.)-- (1.5,8.);
-\draw [dash pattern=on 2pt off 2pt] (4.4,8.7)-- (3.958,8.);
-%\draw [dash pattern=on 2pt off 2pt] (1.5,8.)-- (4.4,8.7);
-%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.399) arc (-21.25:57.75:0.399);
-%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.332) arc (-21.25:57.75:0.332);
-%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.266) arc (-21.25:57.75:0.266);
-\begin{scriptsize}
-\draw [fill=qqqqff] (1.5,8.) circle (1.0pt);
-\draw[color=qqqqff] (1.40,8.22) node {$A$};
-\draw [fill=qqqqff] (5.46,10.38) circle (1.0pt);
-\draw[color=qqqqff] (5.55,10.54) node {$B$};
-\draw [fill=qqqqff] (4.4,8.7) circle (1.0pt);
-\draw[color=qqqqff] (4.3,8.9) node {$C$};
-\draw [fill=qqqqff] (6.2,8.) circle (1.0pt);
-\draw[color=qqqqff] (6.35,8.16) node {$D$};
-%\draw [fill=uuuuuu] (3.95,8.) circle (1.0pt);
-%\draw[color=uuuuuu] (3.90,7.8) node {$E$};
-\draw (3.9,7.5) node[align=center] {Brad's triangulation};
-\end{scriptsize}
-
-\begin{scope}[shift={(6,0)}]
-%\clip(0.245,6.95) rectangle (8.0,12.83);
-%\draw [shift={(4.4,8.7)},color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0,0) -- (-21.25:0.399) arc (-21.25:57.75:0.3997) -- cycle;
-\draw (1.5,8.)-- (5.46,10.38);
-\draw (5.46,10.38)-- (4.4,8.7);
-\draw (4.4,8.7)-- (6.2,8.);
-\draw (6.2,8.)-- (1.5,8.);
+%\begin{image}
+%\definecolor{qqwuqq}{rgb}{0.,0.3921,0.}
+%\definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%%\clip(0.245,6.95) rectangle (8.0,12.83);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0,0) -- (-21.25:0.399) arc (-21.25:57.75:0.3997) -- cycle;
+%\draw (1.5,8.)-- (5.46,10.38);
+%\draw (5.46,10.38)-- (4.4,8.7);
+%\draw (4.4,8.7)-- (6.2,8.);
+%\draw (6.2,8.)-- (1.5,8.);
 %\draw [dash pattern=on 2pt off 2pt] (4.4,8.7)-- (3.958,8.);
-\draw [dash pattern=on 2pt off 2pt] (1.5,8.)-- (4.4,8.7);
-%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.399) arc (-21.25:57.75:0.399);
-%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.332) arc (-21.25:57.75:0.332);
-%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.266) arc (-21.25:57.75:0.266);
-\begin{scriptsize}
-\draw [fill=qqqqff] (1.5,8.) circle (1.0pt);
-\draw[color=qqqqff] (1.40,8.22) node {$A$};
-\draw [fill=qqqqff] (5.46,10.38) circle (1.0pt);
-\draw[color=qqqqff] (5.55,10.54) node {$B$};
-\draw [fill=qqqqff] (4.4,8.7) circle (1.0pt);
-\draw[color=qqqqff] (4.3,8.9) node {$C$};
-\draw [fill=qqqqff] (6.2,8.) circle (1.0pt);
-\draw[color=qqqqff] (6.35,8.16) node {$D$};
-%\draw [fill=uuuuuu] (3.95,8.) circle (1.0pt);
-%\draw[color=uuuuuu] (3.90,7.8) node {$E$};
-\draw (3.9,7.5) node[align=center] {Bart's triangulation};
-\end{scriptsize}
-\end{scope}
-\end{tikzpicture}
-\end{image}
+%%\draw [dash pattern=on 2pt off 2pt] (1.5,8.)-- (4.4,8.7);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.399) arc (-21.25:57.75:0.399);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.332) arc (-21.25:57.75:0.332);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.266) arc (-21.25:57.75:0.266);
+%\begin{scriptsize}
+%\draw [fill=qqqqff] (1.5,8.) circle (1.0pt);
+%\draw[color=qqqqff] (1.40,8.22) node {$A$};
+%\draw [fill=qqqqff] (5.46,10.38) circle (1.0pt);
+%\draw[color=qqqqff] (5.55,10.54) node {$B$};
+%\draw [fill=qqqqff] (4.4,8.7) circle (1.0pt);
+%\draw[color=qqqqff] (4.3,8.9) node {$C$};
+%\draw [fill=qqqqff] (6.2,8.) circle (1.0pt);
+%\draw[color=qqqqff] (6.35,8.16) node {$D$};
+%%\draw [fill=uuuuuu] (3.95,8.) circle (1.0pt);
+%%\draw[color=uuuuuu] (3.90,7.8) node {$E$};
+%\draw (3.9,7.5) node[align=center] {Brad's triangulation};
+%\end{scriptsize}
+%
+%\begin{scope}[shift={(6,0)}]
+%%\clip(0.245,6.95) rectangle (8.0,12.83);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0,0) -- (-21.25:0.399) arc (-21.25:57.75:0.3997) -- cycle;
+%\draw (1.5,8.)-- (5.46,10.38);
+%\draw (5.46,10.38)-- (4.4,8.7);
+%\draw (4.4,8.7)-- (6.2,8.);
+%\draw (6.2,8.)-- (1.5,8.);
+%%\draw [dash pattern=on 2pt off 2pt] (4.4,8.7)-- (3.958,8.);
+%\draw [dash pattern=on 2pt off 2pt] (1.5,8.)-- (4.4,8.7);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.399) arc (-21.25:57.75:0.399);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.332) arc (-21.25:57.75:0.332);
+%%\draw [shift={(4.4,8.7)},color=qqwuqq] (-21.25:0.266) arc (-21.25:57.75:0.266);
+%\begin{scriptsize}
+%\draw [fill=qqqqff] (1.5,8.) circle (1.0pt);
+%\draw[color=qqqqff] (1.40,8.22) node {$A$};
+%\draw [fill=qqqqff] (5.46,10.38) circle (1.0pt);
+%\draw[color=qqqqff] (5.55,10.54) node {$B$};
+%\draw [fill=qqqqff] (4.4,8.7) circle (1.0pt);
+%\draw[color=qqqqff] (4.3,8.9) node {$C$};
+%\draw [fill=qqqqff] (6.2,8.) circle (1.0pt);
+%\draw[color=qqqqff] (6.35,8.16) node {$D$};
+%%\draw [fill=uuuuuu] (3.95,8.) circle (1.0pt);
+%%\draw[color=uuuuuu] (3.90,7.8) node {$E$};
+%\draw (3.9,7.5) node[align=center] {Bart's triangulation};
+%\end{scriptsize}
+%\end{scope}
+%\end{tikzpicture}
+%\end{image}
 
 Both Bart and Brad claim that because in a triangle the sum of the interior angles is $\answer{180}$ degrees, and this quadrilateral is cut into $\answer{2}$ triangles, the angle sum in this quadrilateral should be $\answer{360}$ degrees.  
 What is your judgment about their reasoning?   
