@@ -83,7 +83,17 @@ Short-answer proofs by pictures.
 \begin{problem}
 Recall that a trapezoid is a quadrilateral with two parallel sides. Consider the following picture:
 \begin{image}
-\includegraphics{trap.png}
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-4.66,-0.38) rectangle (11.42,3.38);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (2.,3.)-- (6.,3.);
+\draw [line width=0.8pt] (6.,3.)-- (7.,0.);
+\draw [line width=0.8pt] (7.,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (6.,3.);
+\draw [fill=white] (-4.,0.) circle (0.2pt);
+\draw [fill=white] (11.,0.) circle (0.2pt);
+\end{tikzpicture}
+%\includegraphics{trap.png}
 \end{image}
 How does the above picture prove that the area of a trapezoid is
 \[
@@ -114,7 +124,16 @@ Using the parallel sides as bases, the two triangles have the same height as the
 Look at the previous problem. Can you use a similar idea
   to prove that the area of a parallelogram
 \begin{image}
-\includegraphics{para.png}
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-4.66,-0.38) rectangle (11.42,3.38);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (2.,3.)-- (8.,3.);
+\draw [line width=0.8pt] (8.,3.)-- (6.,0.);
+\draw [line width=0.8pt] (6.,0.)-- (0.,0.);
+\draw [fill=white] (-4.,0.) circle (0.2pt);
+\draw [fill=white] (12.,0.) circle (0.2pt);
+\end{tikzpicture}
+%\includegraphics{para.png}
 \end{image}
 is the length of the base times the height?
 \begin{freeResponse}
@@ -128,7 +147,18 @@ Hint:  Draw a diagonal.  Then there are two triangles with the same base and the
 Explain how the following picture ``proves'' that the area of a
   parallelogram is base times height.
 \begin{image}
-\includegraphics{para3.png}
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (2.,3.)-- (9.,3.);
+\draw [line width=0.8pt] (9.,3.)-- (7.,0.);
+\draw [line width=0.8pt] (7.,0.)-- (0.,0.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (9.,0.)-- (9.,3.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (7.,0.)-- (9.,0.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (2.,3.)-- (2.,0.);
+\draw [fill=white] (-4.,0.) circle (0.2pt);
+\draw [fill=white] (13.,0.) circle (0.2pt);
+\end{tikzpicture}
+%\includegraphics{para3.png}
 \end{image}
 \begin{freeResponse}
 \begin{hint}
@@ -143,7 +173,18 @@ solve a similar problem. In an attempt to prove the formula for the
 area of a parallelogram, \textit{Geometry Giorgio} draws the following
 picture:
 \begin{image}
-\includegraphics{paragiorgio.png}
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [line width=0.8pt] (0.,0.)-- (5.,3.);
+\draw [line width=0.8pt] (5.,3.)-- (8.,3.);
+\draw [line width=0.8pt] (8.,3.)-- (3.,0.);
+\draw [line width=0.8pt] (3.,0.)-- (0.,0.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (8.,0.)-- (8.,3.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (8.,0.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (5.,3.)-- (5.,0.);
+\draw [fill=white] (-4.,0.) circle (0.2pt);
+\draw [fill=white] (12.,0.) circle (0.2pt);
+\end{tikzpicture}
+%\includegraphics{paragiorgio.png}
 \end{image}
 At this point \textit{Geometry Giorgio} says that he has proved the
 formula for area of a parallelogram. What do you think of his picture?
