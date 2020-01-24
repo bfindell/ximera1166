@@ -83,53 +83,44 @@ Short-answer proofs by pictures.
 \begin{problem}
 Recall that a trapezoid is a quadrilateral with two parallel sides. Consider the following picture:
 \begin{image}
-\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-%\clip(-4.66,-0.38) rectangle (11.42,3.38);
-\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
-\draw [line width=0.8pt] (2.,3.)-- (6.,3.);
-\draw [line width=0.8pt] (6.,3.)-- (7.,0.);
-\draw [line width=0.8pt] (7.,0.)-- (0.,0.);
+%\includegraphics{trap.png}
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.) -- (6.,3.)-- (7.,0.) -- cycle;
 \draw [line width=0.8pt] (0.,0.)-- (6.,3.);
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (11.,0.) circle (0.2pt);
 \end{tikzpicture}
-%\includegraphics{trap.png}
 \end{image}
 How does the above picture prove that the area of a trapezoid is
 \[
 \mathrm{area} = \frac{h(b_1 + b_2)}{2}
 \]
-where $h$ is the height of the trapezoid and $b_1$, $b_2$, are the lengths of the parallel sides?
+where $h$ is the height of the trapezoid and $b_1$ and $b_2$ are the lengths of the parallel sides?
 \begin{freeResponse}
-\begin{hint}
-Using the parallel sides as bases, the two triangles have the same height as the trapezoid. 
+\end{freeResponse}
+
+\begin{problem}
+Sample response:  Using the parallel sides as bases, the two triangles have the same height as the trapezoid. 
 \begin{image}
-\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-%\clip(-4.66,-0.38) rectangle (11.42,3.38);
-\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
-\draw [line width=0.8pt] (2.,3.)-- (6.,3.);
-\draw [line width=0.8pt] (6.,3.)-- (7.,0.);
-\draw [line width=0.8pt] (7.,0.)-- (0.,0.);
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.) -- (6.,3.)-- (7.,0.) -- cycle;
 \draw [line width=0.8pt] (0.,0.)-- (6.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (6.,0.)-- (6.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (0.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,3.)-- (2.,3.);
-\draw[color=black] (3.5,-0.3) node {$b_1$};
-\draw[color=black] (3.7,3.3) node {$b_2$};
-\draw[color=black] (5.7,1.4) node {$h$};
-\draw[color=black] (-0.3,1.4) node {$h$};
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (6.,0.) -- (6.,3.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.) -- (0.,3.) -- (2.,3.);
+\draw (3.5,-0.3) node {$b_1$};
+\draw (3.7,3.3) node {$b_2$};
+\draw (5.7,1.4) node {$h$};
+\draw (-0.3,1.4) node {$h$};
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (11.,0.) circle (0.2pt);
 \end{tikzpicture}
-%\includegraphics{trap.png}
 \end{image}
 
- The area of the trapezoid is the sum of the areas of the triangles: 
+ The area of the trapezoid is the $\answer[format=string]{sum}$ of the areas of the triangles: 
 \[
-\mathrm{area} =  \frac{hb_1}{2}+ \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2}
+\mathrm{Area} =  \frac{hb_1}{2}+ \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2}
 \]
-\end{hint}
-\end{freeResponse}
+\end{problem}
 \end{problem}
 
 %\begin{problem}
@@ -146,41 +137,44 @@ Using the parallel sides as bases, the two triangles have the same height as the
 Look at the previous problem. Can you use a similar idea
   to prove that the area of a parallelogram
 \begin{image}
-\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-%\clip(-4.66,-0.38) rectangle (11.42,3.38);
-\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
-\draw [line width=0.8pt] (2.,3.)-- (8.,3.);
-\draw [line width=0.8pt] (8.,3.)-- (6.,0.);
-\draw [line width=0.8pt] (6.,0.)-- (0.,0.);
+%\includegraphics{para.png}
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (8.,3.) -- (6.,0.) -- cycle;
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
 \end{tikzpicture}
-%\includegraphics{para.png}
 \end{image}
-is the length of the base times the height?
+is the length of the base, times the height?
 \begin{freeResponse}
-\begin{hint}
-Hint:  Draw a diagonal.  Then there are two triangles with the same base and the same height.  
-\end{hint}
 \end{freeResponse}
+\begin{problem}
+Hint:  Draw a $\answer[format=string]{diagonal}$:  
+\begin{image}
+%\includegraphics{para.png}
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (8.,3.) -- (6.,0.) -- cycle;
+\draw [line width=0.8pt] (0.,0.) -- (8.,3.);
+\draw [fill=white] (-4.,0.) circle (0.2pt);
+\draw [fill=white] (12.,0.) circle (0.2pt);
+\end{tikzpicture}
+\end{image}
+Then there are two $\answer[format=string]{triangles}$ with the same $\answer[format=string]{base}$ and 
+the same $\answer[format=string]{height}$ as the parallelogram.  Each triangle contributes an area of half the base time the height.
+\end{problem}
 \end{problem}
 
 \begin{problem}
 Explain how the following picture ``proves'' that the area of a
   parallelogram is base times height.
 \begin{image}
-\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
-\draw [line width=0.8pt] (2.,3.)-- (9.,3.);
-\draw [line width=0.8pt] (9.,3.)-- (7.,0.);
-\draw [line width=0.8pt] (7.,0.)-- (0.,0.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (9.,0.)-- (9.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (7.,0.)-- (9.,0.);
+%\includegraphics{para3.png}
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (9.,3.) -- (7.,0.) -- cycle;
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (7.,0.)-- (9.,0.)-- (9.,3.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (2.,3.)-- (2.,0.);
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (13.,0.) circle (0.2pt);
 \end{tikzpicture}
-%\includegraphics{para3.png}
 \end{image}
 \begin{freeResponse}
 \begin{hint}
@@ -195,13 +189,9 @@ solve a similar problem. In an attempt to prove the formula for the
 area of a parallelogram, \textit{Geometry Giorgio} draws the following
 picture:
 \begin{image}
-\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw [line width=0.8pt] (0.,0.)-- (5.,3.);
-\draw [line width=0.8pt] (5.,3.)-- (8.,3.);
-\draw [line width=0.8pt] (8.,3.)-- (3.,0.);
-\draw [line width=0.8pt] (3.,0.)-- (0.,0.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (8.,0.)-- (8.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (8.,0.);
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.)-- (5.,3.) -- (8.,3.)-- (3.,0.) -- cycle;
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (8.,0.)-- (8.,3.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (5.,3.)-- (5.,0.);
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
@@ -215,19 +205,14 @@ Give a complete argument based on his picture.
 \begin{hint}
 This parallelogram problem is much like Giorgio's triangle problem: (1) compute the area of a larger figure (a rectangle) and then (2) subtract the areas we don't want (two congruent right triangles with base $x$): 
 \begin{image}
-\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw [line width=0.8pt] (0.,0.)-- (5.,3.);
-\draw [line width=0.8pt] (5.,3.)-- (8.,3.);
-\draw [line width=0.8pt] (8.,3.)-- (3.,0.);
-\draw [line width=0.8pt] (3.,0.)-- (0.,0.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (8.,0.)-- (8.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (8.,0.);
+\begin{tikzpicture}[scale=0.8]
+\draw [line width=0.8pt] (0.,0.)-- (5.,3.) -- (8.,3.)-- (3.,0.) -- cycle;
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.) -- (8.,0.) -- (8.,3.);
 %\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (5.,3.)-- (5.,0.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (0.,3.);
-\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,3.)-- (5.,3.);
-\draw[color=black] (1.5,-0.2) node {$b$};
-\draw[color=black] (5.5,-0.2) node {$x$};
-\draw[color=black] (8.25,1.4) node {$h$};
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.) -- (0.,3.) -- (5.,3.);
+\draw (1.5,-0.2) node {$b$};
+\draw (5.5,-0.2) node {$x$};
+\draw (8.25,1.4) node {$h$};
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
 \end{tikzpicture}
