@@ -103,8 +103,7 @@ where $h$ is the height of the trapezoid and $b_1$ and $b_2$ are the lengths of 
 I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
 
 \begin{problem}
-Explanation:  Using the parallel sides as bases, the area of the trapezoid is the $\answer[format=string]{sum}$ of the areas of two triangles that have different bases but the same $\answer[format=string]{height}$ as the trapezoid.  
-
+Explanation: Draw the heights of the two triangles:
 \begin{image}
 \begin{tikzpicture}[scale=0.8]
 \draw [line width=0.8pt] (0.,0.)-- (2.,3.) -- (6.,3.)-- (7.,0.) -- cycle;
@@ -120,10 +119,11 @@ Explanation:  Using the parallel sides as bases, the area of the trapezoid is th
 \end{tikzpicture}
 \end{image}
 
+Using the parallel sides as bases, the area of the trapezoid is the $\answer[format=string]{sum}$ of the areas of two triangles that have different bases but the same $\answer[format=string]{height}$ as the trapezoid.  
 
-Note:  Use an underscore character for a subscript: b\textunderscore 1.   
+Note:  Use an underscore character to indicate a subscript: b\textunderscore 1.   
 \[
-\mathrm{Area} =  \frac{hb_1}{2} + \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2}
+\mathrm{Area} =  \answer{\frac{hb_1}{2}} + \answer{\frac{hb_2}{2}}= \frac{h(b_1 + b_2)}{2}
 \]
 \end{problem}
 \end{problem}
@@ -156,18 +156,28 @@ is the length of the base, times the height?
 I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
 
 \begin{problem}
-Draw a $\answer[format=string]{diagonal}$:  
+Explanation: Draw a $\answer[format=string]{diagonal}$ of the parallelogram and the heights.  
 \begin{image}
 %\includegraphics{para.png}
 \begin{tikzpicture}[scale=0.8]
 \draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (8.,3.) -- (6.,0.) -- cycle;
 \draw [line width=0.8pt] (0.,0.) -- (8.,3.);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.) -- (0.,3.) -- (2,3);
+\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (6.,0.) -- (8.,0.) -- (8,3);
+\draw (3.3,-0.3) node {$b$};
+\draw (4.7,3.3) node {$b$};
+\draw (8.3,1.5) node {$h$};
+\draw (-0.3,1.5) node {$h$};
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
-Then there are two $\answer[format=string]{triangles}$ with the same $\answer[format=string]{base}$ and 
-the same $\answer[format=string]{height}$ as the parallelogram.  Each triangle contributes an area of half the base time the height.
+Then there are two congruent $\answer[format=string]{triangles}$ with the same $\answer[format=string]{base}$ and 
+the same $\answer[format=string]{height}$ as the parallelogram.  
+\[
+\mathrm{Area} =  \answer{\frac{hb}{2}} + \answer{\frac{hb}{2}}= hb,
+\]
+which is the base times the height. 
 \end{problem}
 \end{problem}
 
@@ -184,7 +194,14 @@ Explain how the following picture ``proves'' that the area of a
 \draw [fill=white] (13.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
-Imagine cutting off the $\answer[format=text]{triangle}$ on the left and placing it in the (congruent) dotted region on the right.  Then we have a $\answer[format=string]{rectangle}$ with the same base and height as the parallelogram.  The cutting and rearranging doesn't change the $\answer[format=string]{area}$ of the figure, so the area of the parallelogram is the same as the area of the rectangle, which is base times height. 
+\begin{freeResponse}
+\end{freeResponse}
+
+I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
+
+\begin{problem}
+Jenny explains: Imagine cutting off the $\answer[format=text]{triangle}$ on the left and placing it in the (congruent) dotted region on the right.  Then we have a $\answer[format=string]{rectangle}$ with the same base and height as the parallelogram.  The cutting and rearranging doesn't change the $\answer[format=string]{area}$ of the figure, so the area of the parallelogram is the same as the area of the rectangle, which is base times height. 
+\end{problem}
 \end{problem}
 
 \begin{problem}
@@ -201,23 +218,21 @@ solve a similar problem, shown below.
 \end{tikzpicture}
 \end{image}
 
-%The same cutting and rearranging argument works for this parallelogram.  
-%A different cutting and rearranging argument is needed.  
-%
-%
-%Would the same cutting and 
-%
-%Geometry Giorgio's reasoning is correct. 
-%All this discussion is a waste of time:  Just use the formula!
-%A cutting and rearranging argument could be made for this parallelogram, but each different parallelogram would not be general. 
-%A different approach 
-%
+Help Giorgio out by \textbf{selecting all} correct statements:   
+
+\begin{selectAll}
+\choice{Jenny's cutting and rearranging argument works for this parallelogram.}  
+\choice[correct]{A different cutting and rearranging argument is needed for this parallelogram.} 
+\choice[correct]{Yet a different parallelogram might require yet another cutting and rearranging approach.}
+\choice{All this discussion is a waste of time:  Just use the formula!}
+\end{selectAll}
+
 %What do you think of his picture?
 %
 %Give a complete argument based on his picture.
 
 \begin{problem}
-This parallelogram problem is much like Giorgio's triangle problem: (1) compute the area of a larger figure (a rectangle) and then (2) subtract the areas we don't want (two congruent right triangles with base $x$): 
+This parallelogram problem is much like Giorgio's triangle problem.  Here is Giorgio's final explanation: (1) compute the area of a larger figure (a rectangle with base $\answer{b+x}$ and height $\answer{h}$) and then (2) $\answer[format=string]{subtract}$ the areas we don't want (this time two congruent right triangles with base $\answer{x}$ and height $\answer{h}$): 
 \begin{image}
 \begin{tikzpicture}[scale=0.8]
 %\includegraphics{paragiorgio.png}
@@ -236,6 +251,15 @@ This parallelogram problem is much like Giorgio's triangle problem: (1) compute 
 \[
 \mathrm{area} =  \answer{h(b+x)} - \answer{\frac{hx}{2}} - \answer{\frac{hx}{2}}= hb + hx - \frac{hx}{2}- \frac{hx}{2} = \answer{bh}.
 \]
+
+Given a base and a height of a parallelogram, \textbf{select all} true statements:
+\begin{selectAll}
+\choice{Jenny's explanation applies to all parallelograms.}
+\choice[correct]{Jenny's explanation is a useful intuitive way of thinking about parallelogram area, though it is not completely general.}
+\choice[correct]{Giorgio's final explanation applies to all parallelograms.}
+\choice{Giorgio's explanation is a useful intuitive way of thinking about parallelogram area, though it is not completely general.}
+\choice{Each parallelogram is different, so we cannot say.}
+\end{selectAll}
 
 \end{problem}
 

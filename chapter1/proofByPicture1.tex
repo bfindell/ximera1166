@@ -19,7 +19,7 @@ Explain how the following picture ``proves'' that
 \begin{image}
 %\includegraphics{pbpAreaRight.png}
 \definecolor{qqwuqq}{rgb}{0.,0.392,0.}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0.28,0.) -- (0.28,0.28) -- (0.,0.28) -- (0.,0.) -- cycle; 
 \draw [line width=0.8pt] (0.,3.)-- (0.,0.) -- (4.,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,3.)-- (4.,3.) -- (4.,0.);
@@ -27,8 +27,11 @@ Explain how the following picture ``proves'' that
 \draw [color=white] (8.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
+
 \begin{freeResponse}
 \end{freeResponse}
+
+I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
 
 \begin{problem}
 The area of the rectangle is base times height.  The rectangle is made up of two congruent right triangles.  Because congruent triangles have the same area, the area of each right triangle is \wordChoice{\choice{equal to}\choice[correct]{half}\choice{double}} the area of the rectangle.  
@@ -45,8 +48,8 @@ Suppose you know that the area of a \textbf{right} triangle is
 %\includegraphics{pbpDisTri.png}
 \definecolor{qqwuqq}{rgb}{0.,0.392,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.1954) -- (2.8046,0.1954) -- (2.8046,0.) -- (3.,0.) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.1954,0.) -- (3.1954,0.1954) -- (3.,0.1954) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.20) -- (2.80,0.20) -- (2.80,0.) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.20,0.) -- (3.20,0.20) -- (3.,0.20) -- (3.,0.) -- cycle; 
 \draw [line width=0.8pt] (0.,0.)-- (3.,1.8);
 \draw [line width=0.8pt] (3.,1.8)-- (4.5,0.);
 \draw [line width=0.8pt] (4.5,0.)-- (0.,0.);
@@ -59,14 +62,16 @@ Suppose you know that the area of a \textbf{right} triangle is
 \begin{freeResponse}
 \end{freeResponse}
 
+I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
+
 \begin{problem}
-Surround the triangle with a rectangle as shown.    
+Explanation 1: Surround the triangle with a rectangle as shown.    
 \begin{image}
 %\includegraphics{pbpDisTri.png}
 \definecolor{qqwuqq}{rgb}{0.,0.392,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.1954) -- (2.8046,0.1954) -- (2.8046,0.) -- (3.,0.) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.1954,0.) -- (3.1954,0.1954) -- (3.,0.1954) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.20) -- (2.80,0.20) -- (2.80,0.) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.20,0.) -- (3.20,0.20) -- (3.,0.20) -- (3.,0.) -- cycle; 
 \draw [line width=0.8pt] (0.,0.)-- (3.,1.8) -- (4.5,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.,0.)-- (3.,1.8);
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,1.8) -- (4.5,1.8)-- (4.5,0.);
@@ -74,17 +79,17 @@ Surround the triangle with a rectangle as shown.
 \draw [color=white] (8.,0.) circle (0.1pt);
 \end{tikzpicture}
 \end{image}
-Then the solid triangle is again $\answer[format=string]{half}$ the rectangle, and they have the same base and the same height.
+Then the solid triangle and the rectangle have the same $\answer[format=string]{base}$ and the same $\answer[format=string]{height}$.  And again the area of the triangle is $\answer[format=string]{half}$ the area of the rectangle.
 \end{problem}
 
 \begin{problem}
-The whole triangle is made up of two right triangles.  Call the bases of the small right triangles $b_1$ and $b_2$, and call the base of the large (combined) triangle $b$.  
+Explanation 2: The whole triangle is made up of two right triangles.  Call the bases of the small right triangles $b_1$ and $b_2$, and call the base of the large (combined) triangle $b$.  
 \begin{image}
 %\includegraphics{pbpDisTri.png}
 \definecolor{qqwuqq}{rgb}{0.,0.392,0.}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.1954) -- (2.8046,0.1954) -- (2.8046,0.) -- (3.,0.) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.1954,0.) -- (3.1954,0.1954) -- (3.,0.1954) -- (3.,0.) -- cycle; 
+\begin{tikzpicture}
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.20) -- (2.80,0.20) -- (2.80,0.) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.20,0.) -- (3.20,0.20) -- (3.,0.20) -- (3.,0.) -- cycle; 
 \draw [line width=0.8pt] (0.,0.)-- (3.,1.8) -- (4.5,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.,0.)-- (3.,1.8);
 \draw [color=white] (-4.,0.) circle (0.1pt);
@@ -94,9 +99,11 @@ The whole triangle is made up of two right triangles.  Call the bases of the sma
 \draw (2.8,1.0) node {$h$};
 \end{tikzpicture}
 \end{image}
-Then $b=b_1+b_2$, and the three triangles all have the same height, $\answer{h}$.   The area of the whole triangle is the sum of the areas of the two right triangles:  
+Note:  Use an underscore character to indicate a subscript: b\textunderscore 1.   
+
+Then the base of the whole $b=\answer{b_1+b_2}$, and the three triangles all have the same height, $\answer{h}$.   The area of the whole triangle is the sum of the areas of the two right triangles:  
 \[
-\mathrm{Area} =  \frac{hb_1}{2}+ \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2} = \answer{bh/2}
+\mathrm{Area} =  \answer{\frac{hb_1}{2}}+ \answer{\frac{hb_2}{2}}= \frac{h(b_1 + b_2)}{2} = \answer{bh/2}
 \]
 because $b=b_1+b_2$.
 \end{problem}
@@ -104,19 +111,20 @@ because $b=b_1+b_2$.
 \end{problem}
 
 \begin{problem}
-Now suppose that a student, say \textit{Geometry Giorgio} attempts to
+Now suppose that \textit{Geometry Giorgio} attempts to
 solve a similar problem. Again knowing that the area of a right
 triangle is half the base times the height, he draws the following
 picture:
 \begin{image}
 %\includegraphics{pbpDisTriGio.png}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
 \draw [line width=0.8pt] (0.,0.)-- (2.,0.) -- (5.,2.5) -- cycle;
 \draw [color=white] (-4.,0.) circle (0.2pt);
 \draw [color=white] (8.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
+
 \textit{Geometry Giorgio} states that the diagonal line cuts the
 rectangle in half, and thus the area of the triangle is half the base
 times the height. Is this correct reasoning? 
@@ -130,10 +138,18 @@ Response: The area of the solid triangle is
 \wordChoice{\choice[correct]{does not have}\choice{has}} the same base as the triangle, so ``half the base times height'' is 
 \wordChoice{\choice[correct]{unclear}\choice{correct}\choice{incorrect}}.  
 
+What would you recommend to Giorgio?
+\begin{multipleChoice}
+\choice{The reasoning from the previous problem still works for this triangle.  Go back to that.} 
+\choice{The formula ``half base times height'' does not work for this kind of triangle.}
+\choice[correct]{Different reasoning is needed, but the same formula can work.}
+\end{multipleChoice}
+
+
 \begin{problem}
 To get a better sense of Giorgio's triangle, try some numbers.  
 \begin{image}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
 \draw [line width=0.8pt] (0.,0.)-- (2.,0.) -- (5.,2.5) -- cycle;
 \draw (1.1,-0.2) node {$4$};
@@ -155,34 +171,34 @@ Find the area of this triangle (which is much less than half the rectangle).
 \end{align*}
 
 
-\begin{problem}
-Maybe a grid will help.    
-\begin{image}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
-\draw [line width=0.8pt] (0.,0.)-- (2.,0.) -- (5.,2.5) -- cycle;
-\draw (1.1,-0.2) node {$4$};
-\draw (3.5,-0.2) node {$6$};
-\draw (5.2,1.3) node {$5$};
-%% Dot grid
-%\foreach \x in {0,0.5,...,5} {
-%    \foreach \y in {0,0.5,...,2.5} {
-%        \fill[color=gray] (\x,\y) circle (0.04);
-%    }
-% }
-\draw[step=0.5,gray,thin,xshift=0.5,yshift=0.5] (0.0,0.0) grid (5.0,2.5);
-\draw [color=white] (-4.,0.) circle (0.2pt);
-\draw [color=white] (8.,0.) circle (0.2pt);
-\end{tikzpicture}
-\end{image}
-\end{problem}
+%\begin{problem}
+%Maybe a grid will help.    
+%\begin{image}
+%\begin{tikzpicture}
+%\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
+%\draw [line width=0.8pt] (0.,0.)-- (2.,0.) -- (5.,2.5) -- cycle;
+%\draw (1.1,-0.2) node {$4$};
+%\draw (3.5,-0.2) node {$6$};
+%\draw (5.2,1.3) node {$5$};
+%%% Dot grid
+%%\foreach \x in {0,0.5,...,5} {
+%%    \foreach \y in {0,0.5,...,2.5} {
+%%        \fill[color=gray] (\x,\y) circle (0.04);
+%%    }
+%% }
+%\draw[step=0.5,gray,thin,xshift=0.5,yshift=0.5] (0.0,0.0) grid (5.0,2.5);
+%\draw [color=white] (-4.,0.) circle (0.2pt);
+%\draw [color=white] (8.,0.) circle (0.2pt);
+%\end{tikzpicture}
+%\end{image}
+%\end{problem}
 
 \end{problem}
 
 \begin{problem}
-The following picture generalizes this approach.   
+The following picture generalizes this approach:   
 \begin{image}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
 \draw [line width=0.8pt] (0.,0.)-- (2.,0.) -- (5.,2.5) -- cycle;
 \draw (1.1,-0.2) node {$b$};
@@ -193,7 +209,7 @@ The following picture generalizes this approach.
 \end{tikzpicture}
 \end{image}
 
-One way to compute the area of the solid triangle is to (1) compute the area right triangle that is the lower half of the rectangle (with base $b+x$) and then (2) subtract the area of the small right triangle (with base $x$): 
+One way to compute the area of the solid triangle is to (1) compute the area right triangle that is the lower half of the rectangle (with base $\answer{b+x}$) and then (2) $\answer[format=string]{subtract}$ the area of the small right triangle (with base $\answer{x}$): 
 \[
 \mathrm{area} =  \answer{\frac{h(b+x)}{2}} - \answer{\frac{hx}{2}}= \frac{hb+hx}{2} - \frac{hx}{2}
 = \left(\frac{hb}{2} + \frac{hx}{2}\right) - \frac{hx}{2} = \answer{\frac{hb}{2}}
