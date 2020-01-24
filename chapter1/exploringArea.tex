@@ -17,7 +17,7 @@ Short-answer problems about area and length.
 \begin{problem}
 In the figures below, all vertices occur on dots, which are spaced by one cm, both vertically and horizontally.
 \begin{image}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.8]
 \foreach \x in {0,1,...,13} {
     \foreach \y in {0,1,...,9} {
         \fill[color=gray] (\x,\y) circle (0.05);
@@ -54,7 +54,7 @@ Find the areas of the labeled regions:
 \begin{problem}
 Finding areas and lengths.
 \begin{image}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.8]
 \foreach \x in {1,2,...,12} {
     \foreach \y in {0,1,...,5} {
         \fill[color=gray] (\x,\y) circle (0.05);
@@ -76,6 +76,8 @@ Finding areas and lengths.
 \draw (7.0,4.3) node {$X$};
 \draw (9.0,4.3) node {$Y$};
 \draw (11.0,4.3) node {$Z$};
+\draw [color=white] (-2.,0.) circle (0.2pt);
+\draw [color=white] (15.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
 Find the areas of triangles $TMN$, $UMN$, $VMN$, $WMN$, $XMN$, $YMN$, and $ZMN$. How do the areas compare? 
@@ -95,7 +97,7 @@ This is true because they all have the same base of length $\answer{3}$ and equa
 \begin{problem}
 Finding areas and lengths.
 \begin{image}
-\begin{tikzpicture}%[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.8]
 \foreach \x in {0,1,...,13} {
     \foreach \y in {0,1,...,9} {
         \fill[color=gray] (\x,\y) circle (0.05);
@@ -118,6 +120,7 @@ Finding areas and lengths.
 \item Using a vertical or horizontal base, in figure $B$, base = $\answer{2}$, height = $\answer{3}$ and area = $\answer{6}$.
 \item In figure $C$, none of the sides are horizontal or vertical, but area = $\answer{18}$.
 \item In figure $C$, $MN = \answer{\sqrt{40}}$, so if $\overline{MN}$ is the base, the height must be $\answer{18/\sqrt{40}}$.
+Note: To enter square roots, type \texttt{sqrt(5)} or use the math editor.  
 \end{enumerate}
 \end{problem}
 

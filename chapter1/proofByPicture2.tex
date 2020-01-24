@@ -96,11 +96,15 @@ How does the above picture prove that the area of a trapezoid is
 \mathrm{area} = \frac{h(b_1 + b_2)}{2}
 \]
 where $h$ is the height of the trapezoid and $b_1$ and $b_2$ are the lengths of the parallel sides?
+
 \begin{freeResponse}
 \end{freeResponse}
 
+I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
+
 \begin{problem}
-Sample response:  Using the parallel sides as bases, the two triangles have the same height as the trapezoid. 
+Explanation:  Using the parallel sides as bases, the area of the trapezoid is the $\answer[format=string]{sum}$ of the areas of two triangles that have different bases but the same $\answer[format=string]{height}$ as the trapezoid.  
+
 \begin{image}
 \begin{tikzpicture}[scale=0.8]
 \draw [line width=0.8pt] (0.,0.)-- (2.,3.) -- (6.,3.)-- (7.,0.) -- cycle;
@@ -116,9 +120,10 @@ Sample response:  Using the parallel sides as bases, the two triangles have the 
 \end{tikzpicture}
 \end{image}
 
- The area of the trapezoid is the $\answer[format=string]{sum}$ of the areas of the triangles: 
+
+Note:  Use an underscore character for a subscript: b\textunderscore 1.   
 \[
-\mathrm{Area} =  \frac{hb_1}{2}+ \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2}
+\mathrm{Area} =  \frac{hb_1}{2} + \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2}
 \]
 \end{problem}
 \end{problem}
@@ -147,8 +152,11 @@ Look at the previous problem. Can you use a similar idea
 is the length of the base, times the height?
 \begin{freeResponse}
 \end{freeResponse}
+
+I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
+
 \begin{problem}
-Hint:  Draw a $\answer[format=string]{diagonal}$:  
+Draw a $\answer[format=string]{diagonal}$:  
 \begin{image}
 %\includegraphics{para.png}
 \begin{tikzpicture}[scale=0.8]
@@ -176,19 +184,14 @@ Explain how the following picture ``proves'' that the area of a
 \draw [fill=white] (13.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
-\begin{freeResponse}
-\begin{hint}
-Imagine cutting off the triangle on the left and placing it in the (congruent) dotted region on the right.  Then we have a rectangle with the same base and height as the parallelogram.  The cutting and rearranging doesn't change the area of the figure, so the area of the parallelogram is the same as the area of the rectangle, which is $bh$. 
-\end{hint}
-\end{freeResponse}
+Imagine cutting off the $\answer[format=text]{triangle}$ on the left and placing it in the (congruent) dotted region on the right.  Then we have a $\answer[format=string]{rectangle}$ with the same base and height as the parallelogram.  The cutting and rearranging doesn't change the $\answer[format=string]{area}$ of the figure, so the area of the parallelogram is the same as the area of the rectangle, which is base times height. 
 \end{problem}
 
 \begin{problem}
-Now suppose that a student, say \textit{Geometry Giorgio} attempts to
-solve a similar problem. In an attempt to prove the formula for the
-area of a parallelogram, \textit{Geometry Giorgio} draws the following
-picture:
+Now suppose that \textit{Geometry Giorgio} attempts to
+solve a similar problem, shown below.  
 \begin{image}
+%\includegraphics{paragiorgio.png}
 \begin{tikzpicture}[scale=0.8]
 \draw [line width=0.8pt] (0.,0.)-- (5.,3.) -- (8.,3.)-- (3.,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (8.,0.)-- (8.,3.);
@@ -196,16 +199,28 @@ picture:
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
 \end{tikzpicture}
-%\includegraphics{paragiorgio.png}
 \end{image}
-At this point \textit{Geometry Giorgio} says that he has proved the
-formula for area of a parallelogram. What do you think of his picture?
-Give a complete argument based on his picture.
-\begin{freeResponse}
-\begin{hint}
+
+%The same cutting and rearranging argument works for this parallelogram.  
+%A different cutting and rearranging argument is needed.  
+%
+%
+%Would the same cutting and 
+%
+%Geometry Giorgio's reasoning is correct. 
+%All this discussion is a waste of time:  Just use the formula!
+%A cutting and rearranging argument could be made for this parallelogram, but each different parallelogram would not be general. 
+%A different approach 
+%
+%What do you think of his picture?
+%
+%Give a complete argument based on his picture.
+
+\begin{problem}
 This parallelogram problem is much like Giorgio's triangle problem: (1) compute the area of a larger figure (a rectangle) and then (2) subtract the areas we don't want (two congruent right triangles with base $x$): 
 \begin{image}
 \begin{tikzpicture}[scale=0.8]
+%\includegraphics{paragiorgio.png}
 \draw [line width=0.8pt] (0.,0.)-- (5.,3.) -- (8.,3.)-- (3.,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.) -- (8.,0.) -- (8.,3.);
 %\draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (5.,3.)-- (5.,0.);
@@ -216,15 +231,14 @@ This parallelogram problem is much like Giorgio's triangle problem: (1) compute 
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
 \end{tikzpicture}
-%\includegraphics{paragiorgio.png}
 \end{image}
  
 \[
 \mathrm{area} =  \answer{h(b+x)} - \answer{\frac{hx}{2}} - \answer{\frac{hx}{2}}= hb + hx - \frac{hx}{2}- \frac{hx}{2} = \answer{bh}.
 \]
 
-\end{hint}
-\end{freeResponse}
+\end{problem}
+
 \end{problem}
 
 \end{document}
