@@ -84,7 +84,7 @@ Short-answer proofs by pictures.
 Recall that a trapezoid is a quadrilateral with two parallel sides. Consider the following picture:
 \begin{image}
 %\includegraphics{trap.png}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt] (0.,0.)-- (2.,3.) -- (6.,3.)-- (7.,0.) -- cycle;
 \draw [line width=0.8pt] (0.,0.)-- (6.,3.);
 \draw [fill=white] (-4.,0.) circle (0.2pt);
@@ -105,7 +105,7 @@ I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in 
 \begin{problem}
 Explanation: Draw the heights of the two triangles:
 \begin{image}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt] (0.,0.)-- (2.,3.) -- (6.,3.)-- (7.,0.) -- cycle;
 \draw [line width=0.8pt] (0.,0.)-- (6.,3.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (6.,0.) -- (6.,3.);
@@ -121,9 +121,8 @@ Explanation: Draw the heights of the two triangles:
 
 Using the parallel sides as bases, the area of the trapezoid is the $\answer[format=string]{sum}$ of the areas of two triangles that have different bases but the same $\answer[format=string]{height}$ as the trapezoid.  
 
-Note:  Use an underscore character to indicate a subscript: b\textunderscore 1.   
 \[
-\mathrm{Area} =  \answer{\frac{hb_1}{2}} + \answer{\frac{hb_2}{2}}= \frac{h(b_1 + b_2)}{2}
+\mathrm{Area} =  \frac{hb_1}{2} + \frac{hb_2}{2}= \frac{h(b_1 + b_2)}{2}
 \]
 \end{problem}
 \end{problem}
@@ -143,7 +142,7 @@ Look at the previous problem. Can you use a similar idea
   to prove that the area of a parallelogram
 \begin{image}
 %\includegraphics{para.png}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (8.,3.) -- (6.,0.) -- cycle;
 \draw [fill=white] (-4.,0.) circle (0.2pt);
 \draw [fill=white] (12.,0.) circle (0.2pt);
@@ -159,7 +158,7 @@ I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in 
 Explanation: Draw a $\answer[format=string]{diagonal}$ of the parallelogram and the heights.  
 \begin{image}
 %\includegraphics{para.png}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (8.,3.) -- (6.,0.) -- cycle;
 \draw [line width=0.8pt] (0.,0.) -- (8.,3.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.) -- (0.,3.) -- (2,3);
@@ -186,7 +185,7 @@ Explain how the following picture ``proves'' that the area of a
   parallelogram is base times height.
 \begin{image}
 %\includegraphics{para3.png}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt] (0.,0.) -- (2.,3.) -- (9.,3.) -- (7.,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (7.,0.)-- (9.,0.)-- (9.,3.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (2.,3.)-- (2.,0.);
@@ -200,7 +199,7 @@ Explain how the following picture ``proves'' that the area of a
 I \wordChoice{\choice[correct]{have}\choice{have not}} entered my own answer in the box above.  
 
 \begin{problem}
-Jenny explains: Imagine cutting off the $\answer[format=text]{triangle}$ on the left and placing it in the (congruent) dotted region on the right.  Then we have a $\answer[format=string]{rectangle}$ with the same base and height as the parallelogram.  The cutting and rearranging doesn't change the $\answer[format=string]{area}$ of the figure, so the area of the parallelogram is the same as the area of the rectangle, which is base times height. 
+Jenny explains: Imagine cutting off the $\answer[format=string]{triangle}$ on the left and placing it in the (congruent) dotted region on the right.  Then we have a $\answer[format=string]{rectangle}$ with the same base and height as the parallelogram.  The cutting and rearranging doesn't change the $\answer[format=string]{area}$ of the figure, so the area of the parallelogram is the same as the area of the rectangle, which is base times height. 
 \end{problem}
 \end{problem}
 
@@ -209,7 +208,7 @@ Now suppose that \textit{Geometry Giorgio} attempts to
 solve a similar problem, shown below.  
 \begin{image}
 %\includegraphics{paragiorgio.png}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \draw [line width=0.8pt] (0.,0.)-- (5.,3.) -- (8.,3.)-- (3.,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.)-- (8.,0.)-- (8.,3.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (5.,3.)-- (5.,0.);
@@ -234,7 +233,7 @@ Help Giorgio out by \textbf{selecting all} correct statements:
 \begin{problem}
 This parallelogram problem is much like Giorgio's triangle problem.  Here is Giorgio's final explanation: (1) compute the area of a larger figure (a rectangle with base $\answer{b+x}$ and height $\answer{h}$) and then (2) $\answer[format=string]{subtract}$ the areas we don't want (this time two congruent right triangles with base $\answer{x}$ and height $\answer{h}$): 
 \begin{image}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 %\includegraphics{paragiorgio.png}
 \draw [line width=0.8pt] (0.,0.)-- (5.,3.) -- (8.,3.)-- (3.,0.) -- cycle;
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (3.,0.) -- (8.,0.) -- (8.,3.);
