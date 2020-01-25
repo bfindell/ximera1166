@@ -154,18 +154,25 @@ To get a better sense of Giorgio's triangle, try some numbers.
 \draw (1.1,-0.2) node {$4$};
 \draw (3.5,-0.2) node {$6$};
 \draw (5.2,1.3) node {$5$};
+\draw (1.5,1.7) node {$B$};
+\draw (2.1,.6) node {$A$};
+\draw (4,.8) node {$C$};
 \draw [color=white] (-4.,0.) circle (0.2pt);
 \draw [color=white] (8.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
-Find the area of this triangle (which is much less than half the rectangle).  
-
+To find the area of this triangle (which is much less than half the rectangle), we use the following variables:   
 \begin{align*}
-\begin{minipage}{2cm}\center{\textrm{Area of solid triangle}}\end{minipage}  &= 
-            \begin{minipage}{2cm}\center{\textrm{Area of rectangle}}\end{minipage} &-& 
-            \begin{minipage}{2cm}\center{\textrm{Area of large right triangle}}\end{minipage} &-& 
-            \begin{minipage}{2cm}\center{\textrm{Area of small right triangle}}\end{minipage} \\
-      &= \answer{50} &-& \answer{25} &-& \answer{15} \\
+A &= \textrm{Area of solid triangle} \\
+B &= \textrm{Area of large right triangle} \\
+C &= \textrm{Area of small right triangle} \\
+D &= \textrm{Area of rectangle} = A + B + C.
+\end{align*}
+
+We find $A$, the area of the solid triangle as follows:  
+\begin{align*}
+A  &= D - B  - C \\
+      &= \answer{50} - \answer{25} - \answer{15} \\
       &= \answer{10}
 \end{align*}
 
@@ -195,20 +202,25 @@ Find the area of this triangle (which is much less than half the rectangle).
 \end{problem}
 
 \begin{problem}
-The following picture generalizes this approach:   
+The following argument abbreviates this approach:
 \begin{image}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
+%\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5) -- (5.,2.5) -- (5.,0.) -- (2.,0.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (5.,2.5) -- (5.,0.) -- (2.,0.);
 \draw [line width=0.8pt] (0.,0.)-- (2.,0.) -- (5.,2.5) -- cycle;
 \draw (1.1,-0.2) node {$b$};
 \draw (3.5,-0.2) node {$x$};
 \draw (5.2,1.3) node {$h$};
+%\draw (1.5,1.7) node {$B$};
+\draw (2.1,.6) node {$A$};
+\draw (4,.8) node {$C$};
 \draw [color=white] (-4.,0.) circle (0.2pt);
 \draw [color=white] (8.,0.) circle (0.2pt);
 \end{tikzpicture}
 \end{image}
 
-One way to compute the area of the solid triangle is to (1) compute the area right triangle that is the lower half of the rectangle (with base $\answer{b+x}$) and then (2) $\answer[format=string]{subtract}$ the area of the small right triangle (with base $\answer{x}$): 
+We find $A$, the area of the solid triangle as follows: Compute the area ($A+C$) of the large right triangle (with base $\answer{b+x}$) and then 
+$\answer[format=string]{subtract}$ the area ($C$) of the small right triangle (with base $\answer{x}$): 
 \[
 \mathrm{area} =  \answer{\frac{h(b+x)}{2}} - \answer{\frac{hx}{2}}= \frac{hb+hx}{2} - \frac{hx}{2}
 = \left(\frac{hb}{2} + \frac{hx}{2}\right) - \frac{hx}{2} = \answer{\frac{hb}{2}}
