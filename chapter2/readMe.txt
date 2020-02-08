@@ -12,4 +12,5 @@ In both cases, the issue is the call to GeoGebra
 
 Change /stb/false/ to /stb/true/
 
+And one other setting ... 
 
