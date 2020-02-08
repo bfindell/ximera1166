@@ -172,7 +172,8 @@ A proof that makes use of triangle congruence:
     \node [block, below of=e] (f) {$X$ is midpoint of $\overline{AC}$};
     \node [block, right of=e, node distance = 4cm] (g) {$\angle BXA \cong \angle BXC$};    
     \node [block, right of=g, text width=10em, node distance = 4cm] (h) {$\angle BXA$ and $\angle BXC$ form a linear pair};
-    \node [block, below of=g] (i) {$\overline{BX}\perp\overline{AC}$};
+    \node [block, below of=g] (i) 
+    	{$\overline{AC}\perp\overline{BX}$ (and thus $\overleftrightarrow{BD}$)};
 
     \node [Block, text width=12em, below of=f] (m) 
        {Summary: $\overleftrightarrow{BD}$ is the $\perp$ 
@@ -194,8 +195,6 @@ A proof that makes use of triangle congruence:
     \path [implies] (i) -- (m);
 \end{tikzpicture}
 \end{image}
-
-\fixnote{Do we need a step about $\overleftrightarrow{BX}$ and $\overleftrightarrow{BD}$ being the same line?}
 
 In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$, and 
 $\triangle ABX \cong \triangle CBX$ by $\answer[format=string]{SAS}$.  
