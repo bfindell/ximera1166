@@ -18,11 +18,19 @@ Proofs updated.
 %\end{scope}
 %
 
-\fixnote{Below are several different proofs, along with one that is not a proof.  Please consider them separately.\\Any (or all) of the proofs might be extended to conclude that, in the case of an isosceles triangle, the perpendicular bisector, angle bisector, median, and altitude all lie on the same line.}
+\begin{problem}
+\textbf{Important Notes:}
+\begin{itemize}
+\item Below are several different proofs, along with some that are not proofs.  Please consider them separately.
+\item Most of the proofs could be extended to conclude that, in the case of an isosceles triangle, the perpendicular bisector, angle bisector, median, and altitude all lie on the same line.  But for now, let's imagine we don't know this yet.
+\end{itemize}
+I have read the above notes and will consider the following proofs and 
+non-proofs $\answer[format=string]{separately}$.  
+\end{problem}
+
 
 \begin{problem}
 Prove that the base angles of an isosceles triangle are congruent.   
-
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
@@ -102,12 +110,11 @@ Prove that the base angles of an isosceles triangle are congruent.
 
 \item Finally, Morgan concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
 \end{enumerate}
-
 \end{problem}
+
 
 \begin{problem}
 Prove that the base angles of an isosceles triangle are congruent.   
-
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.3921,0.}
@@ -188,12 +195,11 @@ Prove that the base angles of an isosceles triangle are congruent.
 
 \item Finally, Deja concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
 \end{enumerate}
-
 \end{problem}
+
 
 \begin{problem}
 Prove that the base angles of an isosceles triangle are congruent.   
-
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
@@ -273,13 +279,11 @@ Prove that the base angles of an isosceles triangle are congruent.
 
 \item Finally, Elle concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
 \end{enumerate}
-
 \end{problem}
 
 
 \begin{problem}
 Simon and Taylor are trying to prove that the base angles of an isosceles triangle are congruent.   
-
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
@@ -367,7 +371,7 @@ Simon and Taylor are trying to prove that the base angles of an isosceles triang
 \draw (0.,0.)-- (1.,2.2)-- (2.,0.)-- cycle;
 \draw (0.4171,1.1376) -- (0.5828,1.0623);
 \draw (1.5828,1.1376) -- (1.4171,1.0623);
-\draw (0.99,2.4)-- (1.,0.); % segment CD
+\draw (0.95,2.4)-- (1.,0.); % segment CD
 %\draw (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
 %\draw (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
 \draw (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
@@ -381,7 +385,7 @@ Simon and Taylor are trying to prove that the base angles of an isosceles triang
 \draw[color=qqqqff] (-0.18,-0.13) node {$A$};
 \draw [fill=qqqqff] (2.,0.) circle (1.2pt);
 \draw[color=qqqqff] (2.18,-0.13) node {$B$};
-\draw [fill=qqqqff] (1.06,2.2) circle (1.2pt);
+\draw [fill=qqqqff] (1.00,2.2) circle (1.2pt);
 \draw[color=qqqqff] (1.24,2.45) node {$C$};
 \draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 \draw[color=qqqqff] (0.97,-0.2) node {$D$};
@@ -393,31 +397,47 @@ Simon and Taylor are trying to prove that the base angles of an isosceles triang
 
 Beginning with the given figure on the left, Simon draws $\overline{CD}$ and marks the second figure intending that this new segment is a perpendicular bisector of $\overline{AB}$.
 
-Taylor claims that a perpendicular bisector of a side of a triangle usually misses the opposite vertex, so the figure should allow for that possibility. 
+Taylor asks, ``How do we know the perpendicular bisector will go through point $C$?  Maybe the figure looks like this!'' She presents the third figure. 
 
-\fixnote{Taylor's claim, the prompt, and the choices below need attention.  Simon's figure suggests congruence by ``SSAS,'' which might indicate that too much is being assumed.  Would that make sense as a distractor?}
+Without using other facts about isosceles triangles or perpendicular bisectors, choose the best judgment of their disagreement: 
 
-Without using other facts about isosceles triangles or perpendicular bisectors, choose the best assessment of their disagreement: 
 \begin{multipleChoice}
 \choice{Simon is correct, and $\triangle ACD\cong \triangle BCD$ by SAS.} 
 \choice{Simon is correct, and $\triangle ACD\cong \triangle BCD$ by SSS}
-\choice[correct]{Taylor is correct, and the perpendicular bisector should not be used to complete this proof.}
+\choice[correct]{Taylor is correct because a perpendicular bisector of a side of a triangle usually misses the opposite vertex.}
 \choice{Neither of them are correct.}  
 \end{multipleChoice} 
 
-Simon's claim that $\triangle ACD\cong \triangle BCD$ by SAS ignores the given: 
-$\overline{AC}\cong \overline{BC}$, which means that the proof would work for any triangle.
+\begin{problem}
+From Simon's figure, a claim that $\triangle ACD\cong \triangle BCD$ by SAS ignores what information?
+\begin{multipleChoice}
+\choice{$\angle A\cong \angle B$}
+\choice{$\overline{CD}\perp \overline{AB}$}
+\choice[correct]{$\overline{AC}\cong \overline{BC}$}
+\choice{$\overline{AD}\cong \overline{BD}$}
+\end{multipleChoice}
+\begin{feedback}[correct]
+If it were valid to ignore the given (i.e., that the triangle is isosceles), then the base angles of \textbf{any} triangle would be congruent.
+\end{feedback}
 
-Simon's claim that $\triangle ACD\cong \triangle BCD$ by SSS ignores the marking that $\angle CDA$ 
-and $\angle CDB$, which means that the proof is as though $\overline{CD}$ is a median.   
-
+\begin{problem}
+From Simon's figure, a claim that $\triangle ACD\cong \triangle BCD$ by SSS ignores what information?
+\begin{multipleChoice}
+\choice{$\angle A\cong \angle B$}
+\choice[correct]{$\overline{CD}\perp \overline{AB}$}
+\choice{$\overline{AC}\cong \overline{BC}$}
+\choice{$\overline{AD}\cong \overline{BD}$}
+\end{multipleChoice}
+\begin{feedback}[correct]
+Ignoring the marking that $\overline{CD}\perp \overline{AB}$ would mean that $\overline{CD}$ merely a median, and the proof could be fixed.  
+\end{feedback}  
 \end{problem}
-
+\end{problem}
+\end{problem}
 
 
 \begin{problem}
 Prove that the base angles of an isosceles triangle are congruent.   
-
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}

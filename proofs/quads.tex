@@ -49,25 +49,29 @@ Given the parallelogram $WXYZ$, prove that $\overline{WX}\cong\overline{YZ}$.
 \draw[color=qqqqff] (-0.28,-0.03) node {$Z$};
 \draw [fill=qqqqff] (1.,2.) circle (1.2pt);
 \draw[color=qqqqff] (0.86,2.29) node {$W$};
+\draw[color=qqqqff] (1.08,1.75) node {$1$};
+\draw[color=qqqqff] (1.5,1.87) node {$2$};
 \draw [fill=qqqqff] (4.,0.) circle (1.2pt);
-\draw[color=qqqqff] (4.22,0.07) node {$Y$};
+\draw[color=qqqqff] (4.24,-0.03) node {$Y$};
+\draw[color=qqqqff] (3.5,0.15) node {$3$};
+\draw[color=qqqqff] (3.9,0.3) node {$4$};
 \draw [fill=qqqqff] (5.,2.) circle (1.2pt);
 \draw[color=qqqqff] (5.14,2.29) node {$X$};
+\draw[color=white] (-3,0) circle (0.2pt);
+\draw[color=white] (8,0) circle (0.2pt);
 \end{scriptsize}
 \end{tikzpicture}
 \end{image}
 
-\fixnote{It really would help to have an online environment that allows students to mark diagrams.}
 
 Complete the proof below: 
 \begin{enumerate}
-\item $\angle ZWY \cong \angle XYW$ as \wordChoice{\choice[correct]{alternate interior angles}\choice{corresponding angles}\choice{opposite angles}} for parallel segments \wordChoice{\choice[correct]{$\overline{WZ}$ and $\overline{XY}$}\choice{$\overline{WX}$ and $\overline{YZ}$}}.
-\item $\angle ZYW \cong \angle XWY$ for the same reason, this time for parallel segments \wordChoice{\choice{$\overline{WZ}$ and $\overline{XY}$}\choice[correct]{$\overline{WX}$ and $\overline{YZ}$}}.
+\item $\angle 1 \cong \angle 4$ as \wordChoice{\choice[correct]{alternate interior angles}\choice{corresponding angles}\choice{opposite angles}} for parallel segments \wordChoice{\choice[correct]{$\overline{WZ}$ and $\overline{XY}$}\choice{$\overline{WX}$ and $\overline{YZ}$}}.
+\item $\angle 2 \cong \angle 3$ for the same reason, this time for parallel segments \wordChoice{\choice{$\overline{WZ}$ and $\overline{XY}$}\choice[correct]{$\overline{WX}$ and $\overline{YZ}$}}.
 \item $\overline{WY}\cong\overline{YW}$ because a segment is congruent to itself. 
-\item $\triangle WYZ \cong \triangle YWX$ by \wordChoice{\choice{SAS}\choice[correct]{ASA}\choice{SSS}}.  
+\item $\triangle WYZ \cong \triangle \answer[format=string]{YWX}$ by \wordChoice{\choice{SAS}\choice[correct]{ASA}\choice{SSS}}.  
 \item Then $\overline{YZ}\cong\overline{WX}$ as corresponding parts of congruent triangles. 
 \end{enumerate}
-\fixnote{Maybe number the angles.}
 
 \end{problem}
 
@@ -104,11 +108,15 @@ Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ 
 \draw[color=qqqqff] (-0.26,-5.09) node {$D$};
 %\draw [fill=qqqqff] (0.,0) circle (1.2pt);
 %\draw[color=qqqqff] (-0.26,-.26) node {$X$};
+\draw[color=qqqqff] (-5,0) circle (0.2pt);
+\draw[color=qqqqff] (8,0) circle (0.2pt);
 %\end{scriptsize}
 \end{tikzpicture}
 \end{image}
 
-Key theorem:  The points on a perpendicular bisector are exactly those that are equidistant from the endpoints of a segment.  
+\begin{hint}
+A key theorem:  The points on a perpendicular bisector are exactly those that are equidistant from the endpoints of a segment.  
+\end{hint}
 
 Proof:  Because $B$ and $D$ are each $\answer[format=string]{equidistant}$ from $A$ and $C$, they each must lie on the perpendicular bisector of segment $\answer{AC}$, which implies that 
 $\overleftrightarrow{BD}$ is its perpendicular bisector.  
@@ -146,6 +154,8 @@ Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ 
 \draw[color=qqqqff] (-0.26,-5.09) node {$D$};
 \draw [fill=qqqqff] (0.,0) circle (1.2pt);
 \draw[color=qqqqff] (-0.26,-.26) node {$X$};
+\draw[color=qqqqff] (-5,0) circle (0.2pt);
+\draw[color=qqqqff] (8,0) circle (0.2pt);
 %\end{scriptsize}
 \end{tikzpicture}
 \end{image}
@@ -199,16 +209,19 @@ A proof that makes use of triangle congruence:
 In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$, and 
 $\triangle ABX \cong \triangle CBX$ by $\answer[format=string]{SAS}$.  
 
-%\begin{feedback}[correct]
-%Paragraph proof:
-%\\ $\overline{BD}\cong \overline{BD}$, so that $\triangle BAD \cong \triangle BCD$ by SSS.  
-%\\ $\angle ABD \cong \angle CBD$ by CPCTC. 
-%\\ $\overline{BX}\cong \overline{BX}$, so that $\triangle ABX \cong \triangle CBX$ by SAS.  
-%\\ $\angle BXA \cong \angle BXC$ by CPCTC, and they are a linear pair, 
-%so $\overline{BX}\perp\overline{AC}$. 
-%\\ $\overline{AX}\cong \overline{CX}$ by CPCTC, so $X$ is the midpoint of $\overline{AC}$.
-%\\ Thus, $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$.
-%\end{feedback}
+\begin{feedback}[correct]
+For comparison, here is the same proof in a traditional format:
+\begin{enumerate}
+\item $AB\cong CB$ and $AD\cong CD$ are given.  
+\item $\overline{BD}\cong \overline{BD}$, so $\triangle BAD \cong \triangle BCD$ by SSS.  
+\item $\angle ABD \cong \angle CBD$ by CPCTC. 
+\item $\overline{BX}\cong \overline{BX}$, so that $\triangle ABX \cong \triangle CBX$ by SAS.  
+\item $\angle BXA \cong \angle BXC$ by CPCTC, and they are a linear pair, 
+so $\overline{AC}\perp\overline{BX}$ (and thus $\overleftrightarrow{BD}$ as well). 
+\item $\overline{AX}\cong \overline{CX}$ by CPCTC, so $X$ is the midpoint of $\overline{AC}$.
+\item Thus, $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$.
+\end{enumerate}
+\end{feedback}
 \end{problem}
 
 \end{document}
