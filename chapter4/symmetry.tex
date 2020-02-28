@@ -22,15 +22,24 @@ Categorize the capital letters of the alphabet by their symmetries.  Use the fol
 %\begin{tikzpicture}
 %  \node {\scalebox{10}{\textsf{K}}};
 %\end{tikzpicture}
-\begin{itemize}
-\item Vertical line symmetry:  $\answer{AHIMOTUVWXY}$
-\item Horizontal line symmetry:  $\answer{BCDEHIKOX}$  
-\item $180^\circ$ rotational symmetry: $\answer{HINOSXZ}$
-\item None: $\answer{FGJLPQR}$
-\end{itemize}
+\begin{question}
+Vertical line symmetry:  $\answer{AHIMOTUVWXY}$
+\end{question}
+\begin{question}
+Horizontal line symmetry:  $\answer{BCDEHIKOX}$  
 \begin{feedback}[correct]
-Notes:  (1) In many fonts that look much the same, B and K have no symmetry.  (2) In this font, the O is slightly taller than it is wide.  If it were a circle, there would be more symmetry.  (See later problem.)
+In many other fonts, B and K have no symmetry.  
 \end{feedback}
+\end{question}
+\begin{question}
+$180^\circ$ rotational symmetry: $\answer{HINOSXZ}$
+\begin{feedback}[correct]
+In this font, the O is slightly taller than it is wide.  If it were a circle, it would have much more symmetry.  (See later problem.)
+\end{feedback}
+\end{question}
+\begin{question}
+None: $\answer{FGJLPQR}$
+\end{question}
 \end{question}
 
 \begin{question}
@@ -53,27 +62,28 @@ that maps a figure
 \end{question}
 
 \begin{question}
-Explain why a sequence of two symmetries of a figure must also be a symmetry of that figure.  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
+Is a sequence of two symmetries of a figure also a symmetry of that figure?
+$\answer[format=string]{Yes}$.
+\begin{question}
 %If a transformation T1 maps a figure onto itself and another transformation T2 maps the figure onto itself, then T1 followed by T2 also maps the figure onto itself.  
 The first transformation maps the figure onto itself, and the second transformation maps the figure onto itself, so the sequence of two transformations maps the figure $\answer[format=string]{onto itself}$.  
-\end{hint}
+\end{question}
 \end{question}
 
 \begin{question}
-Explain why the identity transformation should be considered a symmetry of \emph{any} figure.   
-
+Is the identity transformation a symmetry of \emph{any} figure? 
+$\answer[format=string]{Yes}$.
+\begin{feedback}[correct]
+If the identity transformation is the \emph{only} symmetry of a figure, we usually say the figure is asymmetric or has no symmetry.  
+\end{feedback}
+\begin{question}
 \textbf{Some possible explanations:} 
 \begin{itemize}
 \item The identity transformation satisfies the definition of a symmetry: It maps the figure $\answer[format=string]{onto itself}$ (two words). 
 \item If a figure has reflection symmetry $R_k$ about a line $k$, then $R_k$ followed by $R_k$ is the $\answer[format=string]{identity transformation}$ (two words).  And by the previous result, this sequence of symmetries must also be a symmetry.  
 \item If a figure has rotational symmetry $R_\alpha$ by some angle $\alpha$ about some center, then it must also have a rotational symmetry $R_{-\alpha}$ by the angle $-\alpha$ about the same center.  $R_\alpha$ followed by $R_{-\alpha}$ is the $\answer[format=string]{identity transformation}$ (two words).  And by the previous result, this sequence of symmetries must also be a symmetry.  
 \end{itemize}
-\begin{feedback}[correct]
-Note: Sometimes the identity transformation is called the \emph{trivial} symmetry.  If the identity transformation is the \emph{only} symmetry of a figure, we usually say the figure is asymmetric or has no (nontrivial) symmetry.  
-\end{feedback}
+\end{question}
 \end{question}
 
 \begin{question}
@@ -110,31 +120,38 @@ Indicate the number of rotation and reflection symmetries of the following figur
 
 
 \begin{question}
-Suppose that quadrilateral $ABCD$ has exactly one rotation symmetry (other than the identity transformation) and no reflection symmetry.  What kind(s) of quadrilateral could it be?  Explain your reasoning.  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-If a rotation of $\alpha$ is a symmetry of a figure, then a rotation of $2\alpha$ must also be a symmetry.  Thus, for the quadrilateral to have only one (non-identity) rotation symmetry, it must be that $\alpha = \answer{180}$ degrees.  That rotation will swap opposite vertices, which implies that the center of rotation is the midpoint of each diagonal, so that the diagonals must $\answer[format=string]{bisect}$ each other.  Thus, quadrilateral $ABCD$ is a $\answer[format=string]{parallelogram}$ that is not any more special (or it would have additional symmetry).  
-\end{hint}
+Suppose that quadrilateral $ABCD$ has exactly one rotation symmetry (other than the identity transformation) and no reflection symmetry.  What kind(s) of quadrilateral could it be?  
+
+\textbf{Answer:}  It must be a $\answer[format=string]{parallelogram}$.
+\begin{question}
+\textbf{Explanation:} If a rotation of $\alpha$ is a symmetry of a figure, then a rotation of $2\alpha$ must also be a symmetry.  Thus, for the quadrilateral to have only one (non-identity) rotation symmetry, it must be that $\alpha = \answer{180}$ degrees.  That rotation will swap opposite vertices, which implies that the center of rotation is the midpoint of each diagonal, so that the diagonals must $\answer[format=string]{bisect}$ each other.  Thus, quadrilateral $ABCD$ is a $\answer[format=string]{parallelogram}$ that is not any more special (or it would have additional symmetry).  
+\end{question}
 \end{question}
 
 \begin{question}
-Suppose that quadrilateral $ABCD$ has exactly one reflection symmetry and no rotation symmetry (other than the identity transformation).  What kind(s) of quadrilateral could it be?  Explain your reasoning.  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-A parallelogram has $180^\circ$ rotational symmetry, so quadrilateral $ABCD$ cannot be a parallelogram, which also excludes the special cases: rhombus, rectangle, and square.  If the line of symmetry goes through two vertices, 
-it must be a(n) $\answer[format=string]{kite}$ that is not a rhombus.  If the line of symmetry goes through two sides, it must be a(n) $\answer[format=string]{isosceles trapezoid}$ (two words).  
-\end{hint}
+Suppose that quadrilateral $ABCD$ has exactly one reflection symmetry and no rotation symmetry (other than the identity transformation).  What kind(s) of quadrilateral could it be? 
+
+\textbf{Answer:}  It must be a(n) $\answer[format=string]{kite}$ or 
+a(n) $\answer[format=string]{isosceles trapezoid}$. (Two words.)
+\begin{question}
+\textbf{Explanation:}  A parallelogram has $180^\circ$ rotational symmetry, so quadrilateral $ABCD$ cannot be a parallelogram, which also excludes the special cases: square, rectangle, 
+and $\answer[format=string]{rhombus}$.  If the line of symmetry goes through two vertices, it must be a(n) $\answer[format=string]{kite}$ that is not a rhombus.  If the line of symmetry goes through two sides, it must be a(n) $\answer[format=string]{isosceles trapezoid}$ (two words).  
+\end{question}
 \end{question}
 
 \begin{question}
-What are the symmetries of a circle? 
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-A circle has rotational symmetry by any $\answer[format=string]{angle}$ about its center.  A circle has reflection symmetry about any $\answer[format=string]{line}$ through its center.  A circle does not have translation symmetry.  
-\end{hint}
+What are the symmetries of a circle? (Select all.)
+\begin{selectAll}
+\choice{translation symmetry}
+\choice[correct]{rotation symmetry}
+\choice[correct]{reflection symmetry}
+\end{selectAll}
+\begin{question}
+A circle has rotation symmetry by any $\answer[format=string]{angle}$ 
+about its $\answer[format=string]{center}$.  A circle has reflection symmetry 
+about any $\answer[format=string]{line}$ through its center.  A circle does 
+not have translation symmetry.  
+\end{question}
 \end{question}
 
 \begin{question}
@@ -148,15 +165,18 @@ Perform any of the symmetry transformations to be sure that the circle is actual
 
 \begin{question}
 What are the symmetries of a line?  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
+\begin{selectAll}
+\choice[correct]{translation symmetry}
+\choice[correct]{rotation symmetry}
+\choice[correct]{reflection symmetry}
+\end{selectAll}
+\begin{question}
 \begin{enumerate}
 \item A line has translation symmetry by a vector of any length \wordChoice{\choice[correct]{parallel}\choice{perpendicular}\choice{opposite}} to the line.   
 \item A line has $\answer{180}$ degree rotational symmetry about any point on the line.  
-\item A line has reflection symmetry about any \wordChoice{\choice{parallel}\choice[correct]{perpendicular}\choice{opposite}} to the line.  A line also has reflection symmetry about itself.  
+\item A line has reflection symmetry about any line \wordChoice{\choice{parallel}\choice[correct]{perpendicular}\choice{opposite}} to the line.  A line also has reflection symmetry about itself.  
 \end{enumerate}
-\end{hint}
+\end{question}
 \end{question}
 
 %\begin{question}
