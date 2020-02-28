@@ -21,9 +21,17 @@ Midsegment Theorem: The segment joining the midpoints of two sides of a triangle
 
 %\fixnote{The typical proof uses similarity, which is suitable for Math 2.  This one uses parallelograms, so that it is suitable for Math 1.}
 
-In preparation for the midsegment theorem, the class proved several useful theorems about parallelograms. 
-
-%\fixnote{Should the four parallelogram theorems be listed here?}
+\begin{question}
+In preparation for the midsegment theorem, the class proved several useful theorems about parallelograms. Which of the following statements are theorems about parallelograms?  
+\begin{selectAll}
+\choice[correct]{If opposite sides of a quadrilateral are congruent, then it is a parallelogram.}
+\choice[correct]{If opposite angles of a quadrilateral are congruent, then it is a parallelogram.}
+\choice{If the diagonals of a quadrilateral are congruent, then it is a parallelogram.}
+\choice[correct]{If the diagonals of a quadrilateral bisect each other, then it is a parallelogram.}
+\choice{If the diagonals of a quadrilateral are perpendicular, then it is a parallelogram.}
+\choice[correct]{If a pair of sides of a quadrilateral are congruent and parallel, then it is a parallelogram.}
+\end{selectAll}
+\end{question}
 
 \begin{problem}
 To prove the midsegment theorem for $\triangle ABC$ with midpoints $D$ and $E$ of sides $AC$ and $BC$, respectively, Mitch extended $\overline{DE}$ to a point $X$ such that $EX=DE$, as shown in the marked figure.  Then he added dotted lines to the figure to show parallelograms.  
@@ -32,7 +40,6 @@ To prove the midsegment theorem for $\triangle ABC$ with midpoints $D$ and $E$ o
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.34,-0.44) rectangle (6.86,3.4);
 \draw (5.,0.)-- (0.,0.);
 \draw (0.,0.)-- (1.5,1.5);
 \draw (0.686,0.814) -- (0.814,0.686);
@@ -68,12 +75,14 @@ To prove the midsegment theorem for $\triangle ABC$ with midpoints $D$ and $E$ o
 \draw[color=qqqqff] (1.44,1.81) node {$D$};
 \draw [fill=qqqqff] (4.,1.5) circle (1.5pt);
 \draw[color=qqqqff] (4.14,1.79) node {$E$};
+\draw[color=white] (-2.,0.) circle (0.2pt);
+\draw[color=white] (8.5,0.) circle (0.2pt);
 \end{scriptsize}
 \end{tikzpicture}
 \end{image}
 
 Mitch organized his reasoning in the following flow chart:  
-\fixnote{The flowchart omits reasons to reduce clutter.  The most significant steps are green whereas the details are blue.}
+%\fixnote{The flowchart omits reasons to reduce clutter.  The most significant steps are green whereas the details are blue.}
 
 \begin{image}
 \tikzstyle{block} = [rectangle, draw, fill=blue!20, 
@@ -132,6 +141,7 @@ In the proof above, which theorem may Mitch use to conclude that quadrilateral $
 \choice{None of these.}
 \end{multipleChoice}
 
+\begin{problem}
 In the proof above, which theorem may Mitch use to conclude that quadrilateral $DABX$ a parallelogram?  
 \begin{multipleChoice}
 \choice[correct]{If one pair of sides of a quadrilateral are congruent and parallel, then the quadrilateral is a parallelogram.}
@@ -142,21 +152,24 @@ In the proof above, which theorem may Mitch use to conclude that quadrilateral $
 \choice{None of these.}
 \end{multipleChoice}
 
-%\begin{feedback}[correct]
-%Paragraph proof:
-%\\ $CE = BE$ and $DX=EX$, as given.
-%\\ Quadrilateral $CDBX$ is a parallelogram because the diagonals bisect each other. 
-%\\ $XB=CD$ because opposite sides of a parallelogram are congruent.
-%\\ $XB=AD$ because they are both equal to $CD$. 
-%\\ $\overline{XB} \parallel \overline{CD}$ because $CDBX$ is a parallelogram. 
-%\\ $\overline{XB} \parallel \overline{AD}$ because $A$, $C$, and $D$ are collinear. 
-%\\ Quadrilateral $DABX$ is a parallelogram because a pair of sides is congruent and parallel.  
-%\\ $\overline{DX} \parallel \overline{AB}$ because $DABX$ is a parallelogram. 
-%\\ $\overline{DE} \parallel \overline{AB}$ because $D$, $E$, and $X$ are collinear.  
-%\\ $AB = DX = DE + EX = 2DE$
-%\\ $DE = \frac{1}{2}AB$
-%\\ Summary:  $DE$ is parallel to $AB$ and half its length.  
-%\end{feeback}
+\begin{feedback}[correct]
+Here is the proof with reasons: 
+\begin{enumerate}
+\item $CE = BE$ and $DX=EX$, as given.
+\item Quadrilateral $CDBX$ is a parallelogram because the diagonals bisect each other. 
+\item $XB=CD$ because opposite sides of a parallelogram are congruent.
+\item $XB=AD$ because they are both equal to $CD$. 
+\item $\overline{XB} \parallel \overline{CD}$ because $CDBX$ is a parallelogram. 
+\item $\overline{XB} \parallel \overline{AD}$ because $A$, $C$, and $D$ are collinear. 
+\item Quadrilateral $DABX$ is a parallelogram because a pair of sides is congruent and parallel.  
+\item $\overline{DX} \parallel \overline{AB}$ because $DABX$ is a parallelogram. 
+\item $\overline{DE} \parallel \overline{AB}$ because $D$, $E$, and $X$ are collinear.  
+\item $AB = DX = DE + EX = 2DE$
+\item $DE = \frac{1}{2}AB$
+\item Summary:  $DE$ is parallel to $AB$ and half its length.  
+\end{enumerate}
+\end{feedback}
+\end{problem}
 
 \end{problem}
 
