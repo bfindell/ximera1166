@@ -1,0 +1,95 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Rotate 180 Degrees}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Proofs updated. 
+\end{abstract}
+\maketitle
+
+
+\begin{axiom}
+Parallel postulate (uniqueness of parallels):  Given a line and a point not on the line, there is exactly one line through the given point parallel to the given line.  
+\end{axiom}
+
+\begin{problem}
+
+\begin{theorem}
+A $180^\circ$ rotation about a point on a line maps the line to 
+$\answer[format=string]{itself}$. 
+\end{theorem}
+
+\begin{proof}
+Suppose point $P$ is on line $k$.  The point cuts the line into two opposite $\answer[format=string]{rays}$.  Call them $\overrightarrow{PR}$ and $\overrightarrow{PQ}$.  
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0.8,8.0) rectangle (11.5,11.5);
+\draw [line width=0.8pt,domain=0.8:11.5] plot(\x,{(16.0192+0.76*\x)/2.12});
+\begin{small}
+\draw [fill=qqqqff] (5.98,9.7) circle (1.5pt);
+\draw[color=qqqqff] (6.12,9.45) node {$P$};
+\draw [fill=qqqqff] (8.1,10.46) circle (1.5pt);
+\draw[color=qqqqff] (8.24,10.2) node {$Q$};
+\draw [fill=qqqqff] (4.3666,9.1216) circle (1.5pt);
+\draw[color=qqqqff] (4.2,9.4) node {$R$};
+\draw[color=black] (2.0,8.6) node {$k$};
+\end{small}
+\end{tikzpicture}
+\end{image}
+
+Because $\angle QPR$ is a $\answer[format=string]{straight angle}$ (two words), a $180^\circ$ rotation about $P$ maps $\overrightarrow{PR}$ onto \wordChoice{\choice{$\overrightarrow{RP}$}\choice[correct]{$\overrightarrow{PQ}$}\choice{$\overrightarrow{QP}$}\choice{$\overrightarrow{PR}$}}, and vice versa.  Swapping the two opposite rays maps the line onto itself.  
+\end{proof}
+\end{problem}
+
+\begin{problem}
+
+\begin{theorem}
+A $180^\circ$ rotation about a point not on a line takes the line to 
+\wordChoice{\choice{itself}\choice[correct]{a parallel line}
+\choice{a perpendicular line}\choice{a slanted line}}.
+\end{theorem}
+
+\begin{proof}
+Let $O$ be a point not on line $l$.  Let $P$ be an arbitrary point on $R(l)$, the rotated image of $l$.  
+To show that $R(l)$ is parallel to $l$, 
+it is sufficient to show that $P$ cannot lie also on $l$.  
+
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.8,6.0) rectangle (8.2,10.3);
+\draw [line width=0.8pt,domain=-0.84:8.24] plot(\x,{(--43.8512--1.22*\x)/6.92});
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.84:8.24] plot(\x,{(-61.52-1.22*\x)/-6.92});
+\draw [line width=0.6pt,dash pattern=on 2pt off 3pt,domain=-0.52:8.12] plot(\x,{(--38.6071-1.8626*\x)/3.91725});
+\begin{scriptsize}
+\draw[color=black] (-0.04,6.6) node {$l$};
+\draw[color=black] (7.3,6.6) node {$k$};
+\draw [fill=qqqqff] (3.44,8.22) circle (1.2pt);
+\draw[color=qqqqff] (3.55,8.50) node {$O$};
+\draw[color=black] (-0.16,8.6) node {$R(l)$};
+\draw [fill=qqqqff] (1.48135,9.1513) circle (1.2pt);
+\draw[color=qqqqff] (1.62,9.45) node {$P$};
+\draw [fill=qqqqff] (5.3986,7.2887) circle (1.2pt);
+\draw[color=qqqqff] (5.54,7.05) node {$Q$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+%\[
+%\includegraphics[scale=0.6]{../graphics/lineRotation.pdf}
+%\]
+
+Because $P$ is on $R(l)$, there is a point $Q$ on $l$ such that $P = R(Q)$.  The rotated image of 
+$\overrightarrow{OQ}$ is \wordChoice{\choice{$\overrightarrow{QO}$}\choice[correct]{$\overrightarrow{OP}$}\choice{$\overrightarrow{QP}$}}, and because $\angle QOP$ is $180^\circ$, it 
+follows that $Q$, $O$, and $P$ are $\answer[format=string]{collinear}$.  Call that line $k$.  We know line $k$ is distinct 
+from $l$ because point $O$ is on line $\answer{k}$ but not on line $\answer{l}$.  Now, if $P$ were on $l$, then points $P$ and $Q$ 
+would both be on two distinct lines, $k$ and $l$, contradicting the assumption that on two distinct points there is a unique line.  The theorem is proved.  
+\end{proof}
+\end{problem}
+
+
+\end{document}
