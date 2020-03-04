@@ -1,0 +1,152 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+%\usepackage{tikz}
+
+
+\title{Assumptions}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Short-answer problems about assumptions in various geometries. 
+\end{abstract}
+\maketitle
+
+In our approach to Euclidean (i.e., flat) geometry, we make the following assumptions:
+\begin{itemize}
+\item[(A1)] Through two distinct points passes a unique line.
+\item[(A2)] Given a line and a point not on the line, there is exactly one line passing through the point which is parallel to the given line (Parallel postulate).
+\item[(A3)] The points on a line can be placed in one-to-one correspondence with the real numbers so that differences measure distances (Ruler postulate).  
+\item[(A4)] The rays with a common endpoint can be numbered so that differences measure angles and so that straight angles measure $180^\circ$ (Protractor postulate). 
+\item[(A5)] Every basic rigid motion (rotation, reflection, or translation) has the following properties:
+\begin{enumerate}
+\item It maps a line to a line, a ray to a ray, and a segment to a segment.
+\item It preserves distance and angle measure.
+\end{enumerate}
+\item [(A6)] Areas of geometric figures have the following properties: 
+\begin{enumerate}
+\item Congruent figures enclose equal areas.
+\item Area is additive, i.e., the area of the union of two regions that overlap only at their boundaries is the sum of their areas. 
+%\item Area is measured by tiling a region with a two-dimensional unit (such as a square) and parts of the unit, without gaps or overlaps. 
+\item A rectangle with side-lengths $a$ and $b$ has area $ab$, where $a$ and $b$ can be any non-negative real numbers.
+\end{enumerate}
+\end{itemize}
+
+In the following problems, consider whether these assumptions hold in spherical or hyperbolic geometry. 
+
+
+
+\begin{problem}
+\textbf{(A1)} Through two distinct points passes a unique line.
+
+Does this assumption hold in spherical and hyperbolic geometry? 
+$\answer[format=string]{no}$
+
+\begin{problem}
+In hyperbolic geometry, this assumption holds. 
+
+In spherical geometry, if the points are on $\answer[format=string]{opposite}$ ends of a diameter, many lines pass through both.
+\begin{feedback}
+The North Pole and the South Poles are easy examples.  
+\end{feedback}
+\end{problem}
+\end{problem}
+
+\begin{problem}
+\textbf{(A2)} Given a line and a point not on the line, there is exactly one line passing through the point which is parallel to the given line (Parallel postulate).
+
+Does this assumption hold in spherical and hyperbolic geometry? 
+$\answer[format=string]{no}$
+\begin{problem}
+In $\answer[format=string]{spherical}$ geometry, there are no parallels. 
+
+In $\answer[format=string]{hyperbolic}$ geometry, there is more than one parallel through a point not on a line. 
+\end{problem}
+\end{problem}
+
+\begin{problem}
+\textbf{(A3)} The points on a line can be placed in one-to-one correspondence with the real numbers so that differences measure distances (Ruler postulate).  
+
+Does this assumption hold in spherical and hyperbolic geometry? 
+$\answer[format=string]{no}$
+
+\begin{problem}
+In hyperbolic geometry, this assumption holds. 
+
+In spherical geometry, lines are finite in length.  Attempting to place the real number line on a great circle on the sphere requires ``wrapping it around'' so that many real numbers land on any point on the great circle.  
+\end{problem}
+\end{problem}
+
+\begin{problem}
+\textbf{(A4)} The rays with a common endpoint can be numbered so that differences measure angles and so that straight angles measure $180^\circ$ (Protractor postulate). 
+
+Does this assumption hold in spherical and hyperbolic geometry? 
+$\answer[format=string]{yes}$
+\end{problem}
+
+\begin{problem}
+\textbf{(A5)} Every basic rigid motion (rotation, reflection, or translation) has the following properties:
+\begin{enumerate}
+\item It maps a line to a line, a ray to a ray, and a segment to a segment.
+\item It preserves distance and angle measure.
+\end{enumerate}
+
+Does this assumption hold in spherical and hyperbolic geometry? 
+$\answer[format=string]{yes}$
+\begin{feedback}
+But in spherical geometry rigid motions that feel like translations are actually rotations.  (Think about moving a spherical transparency.) 
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+\textbf{(A6)} Areas of geometric figures have the following properties: 
+\begin{enumerate}
+\item Congruent figures enclose equal areas.
+\item Area is additive, i.e., the area of the union of two regions that overlap only at their boundaries is the sum of their areas. 
+\item A rectangle with side-lengths $a$ and $b$ has area $ab$, where $a$ and $b$ can be any non-negative real numbers.
+\end{enumerate}
+
+Does this assumption hold in spherical and hyperbolic geometry? 
+$\answer[format=string]{no}$
+\begin{problem}
+Rectangles (i.e., quadrilaterals with four $\answer[format=string]{right}$ angles) do not exist is spherical geometry.  Neither do they exist in hyperbolic geometry.  
+
+In Euclidean geometry, area can be based on tiling with unit squares.  But in spherical and hyperbolic geometry, squares don't exist and regular quadrilaterals don't tile the plane.  
+\end{problem}
+\end{problem}
+
+% Betweenness
+% Angle sum in a triangle.
+% Angle sum in a quadrilateral. 
+
+\begin{problem}
+\begin{enumerate}
+\item In Euclidean geometry, the sum of the interior angles of a triangle is 
+\wordChoice{\choice{less than}\choice[correct]{equal to}\choice{greater than}} 
+$\answer{180}$ degrees.
+\item In spherical geometry, the sum of the interior angles of a triangle is 
+\wordChoice{\choice{less than}\choice{equal to}\choice[correct]{greater than}} 
+$\answer{180}$ degrees.
+\item In hyperbolic geometry, the sum of the interior angles of a triangle is 
+\wordChoice{\choice[correct]{less than}\choice{equal to}\choice{greater than}} 
+$\answer{180}$ degrees.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+\begin{enumerate}
+\item In Euclidean geometry, the sum of the interior angles of a quadrilateral is 
+\wordChoice{\choice{less than}\choice[correct]{equal to}\choice{greater than}} 
+$\answer{360}$ degrees.
+\item In spherical geometry, the sum of the interior angles of a quadrilateral is 
+\wordChoice{\choice{less than}\choice{equal to}\choice[correct]{greater than}} 
+$\answer{360}$ degrees.
+\item In hyperbolic geometry, the sum of the interior angles of a quadrilateral is 
+\wordChoice{\choice[correct]{less than}\choice{equal to}\choice{greater than}} 
+$\answer{360}$ degrees.
+\end{enumerate}
+\end{problem}
+
+\end{document}
