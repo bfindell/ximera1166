@@ -38,25 +38,19 @@ and $OQ=\answer[format=string]{rOP}$.  The image of $O$ is $\answer[format=strin
 
 
 \begin{question}
-Describe, both informally and formally, what it means to say two figures are congruent.
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-\textbf{Informally:}  Two figures are congruent if one can be ``placed upon'' the other so that the figures match exactly.  This is called the ``principle of superposition.''  
-
-\textbf{Formally:}  Two figures are congruent if there is a sequence of basic rigid motions that maps one onto the other.  
-\end{hint}
+%Describe, both informally and formally, what it means to say two figures are congruent.
+Informally, if one figure can be ``placed upon'' another so that the figures match exactly, the figures are said to be $\answer[format=string]{congruent}$.  This is called the ``principle of superposition.''  
+\begin{question}
+Formally, two figures are \textbf{congruent} if there is a sequence of basic $\answer[format=string]{rigid motions}$ (two words) that maps one onto the other.  
+\end{question}
 \end{question}
 
 \begin{question}
-Describe, both informally and formally, what it means to say two figures are similar.
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-\textbf{Informally:}  Two figures are similar if they have the same shape.  With moving and scaling (zooming in or out), one can be placed on another so that the figures match exactly.    
-
-\textbf{Formally:}  Two figures are similar if there is a sequence of basic rigid motions and dilations that maps one onto the other.  
-\end{hint}
+%Describe, both informally and formally, what it means to say two figures are similar.
+Informally, figures that have the same shape are said to be $\answer[format=string]{similar}$.  With moving and scaling (zooming in or out), one can be placed on another so that the figures match exactly.    
+\begin{question}
+Formally, two figures are \textbf{similar} if there is a sequence of basic rigid motions and $\answer[format=string]{dilations}$ that maps one onto the other.  
+\end{question}
 \end{question}
 
 
@@ -75,13 +69,10 @@ Congruence and similarity are defined above.  Two triangles that are congruent h
 \begin{question}
 A student says that any two rectangles are similar because all the angles are the same.  Is the student correct?  
 \wordChoice{\choice{Yes.}\choice[correct]{No.}\choice{Not enough information.}} Explain. 
-\begin{freeResponse}
-\end{freeResponse}
-\begin{feedback}
+\begin{question}
 Two rectangles are similar only if there is a single $\answer[format=string]{scale factor}$ (two words) that works for both the length and width.  Angles alone are not enough for quadrilaterals.  
-\end{feedback}
 \end{question}
-
+\end{question}
 
 \begin{question}
 Suppose $\triangle ABC \sim \triangle XYZ$.  Complete the following equation relating ratios \textbf{within} the figures: 
@@ -92,65 +83,71 @@ Complete the following equation relating ratios \textbf{between} (or across) the
 \[
 \frac{AB}{\answer{XY}} = \frac{\answer{BC}}{YZ}.  
 \]
-A ratio between (or across) corresponding lengths from two similar figures is called a $\answer[format=string]{scale}$ factor.  
+A ratio between (or across) corresponding lengths from two similar figures is 
+called a $\answer[format=string]{scale}$ factor.  
 \end{question}
 
 
 \begin{question}
 Are all equilateral triangles are similar to each other?  
 \wordChoice{\choice[correct]{Yes.}\choice{No.}\choice{It depends.}} Explain.  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{feedback}[correct]
+\begin{question}
 Equilateral triangles have interior angles that all measure $\answer{60}$ degrees.  So all equilateral triangles are similar to one another by AAA similarity.  
-\end{feedback}
+\end{question}
 \end{question}
 
 \begin{question}Are all isosceles right triangles similar to each other? 
 \wordChoice{\choice[correct]{Yes.}\choice{No.}\choice{It depends.}} Explain.  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{feedback}[correct]
-Isosceles right triangles have interior angles that measure $\answer{45}$, $\answer{45}$, and $90$ degrees.  So all equilateral triangles are similar to one another by AAA similarity.  
-\end{feedback}
+\begin{question}
+Isosceles right triangles have interior angles that measure $90$, $\answer{45}$, and $\answer{45}$ degrees.  So all equilateral triangles are similar to one another by AAA similarity.  
+\end{question}
 \end{question}
 
 \begin{question}
-Explain why when given a right triangle, the altitude of the
-  right angle divides the triangle into two smaller triangles each
+Explain why when given a right triangle, the 
+\wordChoice{\choice[correct]{altitude}\choice{median}\choice{perpendicular bisector}\choice{angle bisector}}
+from the right angle divides the triangle into two smaller triangles each
   similar to the original right triangle.
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-Each of the two smaller triangles has a has a right angle and shares an acute angle with the original triangle.  By AA similarity, each of the smaller triangles is similar to the large triangle, and thus the three triangles must be similar to one another.  
-\end{hint}
+\begin{question}
+Because that altitude \wordChoice{\choice{intersects}\choice{bisects}\choice[correct]{is perpendicular to}} the hypotenuse, each of the two smaller triangles has a 
+$\answer[format=string]{right}$ angle. Each of the smaller triangles also \textbf{shares} a(n) 
+\wordChoice{\choice{obtuse}\choice[correct]{acute}\choice{right}\choice{supplementary}}
+angle with the original triangle.  Thus, by \wordChoice{\choice{SAS}\choice{SAA}\choice{SSS}\choice[correct]{AA}}
+similarity, each of the smaller triangles is similar to the large triangle, and therefore the three triangles must be similar to one another.  
+\end{question}
 \end{question}
 
-\begin{question}
-The following sets contain lengths of sides of similar
-  triangles. Solve for all unknowns---give all solutions. In each case
-  explain your reasoning.
-\begin{enumerate}
-%\item $\{3,4,5\}$, $\{6,8,x\}$
-%\item $\{3,3,5\}$, $\{9,9,\x\}$
-\item $\{3,4,5\}$, $\{6,8,\answer{10}\}$
-\item $\{3,3,5\}$, $\{9,9,\answer{15}\}$
-%\item $\{5,5,x\}$, $\{10,4,y\}$
-%\item $\{5,5,x\}$, $\{10,8,y\}$
-%\item $\{3,4,x\}$, $\{4,5,y\}$ 
-\end{enumerate}
-\end{question}
+%\begin{question}
+%The following sets contain lengths of sides of similar
+%  triangles. Solve for all unknowns---give all solutions. In each case
+%  explain your reasoning.
+%\begin{enumerate}
+%%\item $\{3,4,5\}$, $\{6,8,x\}$
+%%\item $\{3,3,5\}$, $\{9,9,\x\}$
+%\item $\{3,4,5\}$, $\{6,8,\answer{10}\}$
+%\item $\{3,3,5\}$, $\{9,9,\answer{15}\}$
+%%\item $\{5,5,x\}$, $\{10,4,y\}$
+%%\item $\{5,5,x\}$, $\{10,8,y\}$
+%%\item $\{3,4,x\}$, $\{4,5,y\}$ 
+%\end{enumerate}
+%\end{question}
 
 \begin{question}
 A \textit{Pythagorean Triple}\index{Pythagorean Triple} is a set
   of three positive integers $\{a,b,c\}$ such that $a^2 + b^2 =
-  c^2$. Write down an infinite list of Pythagorean Triples. Explain
-  your reasoning and justify all claims.
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-Scale any Pythagorean triple by an integer scale factor greater than 1, and you have another Pythagorean triple.  For example, \{3, 4, 5\} is a Pythagorean triple, and so is \{$3n$, $4n$, $5n$\} if $n \ge 1$ is an integer.  
-\end{hint}
+  c^2$. Here are some useful ones (always listing the hypotenuse last): 
+\begin{enumerate}
+\item 3, 4, $\answer{5}$
+\item 5, $\answer{12}$, 13
+\item $\answer{8}$, 15, 17
+\item 7, 24, $\answer{25}$
+\end{enumerate}
+  Is it possible to describe an infinite list of Pythagorean Triples?  
+  $\answer[format=string]{yes}$. 
+  Explain. 
+\begin{question}
+Scale any Pythagorean triple by an integer scale factor greater than 1, and you have another Pythagorean triple.  For example, because \{3, 4, 5\} is a Pythagorean triple, so is \{$\answer{3n}$, $\answer{4n}$, $\answer{5n}$\}, where $n \ge 1$ is an $\answer[format=string]{integer}$.  
+\end{question}
 \end{question}
 
 \begin{question}
@@ -158,7 +155,8 @@ Here is a right triangle, \textbf{not} drawn to scale:
 \begin{image}
 \includegraphics{origamiSimQ.png}
 \end{image}
-Solve for all unknowns in the following cases.  Note:  To enter, say, $\sqrt{3}$, type \texttt{sqrt(3)} or use the Math Editor. 
+Solve \textbf{exactly} for all unknowns in each of the following cases.  Note:  To enter, 
+say, $\sqrt{3}$, type \texttt{sqrt(3)} or use the Math Editor. 
 \begin{enumerate}
 \item $a = 3$, $b = \answer{1}$, $c = \answer{\sqrt{10}}$, $d = 12$, $e = 5$, $f = \answer{4 \sqrt{10}}$
 \item $a = \answer{12/5}$, $b = 3$, $c = \answer{3\sqrt{41}/5}$, $d =8$, $e = 13$, $f = \answer{2\sqrt{41}}$
@@ -169,14 +167,18 @@ Solve for all unknowns in the following cases.  Note:  To enter, say, $\sqrt{3}$
 \end{question}
 
 \begin{question}
-Suppose you have two similar triangles. What can you say about
-  the area of one in terms of the area of the other? Be specific and
-  explain your reasoning.
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-If the triangles are similar with a scale factor of $r$, then the ratio of their areas is $\answer{r^2}$. 
-\end{hint}
+Suppose you have two similar triangles with scale factor $r$. Is it possible to state relationships between their perimeters?  Their areas?
+\begin{multipleChoice}
+\choice{Not without more information}
+\choice{Only between their perimeters}
+\choice{Only between their areas}
+\choice{Yes}
+\end{multipleChoice}
+\begin{question}
+When triangles are similar with a scale factor of $r$, 
+the ratio of their perimeters is $\answer{r}$, and  
+the ratio of their areas is $\answer{r^2}$. 
+\end{question}
 \end{question}
 
 \begin{question}
@@ -210,20 +212,20 @@ When jets fly above $8,000$ meters in the air they form a vapor
 Length of vapor trail $\approx \answer{(10/25)9}$ km. 
 \end{question}
 
-%\begin{question}
-%David proudly owns a 42 inch (measured diagonally) flat screen
-%  TV. Michael proudly owns a 13 inch (measured diagonally) flat screen
-%  TV. Dave sits comfortably with his dog Fritz at a distance of 10
-%  feet. How far must Michael stand from his TV to have the ``same''
-%  viewing experience?  Explain your reasoning.
-%%\begin{enumerate}
-%%\item Draw a relevant (and helpful) picture showing the important
-%%  points of this problem.
-%%\item Solve this problem, be sure to explain your reasoning.
-%%\end{enumerate}
-%
-%Standing distance $\approx \answer{(13/42)10}$ feet.  
-%\end{question}
+\begin{question}
+David proudly owns a 42 inch (measured diagonally) flat screen
+  TV. Michael proudly owns a 13 inch (measured diagonally) flat screen
+  TV. Dave sits comfortably with his dog Fritz at a distance of 10
+  feet. How far must Michael stand from his TV to have the ``same''
+  viewing experience?  Explain your reasoning.
+%\begin{enumerate}
+%\item Draw a relevant (and helpful) picture showing the important
+%  points of this problem.
+%\item Solve this problem, be sure to explain your reasoning.
+%\end{enumerate}
+
+Standing distance $\approx \answer[tolerance=0.02]{(13/42)10}$ feet.  
+\end{question}
 
 %\begin{question}
 %You love IMAX movies. While the typical IMAX screen is 72 feet
@@ -319,13 +321,18 @@ Length of vapor trail $\approx \answer{(10/25)9}$ km.
 
 \begin{question}
 Use the definition of similarity (in terms of transformations) to prove that all circles are similar.  
-\begin{freeResponse}
-\end{freeResponse}
-\begin{hint}
-Comment: We need to find a sequence of basic rigid motions and dilations that maps one circle onto the other.  There are many ways to go about this, but here is one straightforward way that always works: 
 
-Sketch of proof:  Translate one circle by the vector between the centers so that centers coincide.  Dilate about the (now common) center by the ratio of the radii.  Then the circles will coincide.  
-\end{hint}
+\textbf{Comment:} We need to describe a general sequence of 
+$\answer[format=string]{basic rigid motions}$ 
+(three words) and $\answer[format=string]{dilations}$ that maps one circle onto the other.  
+
+\begin{question}
+\textbf{Sketch of proof:}  Translate one circle by the 
+\wordChoice{\choice{line}\choice{angle}\choice[correct]{vector}\choice{ray}} 
+between the centers so that centers coincide.  Dilate about the (now common) center by the 
+\wordChoice{\choice{product}\choice[correct]{ratio}\choice{sum}\choice{difference}}  
+of the radii.  Then the circles will coincide.  
+\end{question}
 \end{question}
 
 
