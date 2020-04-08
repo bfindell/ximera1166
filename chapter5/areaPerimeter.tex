@@ -12,18 +12,137 @@ These problems review the Area and Perimeter activity.
 \end{abstract}
 \maketitle
 
-What can you say about their perimeters of rectangles of area 40?   
+%What can you say about their perimeters of rectangles of area 40?   
+%
+%All the perimeters are the same?  
+%
+%There is a maximum perimeter but no minimum perimeter.  
+%There is a minimum perimeter but no maximum perimeter. 
+%
+%The minimum perimeter occurs when the rectangle is a square.  
+%There is no maximum perimeter.  
+%
+%Among rectangles of perimeter 30, what can you say about their areas?  
 
-All the perimeters are the same. 
+\begin{problem}
+If the perimeter of a rectangle is 20 feet, what is the most one can say about the rectangle's area? 
 
-There is a maximum perimeter but no minimum perimeter.  
-There is a minimum perimeter but no maximum perimeter. 
+\textbf{Answer:}  For a fixed perimeter, the rectangle with maximum area is a $\answer[format=string]{square}$.  So for a perimeter of 20, the rectangle would measure $\answer{5}$ feet by $\answer{5}$ feet, for an area of $\answer{25}$ square feet.  
 
-The minimum perimeter occurs when the rectangle is a square.  
-There is no maximum perimeter.  
+\begin{problem}
+If the perimeter of any simple closed 2-dimensional shape is 20 feet, what is the most anyone can say about its area?
 
-Among rectangles of perimeter 30, what can you say about their areas?  
+Explore the following GeoGebra sketch:  
+\begin{center}  
+\geogebra{nywfmjur}{750}{330}  
+\end{center}
+For regular polygons with a fixed perimeter, increasing the number of sides
+$\answer{increases}$ the area.  But the area of the regular polygon cannot 
+exceed the area of a 
+\wordChoice{\choice{square}\choice{pentagon}\choice{20-gon}\choice[correct]{circle}}
+with the same ``perimeter.''
 
+\begin{problem}
+Answer: For a fixed perimeter, a circle is the figure with maximal area.  A circle of ``perimeter'' 20 will have a radius of $\answer[tolerance=0.01]{20/(2*pi)}$ and an area of 
+$\answer[tolerance=0.05]{pi*(20/(2*pi))^2}$.  
+\end{problem}
+\end{problem}
+\end{problem}
+
+\begin{problem}
+For rectangles of fixed area, we found that the rectangle of minimum perimeter was a 
+$\answer[format=string]{square}$.  More generally, if we allow curved figures, for a fixed area, the simple closed 2-dimensional shape of minimum perimeter is a $\answer[format=string]{circle}$.  
+\end{problem}
+
+\begin{problem}
+If the surface area of a rectangular prism is 20 square feet, what is the most one can say about the prism's volume?  
+
+\textbf{Answer:} Generalizing from two dimensions to three, of the rectangular prisms of surface area 20 square feet, the one with maximum volume will be a $\answer[format=string]{cube}$.
+
+\begin{problem}
+If the surface area of any simple closed 3-dimensional shape is 20 square feet, what is the most one can say about its volume? 
+
+\textbf{Answer:} Generalizing from two dimensions to three, of the solids of surface area 20 square feet, the one with maximum volume will be a $\answer[format=string]{sphere}$.
+\end{problem}
+\end{problem}
+
+\begin{problem}
+Why do cute furry animals curl up to stay warm in the winter?  Why are most ugly desert reptiles long and skinny?
+
+\begin{freeResponse}
+\end{freeResponse}
+\begin{hint}
+When an animal is resting, its volume can be considered fixed.  Heat transfer depends mostly on the area exposed to the sun or to the cold.  
+
+Cute furry animals want to minimize heat transfer in the winter so as to retain their body heat.  They accomplish this by minimizing their exposed surface area, which means approximating a sphere. 
+
+Desert reptiles, in contrast, want to maximize heat transfer from the sun, and being long and skinny gives them much greater surface area than if they were spherical.  
+\end{hint}
+\end{problem}
+
+\begin{problem}Simple closed curve A is contained entirely inside simple closed curve B.  
+\begin{enumerate}
+\item True or False:  The area enclosed by A is less than the area enclosed by B. 
+$\answer[format=string]{true}$
+\item True or False:  The perimeter of A is less than the perimeter of B.   
+$\answer[format=string]{false}$
+\end{enumerate}
+\begin{feedback}[correct]
+Covering curve B and its interior will also cover curve A, so the area of curve A cannot have greater area than curve B. 
+
+But suppose curve B is a circle, so that its perimeter is known and fixed.  Now imaging curve A wiggling many times inside curve B, making its perimeter as big as you like.  
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Is it correct to say that ``area is length times width''?  Think about what these three quantities mean.  When would it be correct in the numerical sense and why?  (Make sure you use the meaning of multiplication.)   
+\begin{freeResponse}
+\end{freeResponse}
+\begin{hint}
+Area is indeed two-dimensional, but that formula works only for rectangles.  Area is about ``covering.''
+\end{hint}
+\end{problem}
+
+%\begin{problem}
+%The apothem of a regular polygon is defined to be the shortest distance from the center of the polygon to an edge.
+%\begin{enumerate}
+%\item There is a nice relationship between the apothem, perimeter, and area for a regular polygon.  See if you can find it. (Hint:  Split the polygon into congruent triangles from its center and find the area of the polygon in terms of the apothem and perimeter.)  You can assume you know the area of a triangle $=\frac{1}{2}$(Length of Base)(Length of Height).
+%\item What does this result say about the area of a circle?  Explain. (Assume you know the circumference of a circle is $2\pi(radius)$.)
+%\end{enumerate}
+%\end{problem}
+
+\begin{problem}
+ Is it correct to say that ``volume is length times width times height''? What must be true about a figure so that the numerical volume can be more easily measured by ``area times height''?
+\begin{freeResponse}
+\end{freeResponse}
+\begin{hint}
+Volume is indeed three-dimensional, but that formula works only for certain kinds of prisms.  Volume is about ``filling.''  The formula ``area (of a base) times height'' can works when (1) all cross sections parallel to a base have the same area as the base, and (2) the height is measured perpendicular to the base.   
+\end{hint}
+\end{problem}
+
+\begin{problem}
+Are there figures for which there is no formula for measuring length, area, and volume?  Explain.  What does your answer to this question imply about the teaching of geometric measurement?
+\begin{freeResponse}
+\end{freeResponse}
+\begin{hint}
+Most real-world objects don't have volume formulas.  But we can usually approximate the volume a figure by imagining ``filling'' it with unit cubes.  
+\end{hint}
+\end{problem}
+
+%\begin{problem}
+%Convert 25 yards to meters (and 25 meters to yards) using ``2.54 cm in each inch'' as the only Metric-English unit conversion.  Now convert 25 square yards to square meters and 25 square meters to square yards.  Do the same with cubic yards and cubic meters.
+%\end{problem}
+%
+%\begin{problem}
+%In track and field, 1600 meters is often called the ``one mile,'' but this is not exactly correct.  Is 1600 meters longer or shorter than one mile?  By how much?  
+%\end{problem}
+%
+%\begin{problem}
+%Felicia and Wesley are neighbors.  The common boundary between their properties consists of two line segments, as shown below.  
+%$$\includegraphics[scale=0.38]{../graphics/TIMSS}$$
+%They would prefer their common boundary to be a single straight segment.  How might they change their boundary so that they 
+%each have the same area as they have now?  
+%\end{problem}
 
 
 \end{document}

@@ -1,0 +1,45 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+\pgfplotsset{compat=1.16}
+
+\title{Slope of a Line}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Slope of a line. 
+\end{abstract}
+\maketitle
+
+
+
+\begin{problem}
+Why is it reasonable to talk about \textbf{the} slope of a line? In other words, for a given line, 
+how do we know that for any two pairs of points, the slope will be always be the same?  
+
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [line width=1pt,domain=-2.0:11.0] plot(\x,{(--4.4776--1.52*\x)/2.7});
+\draw [->] (-2.,0.)-- (11.,0.);
+\draw [->] (0,-1)-- (0.,8.);
+\draw [fill=ududff] (0.82,2.12) circle (1.5pt);
+\draw[color=ududff] (0.68,2.73) node {$(x_1, y_1)$};
+\draw [fill=ududff] (3.52,3.64) circle (1.5pt);
+\draw[color=ududff] (3.34,4.17) node {$(x_2, y_2)$};
+\draw [fill=ududff] (6.543761061946903,5.342265486725664) circle (1.5pt);
+\draw[color=ududff] (6.26,5.83) node {$(x_3, y_3)$};
+\draw [fill=ududff] (8.515716814159294,6.45240353982301) circle (1.5pt);
+\draw[color=ududff] (8.34,7.01) node {$(x_4, y_4)$};
+\draw[color=black] (10.2,-0.3) node {$x$};
+\draw[color=black] (-0.3,7.2) node {$y$};
+\end{tikzpicture}
+\vfill
+\end{problem}
+
+
+
+\end{document}
+
+
