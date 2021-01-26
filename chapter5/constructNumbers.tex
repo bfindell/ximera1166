@@ -1,0 +1,78 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+%\pgfplotsset{compat=1.16}
+
+\title{Constructing Arithmetic Operations}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Constructing arithmetic operations.
+\end{abstract}
+\maketitle
+
+
+
+\begin{problem}
+Suppose you are given segments of lengths $1$, $a$, and $b$.  How would you construct the following: 
+
+\begin{enumerate}
+\item $a+b$
+\item $b-a$
+\item $a\cdot b$
+\item $\frac{b}{a}$
+\item $\sqrt{a}$
+\end{enumerate}  
+
+The triangles might give some hints. 
+
+%\usepackage{pgf,tikz,pgfplots}
+%\pgfplotsset{compat=1.15}
+%\usepackage{mathrsfs}
+%\usetikzlibrary{arrows}
+%\pagestyle{empty}
+
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1.52,-8.86) rectangle (13.12,0.72);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (6.9131578616310305,-1.4240877547057569) -- (7.031676362521683,-1.6000234388253591) -- (7.207612046641285,-1.4815049379347065) -- (7.089093545750632,-1.3055692538151042) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (7.089093545750633,-3.1878679656440347) -- (6.8769615113946685,-3.1878679656440347) -- (6.8769615113946685,-3.4) -- (7.089093545750633,-3.4) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (1.,0.);
+\draw [line width=0.8pt] (2.,0.)-- (3.6666666666666665,0.);
+\draw [line width=0.8pt] (4.5,0.)-- (6.,0.);
+\draw [line width=0.8pt] (0.4,-1.2)-- (1.04,-3.4);
+\draw [line width=0.8pt] (1.04,-3.4)-- (3.22,-3.4);
+\draw [line width=0.8pt] (2.235,-3.4) -- (2.13,-3.535);
+\draw [line width=0.8pt] (2.235,-3.4) -- (2.13,-3.265);
+\draw [line width=0.8pt] (3.22,-3.4)-- (0.4,-1.2);
+\draw [line width=0.8pt] (3.98,-3.4)-- (7.089093545750632,-1.3055692538151042);
+\draw [line width=0.8pt] (7.089093545750632,-1.3055692538151042)-- (8.5,-3.4);
+\draw [line width=0.8pt] (0.6903337453646479,-2.1980222496909767)-- (1.6792830655129793,-2.1980222496909767);
+\draw [line width=0.8pt] (1.2898084054388141,-2.198022249690977) -- (1.184808405438814,-2.3330222496909765);
+\draw [line width=0.8pt] (1.2898084054388141,-2.198022249690977) -- (1.184808405438814,-2.0630222496909774);
+\draw [line width=0.8pt] (7.089093545750632,-1.3055692538151042)-- (7.089093545750633,-3.4);
+\draw [line width=0.8pt] (3.98,-3.4)-- (8.5,-3.4);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.0pt);
+\draw [fill=qqqqff] (1.,0.) circle (1.0pt);
+\draw [fill=qqqqff] (2.,0.) circle (1.0pt);
+\draw [fill=qqqqff] (3.6666666666666665,0.) circle (1.0pt);
+\draw [fill=qqqqff] (4.5,0.) circle (1.0pt);
+\draw [fill=qqqqff] (6.,0.) circle (1.0pt);
+\draw[color=black] (0.54,-0.15) node {1};
+\draw[color=black] (2.88,-0.15) node {$a$};
+\draw[color=black] (5.3,-0.15) node {$b$};
+\draw [fill=qqqqff] (8.5,-3.4) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{problem}
+
+
+
+\end{document}
+
+
