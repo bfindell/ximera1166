@@ -1,4 +1,4 @@
-\documentclass[nooutcomes,space,handout]{ximera}
+\documentclass[nooutcomes,space]{ximera}
 %\documentclass[space,handout,nooutcomes]{ximera}
 
 \input{../preamble.tex}
@@ -218,11 +218,14 @@ The following argument abbreviates this approach:
 \end{image}
 
 We find $A$, the area of the solid triangle as follows: Compute the area ($A+C$) of the large right triangle (with base $\answer{b+x}$) and then 
-$\answer[format=string]{subtract}$ the area ($C$) of the small right triangle (with base $\answer{x}$): 
-\[
-\mathrm{Area} = A =  \answer{\frac{h(b+x)}{2}} - \answer{\frac{hx}{2}}= \frac{hb+hx}{2} - \frac{hx}{2}
-= \left(\frac{hb}{2} + \frac{hx}{2}\right) - \frac{hx}{2} = \answer{\frac{hb}{2}}
-\]
+\wordChoice{\choice{add}\choice[correct]{subtract}\choice{multiply}}
+the area ($C$) of the small right triangle (with base $\answer{x}$): 
+\begin{align*}
+\mathrm{Area} = A &=  \answer{\frac{h(b+x)}{2}} - \answer{\frac{hx}{2}} \\
+   &= \frac{hb+hx}{2} - \frac{hx}{2} \\
+   &= \left(\frac{hb}{2} + \frac{hx}{2}\right) - \frac{hx}{2} \\
+   &= \answer{\frac{hb}{2}}
+\end{align*}
 \end{problem}
 \end{problem}
 
