@@ -211,7 +211,7 @@ Prove that the base angles of an isosceles triangle are congruent.
 
 \item Note that we marked $\overline{CD}\cong \overline{CD}$ because the segment is congruent to itself.  
 
-\item Based on the marked figure, $\triangle ACD\cong \triangle\answer[format=string]{BCD}$ by \wordChoice{\choice{SAS}\choice[correct]{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
+\item Based on the marked figure, $\triangle ADC\cong \triangle\answer[format=string]{BDC}$ by \wordChoice{\choice{SAS}\choice[correct]{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
 
 \item Finally, because corresponding parts of congruent triangles are congruent, we have shown that $\angle A\cong \angle\answer[format=string]{B}$, as desired. 
 \end{enumerate}
@@ -299,7 +299,7 @@ Prove that the base angles of an isosceles triangle are congruent.
 \begin{enumerate}
 \item Beginning with the given figure on the left, draw $\overline{CD}$ and mark the figure so that this new segment is a(n) \wordChoice{\choice{median}\choice{angle bisector}\choice{perpendicular bisector}\choice[correct]{altitude}}.
 
-\item Based on the marked figure, $\triangle ACD\cong \triangle\answer[format=string]{BCD}$ by \wordChoice{\choice{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice[correct]{HL}}. 
+\item Based on the marked figure, $\triangle CDA\cong \triangle\answer[format=string]{CDB}$ by \wordChoice{\choice{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice[correct]{HL}}. 
 
 \item Finally, $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
 \end{enumerate}
@@ -511,7 +511,7 @@ Prove that the base angles of an isosceles triangle are congruent.
 \end{scriptsize}
 %\end{tikzpicture}
 
-\begin{scope}[shift={(4,0)}]
+\begin{scope}[shift={(3,0)}]
 % Isosceles triangle using symmetry 
 %\definecolor{qqqqff}{rgb}{0.,0.,1.}
 %\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
@@ -543,7 +543,43 @@ Prove that the base angles of an isosceles triangle are congruent.
 \draw[color=qqqqff] (1.14,2.45) node {$C$};
 %\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
 %\draw[color=qqqqff] (0.97,-0.2) node {$D$};
-\draw (1,-0.6) node[align=center] {Lissy's figure};
+\draw (1,-0.6) node[align=center] {Lissy's figure 1};
+\end{scriptsize}
+\end{scope}
+
+\begin{scope}[shift={(6,0)}]
+% Isosceles triangle using symmetry 
+%\definecolor{qqqqff}{rgb}{0.,0.,1.}
+%\definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
+%\begin{tikzpicture}[line width=0.8pt,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-0.4,-0.4) rectangle (2.4,2.6);
+\draw [shift={(1.,2.2)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.404) arc (-114.444:-65.556:0.404) -- cycle;  % Mark angle C
+%\draw [shift={(1.,2.2)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-114.444:0.55) arc (-114.444:-90.:0.55) -- cycle;  % Mark angle DCA
+%\draw [shift={(1.,2.2)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-90.:0.48) arc (-90.:-65.556:0.48) -- cycle;  % Mark angle DCB
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.,0.2) -- (0.8,0.2) -- (0.8,0.) -- (1.,0.) -- cycle; 
+%\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2,0.) -- (1.2,0.2) -- (1.,0.2) -- (1.,0.) -- cycle; 
+\draw (0.,0.)-- (1.,2.2)-- (2.,0.)-- cycle;
+\draw (0.4171,1.1376) -- (0.5828,1.0623);
+\draw (1.5828,1.1376) -- (1.4171,1.0623);
+%\draw (1.,2.2)-- (1.,0.); % segment CD
+%\draw (1.0910,1.1354) -- (0.9090,1.1354);  %  Mark on CD
+%\draw (1.0910,1.0646) -- (0.9090,1.0646);  %  Mark on CD
+%\draw (0.4292,0.0910) -- (0.4292,-0.0910); % Mark on AD
+%\draw (0.5,0.0910) -- (0.5,-0.0910);       % Mark on AD
+%\draw (0.5708,0.0910) -- (0.5708,-0.0910); % Mark on AD
+%\draw (1.4292,0.0910) -- (1.4292,-0.0910); % Mark on DB
+%\draw (1.5,0.0910) -- (1.5,-0.0910);       % Mark on DB
+%\draw (1.5708,0.0910) -- (1.5708,-0.0910); % Mark on DB
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.18,-0.13) node {$B$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2.18,-0.13) node {$A$};
+\draw [fill=qqqqff] (1.,2.2) circle (1.2pt);
+\draw[color=qqqqff] (1.14,2.45) node {$C$};
+%\draw [fill=qqqqff] (1.,0.) circle (1.2pt);
+%\draw[color=qqqqff] (0.97,-0.2) node {$D$};
+\draw (1,-0.6) node[align=center] {Lissy's figure 2};
 \end{scriptsize}
 \end{scope}
 \end{tikzpicture}
@@ -552,9 +588,9 @@ Prove that the base angles of an isosceles triangle are congruent.
 \begin{enumerate}
 \item Examining the given figure on the left, Lissy notices symmetry in the triangle and claims that the triangle is congruent to itself by a \wordChoice{\choice{translation}\choice[correct]{reflection}\choice{rotation}}.  
 
-\item Based on the marked figure, Lissy claims that the $\triangle ACB\cong \triangle\answer[format=string]{BCA}$ by \wordChoice{\choice[correct]{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
+\item Lissy draws and marks two figures illustrating the symmetry and claims that  $\triangle ACB\cong \triangle\answer[format=string]{BCA}$ by \wordChoice{\choice[correct]{SAS}\choice{SSS}\choice{SSA}\choice{ASA}\choice{HL}}. 
 
-\item Finally, Lissy concludes that $\angle A\cong \angle\answer[format=string]{B}$, as they are corresponding parts of congruent triangles. 
+\item Finally, Lissy concludes that $\angle B\cong \angle\answer[format=string]{A}$, as they are corresponding parts of congruent triangles. 
 \end{enumerate}
 
 \end{problem}
