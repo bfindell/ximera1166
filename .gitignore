@@ -1,4 +1,7 @@
 *~
+*.json
+*.svg
+*.png
 *.aux
 *.log
 *.out
