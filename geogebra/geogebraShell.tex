@@ -1,0 +1,54 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{GeoGebra Demo}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Testing ways to embed Euclid the Game. 
+\end{abstract}
+\maketitle
+
+
+\begin{problem}
+Complete the following GeoGebra activity.  
+
+\begin{center}
+\begin{javascript}
+<div class="center">
+<p><iframe scrolling="auto" src="geogebraDemo.html" width="720px" height="600px" border="1px"> </iframe></p></div>
+\end{javascript}
+\end{center}
+What is your answer? $\answer{3}$.  Hint: 3. 
+
+Number of moves: 
+\begin{javascript}
+document.write(localStorage.Level4)
+\end{javascript}
+
+
+\end{problem}
+
+% Sample javascript with validator
+%
+%\begin{javascript}
+%function isPrime(num) {
+%  for(var i = 2; i < num; i++)
+%    if(num % i === 0) return false;
+%  return num > 1;
+%}
+%
+%function isPrimeFactorization(x,y) {
+%  var terms = x.split('*').map( function(t) { return parseInt(t) } );
+%  return terms.every( isPrime ) &&
+%    (terms.reduce( function(a,c) { return a*c; }, 1 )) == parseInt(y);
+%}
+%\end{javascript}
+%
+%Then $\answer[format=string,validator=isPrimeFactorization]{33}$ would
+%accept 3*11 and 11*3.  This doesn't work with powers or signs.
+%
+
+\end{document}
