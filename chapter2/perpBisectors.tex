@@ -1,0 +1,110 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Perpendicular Bisectors}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Short-answer problems about perpendicular bisectors. 
+\end{abstract}
+\maketitle
+
+
+\begin{problem}
+In the problems below, we use the following previously proven theorem: 
+\begin{theorem}
+Points on the $\answer[format=string]{perpendicular bisector}$ of a segment are exactly those 
+that are equidistant from the endpoints of the segment.  
+\end{theorem}
+\begin{feedback}[correct]
+\textbf{Correct!}. The phrase \emph{exactly those} means the theorem is equivalent to the following pair of statements: 
+\begin{enumerate}
+\item If a point is on the perpendicular bisector of a segment, then it is equidistant from the endpoints of the segment. 
+\item If a point equidistant from the endpoints of the segment, then it is on the perpendicular bisector of that segment. 
+\end{enumerate}
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+\begin{theorem}
+The perpendicular bisectors of a triangle are concurrent.  
+\end{theorem}
+Proof: Given $\triangle ABC$, let line $k$ be the perpendicular bisector of segment $\answer{AB}$; 
+let line $j$ be the perpendicular bisector of segment $\answer{BC}$; 
+and let $\answer{X}$ be their intersection, as shown in the figure below.  
+
+
+\begin{image}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.7,-1.) rectangle (6.2,3.5);
+\draw [line width=0.8pt] (0.,1.)-- (4.,0.);
+\draw [line width=0.8pt] (4.,0.)-- (5.,2.);
+\draw [line width=0.8pt] (5.,2.)-- (0.,1.);
+\draw [line width=0.8pt,domain=-0.7:6.6] plot(\x,{(-7.5--4.*\x)/1.});
+\draw [line width=0.8pt,domain=-0.7:6.6] plot(\x,{(-6.5--1.*\x)/-2.});
+%\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.39,2.06)-- (0.,1.);
+%\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.39,2.06)-- (5.,2.);
+%\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.39,2.06)-- (4.,0.);
+%\draw [line width=0.8pt] (2.39,2.06) circle (2.612cm);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,1.) circle (1.5pt);
+\draw[color=qqqqff] (-0.2,0.85) node {$A$};
+\draw [fill=qqqqff] (4.,0.) circle (1.5pt);
+\draw[color=qqqqff] (4.2,-0.1) node {$B$};
+\draw [fill=qqqqff] (5.,2.) circle (1.5pt);
+\draw[color=qqqqff] (5.2,2.2) node {$C$};
+\draw[color=black] (2.40,2.82) node {$k$};
+\draw[color=black] (1.,2.5) node {$j$};
+\draw [fill=uuuuuu] (2.3889,2.0555) circle (1.5pt);
+\draw[color=uuuuuu] (2.6,2.26) node {$X$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+\begin{enumerate}
+\item First, $XA = XB$ because $X$ is on the perpendicular bisector of segment $\answer{AB}$, from Theorem 1, part \wordChoice{\choice[correct]{(a)}\choice{(b)}\choice{neither}}. 
+\item Similarly, $XB = XC$ because $X$ is on the perpendicular bisector of segment$\answer{BC}$. 
+\item Then, $XA = XC$ because they both equal $\answer{XB}$.  
+\item Thus, X must be on the perpendicular bisector (not shown) of segment $\answer{AC}$, from Theorem 1, part \wordChoice{\choice{(a)}\choice[correct]{(b)}\choice{neither}}.  
+\item Therefore $X$ is on all three perpendicular bisectors are concurrent, which is to say they are concurrent.  
+\end{enumerate}
+
+Note that $X$ is the center of the $\answer[format=string]{circumcircle}$ of $\triangle ABC$, as shown below, because it is equidistant from its three vertices.  
+
+\begin{image}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.7,-1.) rectangle (6.2,5.);
+\draw [line width=0.8pt] (0.,1.)-- (4.,0.);
+\draw [line width=0.8pt] (4.,0.)-- (5.,2.);
+\draw [line width=0.8pt] (5.,2.)-- (0.,1.);
+\draw [line width=0.8pt,domain=-0.7:6.6] plot(\x,{(-7.5--4.*\x)/1.});
+\draw [line width=0.8pt,domain=-0.7:6.6] plot(\x,{(-6.5--1.*\x)/-2.});
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.39,2.06)-- (0.,1.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.39,2.06)-- (5.,2.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.39,2.06)-- (4.,0.);
+\draw [line width=0.8pt] (2.39,2.06) circle (2.612cm);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,1.) circle (1.5pt);
+\draw[color=qqqqff] (-0.2,0.85) node {$A$};
+\draw [fill=qqqqff] (4.,0.) circle (1.5pt);
+\draw[color=qqqqff] (4.2,-0.1) node {$B$};
+\draw [fill=qqqqff] (5.,2.) circle (1.5pt);
+\draw[color=qqqqff] (5.2,2.2) node {$C$};
+\draw[color=black] (2.40,2.82) node {$k$};
+\draw[color=black] (1.,2.5) node {$j$};
+\draw [fill=uuuuuu] (2.3889,2.0555) circle (1.5pt);
+\draw[color=uuuuuu] (2.6,2.26) node {$X$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+\end{problem}
+
+
+\end{document}
