@@ -16,49 +16,120 @@ Short-answer questions about folding and tracing.
 %What are the rules for folding and tracing constructions?
 %\end{problem}
 
-\begin{problem}
-Use folding and tracing to bisect a given line segment. Explain the steps in
-  your construction.
-\begin{hint}
-Fold one endpoint of the segment onto the other.  The midpoint is where the fold intersects the segment.  (Note: The fold is the perpendicular bisector of the segment.)
-\end{hint}
-\end{problem}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
 
 \begin{problem}
-Given a line segment with a point on it, use folding and tracing to
-  construct a line perpendicular to the segment and passing through
-  the given point. Explain the steps in your construction.
-\begin{hint}
-Fold the line onto itself so that the fold goes through the given point.  (Note: You may need to extend the segment to see enough of the line.)
-\end{hint}
+Use folding and tracing to bisect a given line segment. 
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [line width=1pt] (1,0)-- (3,1);
+\begin{scriptsize}
+\draw [fill=xdxdff] (1,0) circle (1.5pt);
+\draw [fill=ududff] (3,1) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+Which of the following \textbf{best} describes how to \textbf{begin} the process?  
+\begin{multipleChoice}
+\choice{Fold the segment in half.} 
+\choice{Fold the segment onto itself.}
+\choice{Fold along the segment.}
+\choice[correct]{Fold one endpoint onto the other.}
+\choice{Fold the paper in half.}
+\end{multipleChoice}
+\begin{problem}
+Correct!  Fold one endpoint of the segment onto the other.  The fold intersects the segment at its $\answer[format=string]{midpoint}$.  
+Furthermore, the fold will be the $\answer[format=string]{perpendicular bisector}$ (two words) of the segment.  
+\end{problem}
 \end{problem}
 
-\begin{problem}
-Use folding and tracing to bisect a given angle. Explain the steps in your
-  construction.
-\begin{hint}
-Fold one side of the angle onto the other so that the fold goes through the vertex of the angle. 
-\end{hint}
-\end{problem}
 
 \begin{problem}
-Given a point and a line, use folding and tracing to construct a line
-  perpendicular to the given line and passing through the given
-  point. Explain the steps in your construction.
-\begin{hint}
-Fold the line onto itself so that the fold goes through the given point. 
-\end{hint}
+Given a line and a point \textbf{not on} the line, use folding and tracing to construct a line perpendicular to the segment and passing through the given point. 
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [line width=1pt] (1,0)-- (7,1);
+\begin{scriptsize}
+\draw [fill=xdxdff] (4,2) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+Which of the following \textbf{best} describes how to \textbf{begin} the process?  
+\begin{multipleChoice}
+\choice{Fold the line in half.} 
+\choice[correct]{Fold the line onto itself.}
+\choice{Fold along the line.}
+\choice{Fold one endpoint onto the other.}
+\choice{Fold the paper in half.}
+\end{multipleChoice}
+\begin{problem}
+Correct!  Fold the line onto itself so that the $\answer[format=string]{fold}$ goes through the given $\answer[format=string]{point}$.
+
+Will the process also work when the point is \textbf{on} the line?  (Yes or no.) $\answer[format=string]{yes}$
+\end{problem}
 \end{problem}
 
+
 \begin{problem}
-Given a point and line, use folding and tracing to construct a line parallel
-  to the given line and passing through the given point. Explain the
-  steps in your construction.
-\begin{hint}
-Construct a perpendicular to a perpendicular as follows:  (1) Fold the line onto itself so that the fold goes through the given point. 
-(2) Fold the new fold onto itself so that the second fold goes through the given point.
-\end{hint}
+Use folding and tracing to bisect a given angle.
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [line width=1pt] (1,0)-- (5,-1);
+\draw [line width=1pt] (1,0)-- (5,2);
+\begin{scriptsize}
+\draw [fill=xdxdff] (1,0) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+Which of the following \textbf{best} describes how to \textbf{begin} the process?  
+\begin{multipleChoice}
+\choice{Fold the angle in half.} 
+\choice{Fold the angle onto itself.}
+\choice{Fold along the angle.}
+\choice[correct]{Fold one ray onto the other.}
+\choice{Fold the paper in half.}
+\end{multipleChoice}
+\begin{problem}
+Correct!  Fold one side of the $\answer[format=string]{angle}$ onto the other so that the fold goes through the $\answer[format=string]{vertex}$ of the angle. 
 \end{problem}
+\end{problem}
+
+
+
+\begin{problem}
+Given a point and line, use folding and tracing to construct a line parallel to the given line and passing through the given point. 
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw [line width=1pt] (1,0)-- (7,1);
+\begin{scriptsize}
+\draw [fill=xdxdff] (4,2) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+% Construct a perpendicular to a perpendicular as follows:  
+% (1) Fold the line onto itself so that the fold goes through the given point. 
+% (2) Fold the new fold onto itself so that the second fold goes through the given point.
+Which of the following \textbf{best} describes how to \textbf{begin} the process?  
+\begin{multipleChoice}
+\choice{Fold the point onto the line.} 
+\choice{Fold the line onto the point.}
+\choice{Fold along the line.}
+\choice[correct]{Fold the line onto itself.}
+\choice{Fold the paper in half.}
+\end{multipleChoice}
+\begin{problem}
+Correct!  First, fold the line onto itself so that the $\answer[format=string]{fold}$ goes through the given $\answer[format=string]{point}$.
+
+This first fold is then $\answer[format=string]{perpendicular}$ to the line and through the given point.  
+
+Second, fold the first fold onto $\answer[format=string]{itself}$ so that the second fold goes through the given $\answer[format=string]{point}$.
+
+The second fold is $\answer[format=string]{parallel}$ to the original line because it is $\answer[format=string]{perpendicular}$ to a perpendicular!  
+\end{problem}
+\end{problem}
+
 
 %\begin{problem}
 %Given a circle (a center and a point on the circle) and line,
