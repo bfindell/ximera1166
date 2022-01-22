@@ -23,6 +23,7 @@ Short-answer questions about folding and tracing.
 Use folding and tracing to bisect a given line segment. 
 \begin{image}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-3,-1) rectangle (7,2);
 \draw [line width=1pt] (1,0)-- (3,1);
 \begin{scriptsize}
 \draw [fill=xdxdff] (1,0) circle (1.5pt);
@@ -49,6 +50,7 @@ Furthermore, the fold will be the $\answer[format=string]{perpendicular bisector
 Given a line and a point \textbf{not on} the line, use folding and tracing to construct a line perpendicular to the segment and passing through the given point. 
 \begin{image}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-1,-1) rectangle (9,3);
 \draw [line width=1pt] (1,0)-- (7,1);
 \begin{scriptsize}
 \draw [fill=xdxdff] (4,2) circle (1.5pt);
@@ -75,10 +77,11 @@ Will the process also work when the point is \textbf{on} the line?  (Yes or no.)
 Use folding and tracing to bisect a given angle.
 \begin{image}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
-\draw [line width=1pt] (1,0)-- (5,-1);
-\draw [line width=1pt] (1,0)-- (5,2);
+\clip(-1,-2) rectangle (9,3);
+\draw [line width=1pt] (1,-0.5)-- (5,-1);
+\draw [line width=1pt] (1,-0.5)-- (5,2);
 \begin{scriptsize}
-\draw [fill=xdxdff] (1,0) circle (1.5pt);
+\draw [fill=xdxdff] (1,-0.5) circle (1.5pt);
 \end{scriptsize}
 \end{tikzpicture}
 \end{image}
@@ -102,6 +105,7 @@ Correct!  Fold one side of the $\answer[format=string]{angle}$ onto the other so
 Given a point and line, use folding and tracing to construct a line parallel to the given line and passing through the given point. 
 \begin{image}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-1,-1) rectangle (9,3);
 \draw [line width=1pt] (1,0)-- (7,1);
 \begin{scriptsize}
 \draw [fill=xdxdff] (4,2) circle (1.5pt);
