@@ -1,0 +1,100 @@
+%\documentclass[handout]{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+
+\input{../preamble}
+
+\title{Pythagorean Theorem Converse}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+  We reason about the converse of the Pythagorean Theorem.
+\end{abstract}
+\maketitle
+
+
+\begin{problem}
+
+Suppose a triangle has side lengths $a$, $b$, and $c$.  
+
+Pythagorean Theorem: If the triangle is a $\answer[format=string]{right}$ triangle with hypotenuse $c$, then $a^2+b^2=\answer{c^2}$.  
+
+The converse of a true theorem is \wordChoice{\choice{always true}\choice[correct]{sometimes true}\choice{never true}}.  
+
+Converse of the Pythagorean Theorem:  If $a^2+b^2=c^2$, then the triangle is a right triangle with hypotenuse $c$.  
+
+\end{problem}
+
+\begin{problem}
+Proof.   We have $\triangle ABC$ with side lengths $a$, $b$, and $c$, as shown.  
+
+\begin{center}
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+%\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3,0.28284271247461906) -- (2.717157287525381,0.28284271247461906) -- (2.717157287525381,0) -- (3,0) -- cycle; 
+\draw [line width=1.2pt] (0,0)-- (3,2);
+\draw [line width=1.2pt] (3,2)-- (3,0);
+\draw [line width=1.2pt] (3,0)-- (0,0);
+\begin{scriptsize}
+\draw [fill=uuuuuu] (0,0) circle (1pt);
+\draw[color=uuuuuu] (-0.29,0.12) node {$A$};
+\draw [fill=ududff] (3,2) circle (1.5pt);
+\draw[color=ududff] (3.15,2.3) node {$B$};
+\draw[color=black] (1.39,1.29) node {$c$};
+\draw [fill=xdxdff] (3,0) circle (1.5pt);
+\draw[color=xdxdff] (3.2,-0.03) node {$C$};
+\draw[color=black] (3.27,1.05) node {$a$};
+\draw[color=black] (1.63,-0.20) node {$b$};
+\draw [fill=white] (6,0) circle (0.5pt);
+\draw [fill=white] (-3,0) circle (0.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+\end{center}
+
+Suppose $a^2+b^2=c^2$.  We want to show that the triangle is a right triangle with hypotenuse $c$.  Until we should that $\angle C$ is a right angle, we must consider the possibility that it is not.  
+
+Construct another triangle: $\triangle XYZ$ with right angle $Z$ and legs of length $a$ and $b$, as shown.  Opposite the $\angle Z$ is a hypotenuse whose length is not yet known, so let's call it $d$.  
+
+\begin{center}
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\draw[line width=1.2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3,0.28284271247461906) -- (2.717157287525381,0.28284271247461906) -- (2.717157287525381,0) -- (3,0) -- cycle; 
+\draw [line width=1.2pt] (0,0)-- (3,2);
+\draw [line width=1.2pt] (3,2)-- (3,0);
+\draw [line width=1.2pt] (3,0)-- (0,0);
+\begin{scriptsize}
+\draw [fill=uuuuuu] (0,0) circle (1pt);
+\draw[color=uuuuuu] (-0.29,0.12) node {$X$};
+\draw [fill=ududff] (3,2) circle (1.5pt);
+\draw[color=ududff] (3.15,2.3) node {$Y$};
+\draw[color=black] (1.39,1.29) node {$d$};
+\draw [fill=xdxdff] (3,0) circle (1.5pt);
+\draw[color=xdxdff] (3.2,-0.03) node {$Z$};
+\draw[color=black] (3.27,1.05) node {$a$};
+\draw[color=black] (1.63,-0.20) node {$b$};
+\draw [fill=white] (6,0) circle (0.5pt);
+\draw [fill=white] (-3,0) circle (0.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+\end{center}
+
+From (the forward version of) the Pythagorean Theorem, it must follows that $a^2+b^2=d^2$, where $d$ is the hypotenuse of the triangle known to be right.  From the two equations, it must follow that $d^2=c^2$.  Algebraically, we can conclude that $d=\pm c$, which implies that $d=c$ because the side lengths must be positive.   
+
+Now we can conclude that $\triangle ABC \cong \triangle XYZ$ by SSS.  And from the congruent triangles, we know that $\angle C\cong\angle Z$, which means that the $\triangle ABC$ is a right triangle.  
+
+\end{problem}
+
+
+\end{document}

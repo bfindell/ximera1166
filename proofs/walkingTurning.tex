@@ -16,20 +16,14 @@
 
 
 \begin{problem}
-Consider an arbitrary triangle $ABC$. shown below.  Let $a$, $b$, and $c$, respectively, be the measures of the interior angles of the triangle.  
+Consider $\triangle ABC$. shown below.  Let $a$, $b$, and $c$, respectively, be the measures of the interior angles of the triangle.  
+
+We want to prove (generally) that $\answer{a+b+c}=\answer{180}$ degrees. 
 
 \begin{center}  
 \geogebra{gfx5sugj}{800}{660}  
 \end{center}
 
-Beginning at point labeled Start, on a side of the triangle, imagine\footnote{You will find it helpful to actually walk around a triangle outlined on the floor with masking tape, for example.} walking around the triangle starting in the direction indicated by the arrow.  At each vertex, turn counterclockwise (viewed from above).  Your journey ends when you return to the starting point.  
-\begin{enumerate}
-\item What do you want to prove about $a$, $b$, and $c$?  
-\item Use the angle sticks to measure each of the interior angles: $a=\answer[tolerance=1.2]{20.2}$, $b=\answer[tolerance=1.2]{41.7}$, and $c=\answer[tolerance=1.2]{118.1}$.
-\item Extend the sides of the triangle.  At each vertex measure the angle through which the walker turns at that vertex:  
-At $A$, turn $a=\answer[tolerance=1.2]{180-20.2}$; at $B$, turn $\answer[tolerance=1.2]{180-41.7}$; and at $C$, turn $\answer[tolerance=1.2]{180-118.1}$.
-\item How much does the walker turn during the whole journey?  $\answer{360}$ degrees.
-\item Based upon your ``walking and turning'' journey, write a proof of your claim.  
 %\begin{image}
 %\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 %\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
@@ -52,7 +46,43 @@ At $A$, turn $a=\answer[tolerance=1.2]{180-20.2}$; at $B$, turn $\answer[toleran
 %\end{tikzpicture}
 %\end{image}
 %\vfill
+
+
+Beginning at point labeled Start, on a side of the triangle, imagine walking around the triangle starting in the direction indicated by the arrow.  At each vertex, turn counterclockwise (viewed from above).  Your journey ends when you return to the starting point.  
+
+%\footnote{You will find it helpful to actually walk around a triangle outlined on the floor with masking tape, for example.}
+
+Before reasoning about the general case, make some measurements on this specific triangle.  
+\begin{enumerate}
+\item Use the angle sticks to measure each of the interior angles: $a=\answer[tolerance=0.6]{20.2}$, $b=\answer[tolerance=0.6]{41.7}$, and $c=\answer[tolerance=0.6]{118.1}$.
+\item Extend the sides of the triangle.  At each vertex measure the angle through which the walker turns at that vertex:  
+\begin{itemize}
+\item At $A$, turn $\answer[tolerance=0.6]{180-20.2}$ degrees;  
+\item at $B$, turn $\answer[tolerance=0.6]{180-41.7}$ degrees; and 
+\item at $C$, turn $\answer[tolerance=0.6]{180-118.1}$ degrees.
+\end{itemize}
+\item How much does the walker turn during the whole journey?  $\answer[tolerance=1.8]{360}$ degrees.
 \end{enumerate}
+
+\begin{problem}
+To reason about the general case, think of the angle measures $a$, $b$, and $c$ as variables.  
+
+% We want to prove (in general) that $\answer{a+b+c}=\answer{180}$ degrees. 
+
+Now recreate the reasoning from above:  
+\[
+\left(\text{Turning at A}\right) + \left(\text{Turning at B}\right) + \left(\text{Turning at C}\right) = \left(\text{Total amount of turning}\right).
+\]
+Algebraically, we can build this equation with expressions in $a$, $b$, and $c$:  
+\[
+\left(\answer{180-a}\right) + \left(\answer{180-b}\right) + \left(\answer{180-c}\right)  = \answer{360} \text{ degrees.}
+\]
+After some algebra, we get the desired result about the interior angles:  
+\[
+\answer{a+b+c}=\answer{180} \text{ degrees}. 
+\]
+
+\end{problem}
 \end{problem}
 
 %\newpage
