@@ -12,75 +12,197 @@ These problems provide practice writing and solving equations of lines.
 \end{abstract}
 \maketitle
 
+
+\begin{problem}
+Equations of lines are usually written in one of the following three forms.  (Use hyphens for two-word forms.) 
+\begin{itemize}
+\item $ax+by=c$ is called $\answer[format=string]{standard}$ form. 
+\item $y-y_1=m(x-x_1)$ is called $\answer[format=string]{point-slope}$ form.  
+\item $y=mx+b$ is called $\answer[format=string]{slope-intercept}$ form. 
+\end{itemize}
+\begin{problem}
+Correct!  And each of the forms has advantages and disadvantages.  Here are some advantages:  
+\begin{itemize}
+\item In $\answer[format=string]{slope-intercept}$ form, the equation is unique.  
+\item Any line in the plane can be represented in $\answer[format=string]{standard}$ form. 
+\item In $\answer[format=string]{point-slope}$ form, an equation can often be written quickly.  
+\item In $\answer[format=string]{standard}$ form, it is easy to compute both the $x$- and $y$-intercepts.  
+\end{itemize}
+\end{problem}
+\end{problem}
+
+% In point-slope form, it is easy to see the slope. 
+% In slope-intercept form, it is easy to see the slope and the $y$-intercept.  
+
 \begin{problem}
 Write an equation of the line through $(2,3)$ and $(5,1)$.  
 
 \begin{prompt}
 $y = \answer{3+(1-3)/(5-2)(x-2)}$
-
-Enter integer: $\answer[format=integer]{2}$
-
-Enter number: $\answer[format=number]{3}$
-
-Enter real: $\answer[format=real]{4}$
-
-Enter rational: $\answer[format=rational]{5}$
-
-Enter complex: $\answer[format=complex]{6}$
-
-Enter string: $\answer[format=string]{7}$
 \end{prompt}
 \end{problem}
 
 
 \begin{problem}
-Write an equation of the line through $(2,4)$ parallel to $5x-3y=1$.  
+Write an equation (in standard form) of the line through $(2,4)$ parallel to $5x-3y=1$.  
 
-  \begin{prompt}
-    \begin{validator}[(-3*ua==5*ub) && (-3*uc==(5*2-3*4)*ub) && (ub != 0)]
-      \(
-         \answer[format=expression,id=ua]{5}x + \answer[format=number,id=ub]{-3}y = 
-         \answer[format=real,id=uc]{5\cdot2-3\cdot4}
-      \)
-    \end{validator}
-  \end{prompt}
+My equation begins: 
+\begin{multipleChoice}
+\choice{$y=$}
+\choice{$5x+3y=$}
+\choice{$3x+5y=$}
+\choice{$3x-5y=$}
+\choice[correct]{$5x-3y=$}
+\end{multipleChoice}
+\begin{problem}
+That can work!  Your equation is
+\[
+5x-3y=\answer{5\cdot2-3\cdot4}
+\]
+\end{problem}
 \end{problem}
 
-%\item[(a)] Find a vector $u$ normal to the plane $2x+2y+z=3$.
-%  \begin{prompt}
-%    \begin{validator}[(ux==uy) && (uy==2*uz) && (uy != 0)]
-%      \(
-%        u = \left( \answer[format=integer,id=ux]{2}, \answer[format=integer,id=uy]{2}, \answer[format=integer,id=uz]{1} \right)
-%      \)
-%    \end{validator}
-%  \end{prompt}
+\begin{problem}
+Write an equation (in standard form) of the line through $(p,q)$ parallel to $5x-3y=1$.  
+
+My equation begins: 
+\begin{multipleChoice}
+\choice{$y=$}
+\choice{$5x+3y=$}
+\choice{$3x+5y=$}
+\choice{$3x-5y=$}
+\choice[correct]{$5x-3y=$}
+\end{multipleChoice}
+\begin{problem}
+That can work!  Your equation is
+\[
+5x-3y=\answer{5p-3q}
+\]
+\end{problem}
+\end{problem}
 
 
 \begin{problem}
-Now write an equation of the line through $(p,q)$ parallel to $ax+by=c$. 
+Now write an equation (in standard form) of the line through $(p,q)$ parallel to $ax+by=c$. 
 
 \begin{prompt}
-$y = \answer{3+(1-3)/(5-2)(x-2)}$
+\[
+\answer{ax+by} = \answer{ap+pq}
+\]
 \end{prompt}
 \end{problem}
 
+
 \begin{problem}
-Write an equation of the line through $(2,4)$ perpendicular to $5x-3y=1$.  
-Now write an equation of the line through $(p,q)$ perpendicular to $ax+by=c$. 
+Write an equation (in standard form) of the line through $(2,4)$ perpendicular to $5x-3y=1$.  
+
+My equation begins: 
+\begin{multipleChoice}
+\choice{$y=$}
+\choice{$5x+3y=$}
+\choice[correct]{$3x+5y=$}
+\choice{$3x-5y=$}
+\choice{$5x-3y=$}
+\end{multipleChoice}
+\begin{problem}
+That can work!  Your equation is
+\[
+3x+5y=\answer{3\cdot2+5\cdot4}
+\]
+\end{problem}
+\end{problem}
+
+\begin{problem}
+Write an equation (in standard form) of the line through $(p,q)$ perpendicular to $5x-3y=1$.  
+
+My equation begins: 
+\begin{multipleChoice}
+\choice{$y=$}
+\choice{$5x+3y=$}
+\choice[correct]{$3x+5y=$}
+\choice{$3x-5y=$}
+\choice{$5x-3y=$}
+\end{multipleChoice}
+\begin{problem}
+That can work!  Your equation is
+\[
+3x+5y=\answer{3p+5q}
+\]
+\end{problem}
 \end{problem}
 
 
-%\begin{problem}
-%Write an equation of the line through (1,2) and parallel to $2x-3y=1$.  
-%
-%\begin{hint} Hint. \end{hint}
-%\end{problem}
-%
-%Write an equation of the line through (1,2) and perpendicular to $2x-3y=1$.  
-%
-%
-With two equations in two unknowns, two common solutions methods are substitution and elimination.  
+\begin{problem}
+Now write an equation (in standard form) of the line through $(p,q)$ perpendicular to $ax+by=c$. 
 
+My equation begins: 
+\begin{multipleChoice}
+\choice{$y=$}
+\choice{$ax+by=$}
+\choice{$ax-by=$}
+\choice[correct]{$bx-ay=$}
+\choice{$bx+ay=$}
+\end{multipleChoice}
+\begin{problem}
+That can work! Your equation is
+\begin{prompt}
+\[
+bx-ay = \answer{bp-aq}
+\]
+\end{prompt}
+\end{problem}
+\end{problem}
+
+\begin{problem}
+With two equations in two unknowns, two common solutions methods are called (in alphabetical order)   $\answer[format=string]{elimination}$ and $\answer[format=string]{substitution}$. 
+\end{problem}
+
+\begin{problem}
+The simultaneous equations  $2x-3y=5$ and $x+4y=19$ have
+\begin{multipleChoice}
+\choice{no solution}
+\choice[correct]{a unique solution}
+\choice{more than one solution}
+\end{multipleChoice}
+\begin{problem}
+%Correct, because the equations are $\answer[format=string]{equivalent}$.
+%Correct, because the lines are $\answer[format=string]{parallel}$.
+Correct!  And the solution is $x=\answer{7}$, $y = \answer{3}$. 
+\end{problem}
+\end{problem}
+
+\begin{problem}
+The simultaneous equations  $2x-3y=5$ and $-4x+6y=7$ have
+\begin{multipleChoice}
+\choice[correct]{no solution}
+\choice{a unique solution}
+\choice{more than one solution}
+\end{multipleChoice}
+\begin{problem}
+%Correct, because the equations are $\answer[format=string]{equivalent}$.
+Correct, because the lines are $\answer[format=string]{parallel}$.
+%Correct!  And the solution is $x=\answer{7}
+\end{problem}
+\end{problem}
+
+\begin{problem}
+The simultaneous equations  $2x-3y=5$ and $-4x+6y=-10$ have
+\begin{multipleChoice}
+\choice{no solution}
+\choice{a unique solution}
+\choice[correct]{more than one solution}
+\end{multipleChoice}
+\begin{problem}
+Correct, because the equations are $\answer[format=string]{equivalent}$.
+%Correct, because the lines are $\answer[format=string]{parallel}$.
+%Correct!  And the solution is $x=\answer{7}
+\end{problem}
+\end{problem}
+
+  
+%\item Find the intersection of the lines $2x-3y=4$ and $3x-5y=3$.  
+%\item Find the intersection of the lines $2x-3y=4$ and $-4x+6y=-8$.
+%\item Find the intersection of the lines $2x-3y=4$ and $-4x+6y=5$.
 
 
 \end{document}
