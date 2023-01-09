@@ -3,7 +3,7 @@
 
 \input{../preamble}
 
-\title{Pythagorean Theorem Converse}
+\title{Converse of the Pythagorean Theorem}
 \author{Bart Snapp and Brad Findell}
 
 \outcome{Learning outcome goes here.}
@@ -18,17 +18,20 @@
 \begin{problem}
 
 Suppose a triangle has side lengths $a$, $b$, and $c$.  
+\begin{enumerate}
+\item Pythagorean Theorem: If the triangle is a $\answer[format=string]{right}$ triangle with hypotenuse $c$, then $a^2+b^2=\answer{c^2}$.  
 
-Pythagorean Theorem: If the triangle is a $\answer[format=string]{right}$ triangle with hypotenuse $c$, then $a^2+b^2=\answer{c^2}$.  
+\item Converse of the Pythagorean Theorem:  If $a^2+b^2=c^2$, then the triangle is a $\answer[format=string]{right}$ triangle with hypotenuse $\answer{c}$.  
 
-The converse of a true theorem is \wordChoice{\choice{always true}\choice[correct]{sometimes true}\choice{never true}}.  
+\item The converse of a true theorem is \wordChoice{\choice{always true}\choice[correct]{sometimes true}\choice{never true}}.  
 
-Converse of the Pythagorean Theorem:  If $a^2+b^2=c^2$, then the triangle is a right triangle with hypotenuse $c$.  
-
+\item Is the converse of the Pythagorean Theorem true?  $\answer[format=string]{Yes}$
+\end{enumerate}
 \end{problem}
 
 \begin{problem}
-Proof.   We have $\triangle ABC$ with side lengths $a$, $b$, and $c$, as shown.  
+\begin{proof}[Proof.] 
+We have $\triangle ABC$ with side lengths $a$, $b$, and $c$, as shown.  
 
 \begin{center}
 \begin{image}
@@ -58,9 +61,16 @@ Proof.   We have $\triangle ABC$ with side lengths $a$, $b$, and $c$, as shown.
 \end{image}
 \end{center}
 
-Suppose $a^2+b^2=c^2$.  We want to show that the triangle is a right triangle with hypotenuse $c$.  Until we should that $\angle C$ is a right angle, we must consider the possibility that it is not.  
+Suppose $a^2+b^2=c^2$.  We want to show that the triangle must be a right triangle with hypotenuse $c$.  Until we show that $\angle C$ is a right angle, we must consider the possibility that it is not.  
 
-Construct another triangle: $\triangle XYZ$ with right angle $Z$ and legs of length $a$ and $b$, as shown.  Opposite the $\angle Z$ is a hypotenuse whose length is not yet known, so let's call it $d$.  
+% Construct another triangle, known to be right, and show that it is congruent to the given triangle. 
+% It is always true that $a^2+b^2 = c^2$. 
+% Make a different side the hypotenuse. 
+% Use different letters. 
+% Try it for an acute or obtuse triangle. 
+% Use the quadratic formula. 
+
+Construct another triangle: $\triangle XYZ$ with right angle $\answer{Z}$ and legs of length $a$ and $\answer{b}$, as shown.  Opposite $\angle Z$ is a hypotenuse whose length is \wordChoice{\choice{equal to $c$}\choice{obvious}\choice[correct]{not yet known}}, so let's call it $\answer{d}$.  
 
 \begin{center}
 \begin{image}
@@ -90,10 +100,13 @@ Construct another triangle: $\triangle XYZ$ with right angle $Z$ and legs of len
 \end{image}
 \end{center}
 
-From (the forward version of) the Pythagorean Theorem, it must follows that $a^2+b^2=d^2$, where $d$ is the hypotenuse of the triangle known to be right.  From the two equations, it must follow that $d^2=c^2$.  Algebraically, we can conclude that $d=\pm c$, which implies that $d=c$ because the side lengths must be positive.   
+From (the forward version of) the Pythagorean Theorem, it follows that $a^2+b^2=\answer{d^2}$, where $d$ is the hypotenuse of $\triangle \answer{XYZ}$, known to be 
+\wordChoice{\choice{acute}\choice[correct]{right}\choice{obtuse}}.  From the two equations, it follows that $d^2=\answer{c^2}$.  
 
-Now we can conclude that $\triangle ABC \cong \triangle XYZ$ by SSS.  And from the congruent triangles, we know that $\angle C\cong\angle Z$, which means that the $\triangle ABC$ is a right triangle.  
+Algebraically, we see that $d=\pm c$, from which can conclude that $d=\answer{c}$ because the side lengths must be \wordChoice{\choice[correct]{positive}\choice{zero}\choice{negative}\choice{non-zero}}.   
 
+Now we conclude that $\triangle ABC \cong \triangle XYZ$ by $\answer[format=string]{SSS}$.  And from the congruent triangles, we see that $\angle C\cong\angle \answer{Z}$, which implies that $\triangle ABC$ is a $\answer[format=string]{right}$ triangle.  
+\end{proof}
 \end{problem}
 
 

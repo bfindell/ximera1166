@@ -1,0 +1,85 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+%\usepackage{tikz}
+
+
+\title{Betweenness}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Short-answer problems about betweenness. 
+\end{abstract}
+\maketitle
+
+
+\begin{question}
+Can the two distinct lines have more than one point in common?  Use the above axioms to explain your reasoning.  
+\end{question}
+%\QM
+
+%Lemma 2. If three lines L1, L2, and L3 have the property that L1 || L2 and L2 || L3,
+%then L1 || L3.
+
+The ruler postulate supports a definition of betweenness, which will allow us to to define line segment and ray.    
+
+\begin{definition}
+If points $A$, $X$, and $B$ are on a line $\l$, we say that $X$ is \emph{between} $A$ and $B$ if $AX + XB = AB$.
+\end{definition}
+
+\begin{question}
+In the figure below, $C$, $M$, and $Y$ are on $\overleftrightarrow{AB}$, but $X$ is not.  Suppose $AB=5$ cm, $AC=4$ cm, $AY=1$ cm, and $M$ is the midpoint of $AB$.  Use the definition 
+
+Then $AM=\answer{5/2}$ cm, $BM=\answer{5/2}$ cm, $BC=\answer{1}$ cm, and $AA=\answer{0}$ cm.  
+\end{question}
+
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\clip(-1.44,-3.9) rectangle (13.2,5.56);
+\draw [line width=0.8pt] (1.,1.)-- (6.,1.);
+\begin{scriptsize}
+\draw [fill=qqqqff] (1.,1.) circle (1.5pt);
+\draw[color=qqqqff] (1.14,1.29) node {$A$};
+\draw [fill=qqqqff] (6.,1.) circle (1.5pt);
+\draw[color=qqqqff] (6.14,1.29) node {$B$};
+\draw [fill=uuuuuu] (3.5,1.) circle (1.5pt);
+\draw[color=uuuuuu] (3.64,1.29) node {$M$};
+\draw [fill=xdxdff] (5.,1.) circle (1.5pt);
+\draw[color=xdxdff] (5.14,1.29) node {$C$};
+\draw [fill=qqqqff] (3.5,2.) circle (1.5pt);
+\draw[color=qqqqff] (3.64,2.29) node {$X$};
+\draw [fill=qqqqff] (0.,1.) circle (1.5pt);
+\draw[color=qqqqff] (0.14,1.29) node {$Y$};
+\draw [fill=white] (-1.,1) circle (0.5pt);
+\draw [fill=white] (7.,1) circle (0.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+
+
+$M$ is between $A$ and $B$ because 
+
+We can manipulate lengths as quantities.  
+
+
+\begin{question}
+Use the concept of betweenness to define line segment $\overline{AB}$.  Now use the concept of betweenness to 
+define ray $\overrightarrow{AB}$. 
+
+\begin{solution}
+Solution here. 
+\end{solution}
+\end{question}
+%\QM
+
+\begin{question}
+Use the protractor postulate to provide a definition of adjacent angles, analogous to betweenness for distances.  
+\end{question}
+%\QM
+
+
+
+\end{document}
