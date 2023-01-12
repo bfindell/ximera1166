@@ -14,12 +14,16 @@ Testing ways to embed Euclid the Game.
 \begin{problem}
 Complete the following GeoGebra activity.  
 
-\begin{javascript}
+\Hcode{
 <div>
 <iframe scrolling="auto" src="geogebraDemo.html" width="720px" height="600px" border="1px"> </iframe>
 </div>
-\end{javascript}
+}
 What is your answer? $\answer{3}$.  Hint: 3. 
+
+
+<p class="noindent"><iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/mjscvuw3/width/600/height/320/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto" width="600px" height="320px" style="border:0px;">
+
 
 Number of moves: 
 \begin{javascript}
@@ -33,20 +37,20 @@ document.write(localStorage.Level4)
 %
 %\begin{javascript}
 %function isPrime(num) {
-%  for(var i = 2; i < num; i++)
-%    if(num % i === 0) return false;
-%  return num > 1;
+%Â Â for(var i = 2; i < num; i++)
+%Â Â Â Â if(num % i === 0) return false;
+%Â Â return num > 1;
 %}
 %
 %function isPrimeFactorization(x,y) {
-%  var terms = x.split('*').map( function(t) { return parseInt(t) } );
-%  return terms.every( isPrime ) &&
-%    (terms.reduce( function(a,c) { return a*c; }, 1 )) == parseInt(y);
+%Â Â var terms = x.split('*').map( function(t) { return parseInt(t) } );
+%Â Â return terms.every( isPrime ) &&
+%Â Â Â Â (terms.reduce( function(a,c) { return a*c; }, 1 )) == parseInt(y);
 %}
 %\end{javascript}
 %
 %Then $\answer[format=string,validator=isPrimeFactorization]{33}$ would
-%accept 3*11 and 11*3.  This doesn't work with powers or signs.
+%accept 3*11 and 11*3.Â Â This doesn't work with powers or signs.
 %
 
 \end{document}
