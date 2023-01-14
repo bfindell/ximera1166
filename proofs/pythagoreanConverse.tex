@@ -61,16 +61,20 @@ We have $\triangle ABC$ with side lengths $a$, $b$, and $c$, as shown.
 \end{image}
 \end{center}
 
-Suppose $a^2+b^2=c^2$.  We want to show that the triangle must be a right triangle with hypotenuse $c$.  Until we show that $\angle C$ is a right angle, we must consider the possibility that it is not.  
+Suppose $a^2+b^2=c^2$.  We want to prove that the triangle must be $\answer[format=string]{right}$, and that the hypotenuse is $c$.  Until we show that $\angle C$ is a right angle, we must consider the possibility that it is not.  
 
-% Construct another triangle, known to be right, and show that it is congruent to the given triangle. 
-% It is always true that $a^2+b^2 = c^2$. 
-% Make a different side the hypotenuse. 
-% Use different letters. 
-% Try it for an acute or obtuse triangle. 
-% Use the quadratic formula. 
+Choose the \textbf{best} proof strategy from among the following: 
+\begin{multipleChoice}
+\choice{It is always true that $a^2+b^2 = c^2$.}
+\choice{Make a different side the hypotenuse.}
+\choice{Use the quadratic formula.}
+\choice[correct]{Construct another triangle, known to be right, and show that it is congruent to the given triangle.}
+\choice{Use different letters.}
+\choice{Try it for an acute or obtuse triangle.} 
+\end{multipleChoice}
 
-Construct another triangle: $\triangle XYZ$ with right angle $\answer{Z}$ and legs of length $a$ and $\answer{b}$, as shown.  Opposite $\angle Z$ is a hypotenuse whose length is \wordChoice{\choice{equal to $c$}\choice{obvious}\choice[correct]{not yet known}}, so let's call it $\answer{d}$.  
+\begin{problem}
+Correct!  Construct a \textbf{right} triangle as shown: 
 
 \begin{center}
 \begin{image}
@@ -100,12 +104,15 @@ Construct another triangle: $\triangle XYZ$ with right angle $\answer{Z}$ and le
 \end{image}
 \end{center}
 
-From (the forward version of) the Pythagorean Theorem, it follows that $a^2+b^2=\answer{d^2}$, where $d$ is the hypotenuse of $\triangle \answer{XYZ}$, known to be 
+Right $\triangle XYZ$, with right angle $\answer{Z}$, has legs of length $a$ and $\answer{b}$.  Opposite $\angle Z$ is a hypotenuse whose length is \wordChoice{\choice{equal to $c$}\choice{obvious}\choice[correct]{not yet known}}, so let's call it $\answer{d}$.  
+
+From the (forward version of the) Pythagorean Theorem, it follows that $a^2+b^2=\answer{d^2}$, where $d$ is the hypotenuse of $\triangle \answer{XYZ}$, known to be 
 \wordChoice{\choice{acute}\choice[correct]{right}\choice{obtuse}}.  From the two equations, it follows that $d^2=\answer{c^2}$.  
 
 Algebraically, we see that $d=\pm c$, from which can conclude that $d=\answer{c}$ because the side lengths must be \wordChoice{\choice[correct]{positive}\choice{zero}\choice{negative}\choice{non-zero}}.   
 
-Now we conclude that $\triangle ABC \cong \triangle XYZ$ by $\answer[format=string]{SSS}$.  And from the congruent triangles, we see that $\angle C\cong\angle \answer{Z}$, which implies that $\triangle ABC$ is a $\answer[format=string]{right}$ triangle.  
+Now we conclude that $\triangle ABC \cong \triangle XYZ$ by $\answer[format=string]{SSS}$ triangle congruence.  And from the congruent triangles, we see that $\angle C\cong\angle \answer{Z}$, which implies that $\triangle ABC$ is a $\answer[format=string]{right}$ triangle.  
+\end{problem}
 \end{proof}
 \end{problem}
 
