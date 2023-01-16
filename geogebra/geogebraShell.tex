@@ -20,46 +20,14 @@ Then complete the following GeoGebra activity.
 
 \ifdefined\HCode
 \HCode{
-	<script type="text/javascript">
-		function toggleDiv(divId) {
-			$('#' + divId).toggle();
-		}
-	</script>
-
-	<script>
-		
-		localStorage.lastLevel = 4 ;
-		
-	</script>
-</head>
-
-
-<div id="page">
-<body>
-
-<!--    <h1>Euclid: The Game - Level 4</h1> -->
-
 <p id="goal">
 	<b>Goal:</b> Construct a line (segment) that goes through point A and that is perpendicular to the given line. 
 </p>
 
-<script>
-$(document).ready(function(){
-  $("#button").click(function(){
-    $("#hint").toggle();
-  });
-});
-</script>
-<p><span id="button"><b>Show hint: &nbsp;</b></span> <span style="display:none" id="hint"> It would help to have points equidistant from A.</span></p>
-
 <p id="winningimg">
 <img src="level4.png"/ >
 </p>
-<div id="hidden" style="display: none">
-<p id="level">
-Well done! You are ready for the next level!
-</p>
-</div>
+
 <script type="text/javascript">
 	    // * ShowResetIcon set to false because pressing it caused "Level Completed" bug
     var parameters = {"id":"ggbApplet","width":680,"height":480,"showToolBar":true,"showMenuBar":false,"showAlgebraInput":false,"showResetIcon":false,"enableLabelDrags":false,"enableShiftDragZoom":false,"enableRightClick":false, "showToolBarHelp":true,"errorDialogsActive":true,"useBrowserForJS":true, "language":"en","isPreloader":false,"screenshotGenerator":false,"preventFocus":false};
