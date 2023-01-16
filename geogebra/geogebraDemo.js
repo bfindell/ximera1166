@@ -1,21 +1,3 @@
-\documentclass[nooutcomes]{ximera}
-
-\input{../preamble.tex}
-
-\title{GeoGebra Demo}
-\author{Brad Findell}
-\begin{document}
-\begin{abstract}
-Testing ways to embed Euclid the Game. 
-\end{abstract}
-\maketitle
-
-
-\begin{problem}
-Complete the following GeoGebra activity.  
-
-\ifdefined\HCode
-\HCode{
 	<script type="text/javascript">
 		function toggleDiv(divId) {
 			$('#' + divId).toggle();
@@ -313,39 +295,4 @@ LevelCompleted(drawn("segmentPerp"),3);
 
 }
 </script>
-}
-\fi
 
-%
-%<p class="noindent"><iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/mjscvuw3/width/600/height/320/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto" width="600px" height="320px" style="border:0px;">
-
-
-%Number of moves: 
-%\begin{javascript}
-%document.write(localStorage.Level4)
-%\end{javascript}
-
-
-\end{problem}
-
-% Sample javascript with validator
-%
-%\begin{javascript}
-%function isPrime(num) {
-%  for(var i = 2; i < num; i++)
-%    if(num % i === 0) return false;
-%  return num > 1;
-%}
-%
-%function isPrimeFactorization(x,y) {
-%  var terms = x.split('*').map( function(t) { return parseInt(t) } );
-%  return terms.every( isPrime ) &&
-%    (terms.reduce( function(a,c) { return a*c; }, 1 )) == parseInt(y);
-%}
-%\end{javascript}
-%
-%Then $\answer[format=string,validator=isPrimeFactorization]{33}$ would
-%accept 3*11 and 11*3.  This doesn't work with powers or signs.
-%
-
-\end{document}
