@@ -64,7 +64,10 @@ Consider the following diagram:
 \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-1.6,7.9) rectangle (8.1,13.8);
+%\clip(-1.6,7.9) rectangle (8.1,13.8);
+\clip(-3,7.9) rectangle (9,13.8);
+\draw[color=white] (-3,8) circle (0.2pt);
+\draw[color=white] (9,8) circle (0.2pt);
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.8735088935932647,9.752982212813471) -- (1.620526680779794,9.626491106406736) -- (1.7470177871865293,9.373508893593264) -- (2.,9.5) -- cycle; 
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (4.716982212813471,10.858491106406735) -- (4.590491106406736,11.111473319220206) -- (4.337508893593265,10.98498221281347) -- (4.464,10.732) -- cycle; 
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-1.6:8.1] plot(\x,{(--17.--1.*\x)/2.});
@@ -106,60 +109,28 @@ Correct!
 \end{question}
 \end{question}
 
-\begin{question}  
-Three (or more) points that lie on the same line are said to be $\answer[format=string]{collinear}$.  
-\end{question}
-
-\begin{question}  
-Three (or more) lines that lie on the same point are said to be $\answer[format=string]{concurrent}$.  
-\end{question}
-
-%\begin{question}  
-%When three (or more) points all lie on the same line, we say they are \dots
-%\begin{multipleChoice}  
-%\choice{coplanar.}  
-%\choice[correct]{collinear.}  
-%\choice{conjoined.}
-%\choice{concurrent.}  
-%\choice{none of these.}
-%\end{multipleChoice}  
-%\end{question}
-%
-%\begin{question}  
-%When three (or more) lines all lie on the same point, we say they are \dots
-%\begin{multipleChoice}  
-%\choice{coplanar.}  
-%\choice{collinear.}  
-%\choice{conjoined.}
-%\choice[correct]{concurrent.}  
-%\choice{none of these.}
-%\end{multipleChoice}  
-%\end{question}
-
-%\begin{question}  
-%In a circle, the measure of an $\answer[format=string]{inscribed}$ angle is $\answer[format=string]{half}$ the measure of the corresponding central angle.  (Hint: For the second blank, answer with a word.)
-%\end{question}
-
 \begin{question}
-Consider the following diagram
+Consider the following diagram regarding $\triangle ABC$.  
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(0,7) rectangle (9,12.5);
+\clip(-1,7) rectangle (10,12.5);
+\draw[color=white] (-1,8) circle (0.2pt);
+\draw[color=white] (10,8) circle (0.2pt);
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3.7,9.3) -- (3.9,9.5) -- (3.7,9.7) -- (3.5,9.5) -- cycle; 
 \draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (5.868328157299975,9.289442719099991) -- (5.778885438199983,9.557770876399966) -- (5.510557280900008,9.468328157299975) -- (5.6,9.2) -- cycle; 
 \draw [shift={(5.,11.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-135.:0.6) arc (-135.:-112.5:0.6) -- cycle;
 \draw [shift={(5.,11.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-112.5:0.6) arc (-112.5:-90.:0.6) -- cycle;
-\draw [line width=0.8pt] (5.,11.)-- (5.,9.);
-\draw [line width=0.8pt] (5.,9.)-- (2.,8.);
+\draw [line width=1.2pt] (5.,11.)-- (5.,9.);
+\draw [line width=1.2pt] (5.,9.)-- (2.,8.);
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(--22.--1.*\x)/3.});
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(-26.--3.*\x)/-1.});
-\draw [line width=0.8pt] (5.,9.)-- (3.5,9.5);
-\draw [line width=0.8pt] (2.,8.)-- (3.5,9.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] (5.,9.)-- (3.5,9.5);
+\draw [line width=1.2pt] (2.,8.)-- (3.5,9.5);
 \draw [line width=0.8pt] (2.6863603896932102,8.813639610306788) -- (2.813639610306789,8.686360389693212);
-\draw [line width=0.8pt] (3.5,9.5)-- (5.,11.);
+\draw [line width=1.2pt] (3.5,9.5)-- (5.,11.);
 \draw [line width=0.8pt] (4.186360389693211,10.313639610306788) -- (4.313639610306789,10.186360389693212);
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(--0.40987990654044726-0.9238795325112867*\x)/-0.3826834323650897});
 \draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(-39.--3.*\x)/-3.});
@@ -185,7 +156,7 @@ Consider the following diagram
 \end{scriptsize}
 \end{tikzpicture}
 \end{image}
-For $\triangle ABC$, 
+
 \begin{enumerate}
 \item line $n$ is a(n) $\answer[format=string]{perpendicular bisector}$, 
 \item line $m$ is a(n) $\answer[format=string]{angle bisector}$,

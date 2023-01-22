@@ -36,7 +36,10 @@ Given a line segment, construct an equilateral triangle whose edge has the lengt
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.5,3.5) rectangle (4.5,4.5);
+%\clip(-0.5,3.5) rectangle (4.5,4.5);
+\clip(-3,3.5) rectangle (8,4.5);
+\draw[color=white] (-3,4) circle (0.2pt);
+\draw[color=white] (8,4) circle (0.2pt);
 \draw [line width=1.6pt] (0.,4.)-- (2.,4.);
 \begin{scriptsize}
 \draw [fill=qqqqff] (0.,4.) circle (1.0pt);
@@ -57,16 +60,19 @@ Which of the following \textbf{best} describes the process:
 \end{multipleChoice}
   
 \begin{problem}
-Correct.  And, as shown below, the two circles intersect at point $C$.  From the construction, $AB = \answer{AC}$ because both are radii of the circle with center $A$.  Similarly, $BA = \answer{BC}$ because radii of the circle with center $\answer{B}$.  Finally, $AC=AB$ because they both equal $\answer{BA}$.  Therefore the triangle is 
+Correct.  And, as shown below, the two circles intersect at point $C$.  From the construction, $AB = \answer{AC}$ because both are radii of the circle with center $A$.  Similarly, $BA = \answer{BC}$ because radii of the circle with center $\answer{B}$.  Finally, $AC=AB$ because they both equal $\answer{BA}$.  Therefore $\triangle ABC$ is 
 $\answer[format=string]{equilateral}$, as desired.  
 
-Notice that you also could have constructed another equilateral triangle, $\triangle \answer{ABD}$, and it is congruent to $\triangle{ABC}$.  
+Notice that we also could have constructed another equilateral triangle, $\triangle \answer{ABD}$, and it is congruent to $\triangle{ABC}$.  
 
 \begin{image}
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-2.5,1.5) rectangle (4.5,6.5);
+%\clip(-2.5,1.5) rectangle (4.5,6.5);
+\clip(-3,1.5) rectangle (8,6.5);
+\draw[color=white] (-3,4) circle (0.2pt);
+\draw[color=white] (8,4) circle (0.2pt);
 \draw [line width=1.6pt] (0.,4.)-- (2.,4.);
 \draw [line width=0.8pt] (0.,4.) circle (2.cm);
 \draw [line width=0.8pt] (2.,4.) circle (2.cm);
@@ -206,7 +212,10 @@ Use a compass and straightedge to bisect a given line segment. % Explain the ste
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.5,3.5) rectangle (4.5,4.5);
+%\clip(-0.5,3.5) rectangle (4.5,4.5);
+\clip(-3,3.5) rectangle (8,4.5);
+\draw[color=white] (-3,4) circle (0.2pt);
+\draw[color=white] (8,4) circle (0.2pt);
 \draw [line width=1.6pt] (0.,4.)-- (2.,4.);
 \begin{scriptsize}
 \draw [fill=qqqqff] (0.,4.) circle (1.0pt);
@@ -234,7 +243,10 @@ Correct!  This problem takes advantage of the symmetry in the equilateral triang
 \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-2.5,1.5) rectangle (4.5,6.5);
+%\clip(-2.5,1.5) rectangle (4.5,6.5);
+\clip(-3,1.5) rectangle (8,6.5);
+\draw[color=white] (-3,4) circle (0.2pt);
+\draw[color=white] (8,4) circle (0.2pt);
 \draw [line width=1.6pt] (0.,4.)-- (2.,4.);
 \draw [line width=0.8pt] (0.,4.) circle (2.cm);
 \draw [line width=0.8pt] (2.,4.) circle (2.cm);
@@ -300,6 +312,8 @@ Consider the construction below.
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-2.58,-1.42) rectangle (8.66,5.84);
+\draw[color=white] (-3,4) circle (0.2pt);
+\draw[color=white] (8,4) circle (0.2pt);
 \draw [line width=0.8pt,domain=1.0:8.660000000000005] plot(\x,{(--4.--2.*\x)/3.});
 \draw [line width=0.8pt,domain=1.0:8.660000000000005] plot(\x,{(--5.86-0.3*\x)/2.78});
 \draw [line width=0.8pt] (1.,2.) circle (2.796140196771256cm);
