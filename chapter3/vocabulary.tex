@@ -1,0 +1,201 @@
+% Section 2.2 Anatomy of Figures
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Vocabulary Review}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Short-answer, multiple-choice, and select-all questions about key vocabulary. 
+\end{abstract}
+\maketitle
+
+%Useful questions: 
+%
+%What is regular quadrilateral? 
+%Definition of ? 
+%Write the Pythagorean theorem. 
+%Measure angles. 
+%Angle sum in a triangle. 
+%Triangulate a figure 
+
+
+\begin{question}
+Equiangular means that all $\answer[format=string]{angles}$ are the same \wordChoice{\choice{length}\choice{width}\choice{height}\choice{weight}\choice[correct]{measure}\choice{volume}}.  
+Equilateral means that all $\answer[format=string]{sides}$ are the same $\answer[format=string]{length}$.  A polygon that is both equiangular and equlateral is said to be $\answer[format=string]{regular}$.  
+\end{question}
+
+\begin{question}  
+An \textbf{equilateral quadrilateral} is called a $\answer[format=string]{rhombus}$.
+\end{question}
+
+\begin{question}  
+An \textbf{equiangular quadrilateral} is called a $\answer[format=string]{rectangle}$. 
+\end{question}
+
+\begin{question}  
+An \textbf{regular quadrilateral} is called a $\answer[format=string]{square}$. 
+\end{question}
+
+%\begin{question}  
+%An line segment between two points on a circle is called a $\answer[format=string]{chord}$ of the circle.  
+%\end{question}
+
+%\begin{question}  
+%A $\answer[format=string]{straight angle}$ measures $180^\circ$.  (Hint: Answer with two words.)
+%\end{question}
+%
+%\begin{question}  
+%Two angles whose measures sum to $180^\circ$ are said to be $\answer[format=string]{supplementary}$.  
+%\end{question}
+%
+%\begin{question}  
+%Two angles whose measures sum to $90^\circ$ are said to be $\answer[format=string]{complementary}$.  
+%\end{question}
+
+\begin{question}
+Consider the following diagram: 
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1.6,7.9) rectangle (8.1,13.8);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.8735088935932647,9.752982212813471) -- (1.620526680779794,9.626491106406736) -- (1.7470177871865293,9.373508893593264) -- (2.,9.5) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (4.716982212813471,10.858491106406735) -- (4.590491106406736,11.111473319220206) -- (4.337508893593265,10.98498221281347) -- (4.464,10.732) -- cycle; 
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-1.6:8.1] plot(\x,{(--17.--1.*\x)/2.});
+\draw [line width=0.8pt,domain=-1.6:8.1] plot(\x,{(-13.5--2.*\x)/-1.});
+\draw [line width=0.8pt,domain=-1.6:8.1] plot(\x,{(-19.66--2.*\x)/-1.});
+\draw [line width=0.8pt] (1.,9.)-- (2.,9.5);
+\draw [line width=0.8pt] (1.4597507764050037,9.330498447189992) -- (1.540249223594996,9.169501552810008);
+\draw [line width=0.8pt] (2.,9.5)-- (3.,10.);
+\draw [line width=0.8pt] (2.4597507764050035,9.830498447189992) -- (2.540249223594996,9.669501552810008);
+\draw [line width=0.8pt] (1.256,10.988)-- (4.464,10.732);
+\draw [line width=0.8pt] (2.,9.5)-- (3.328,13.004);
+\begin{scriptsize}
+\draw [fill=qqqqff] (1.,9.) circle (1.0pt);
+\draw[color=qqqqff] (1.08,8.85) node {$A$};
+\draw [fill=qqqqff] (3.,10.) circle (1.0pt);
+\draw[color=qqqqff] (3.02,9.81) node {$B$};
+\draw [fill=xdxdff] (4.464,10.732) circle (1.0pt);
+\draw[color=xdxdff] (4.68,10.67) node {$C$};
+\draw [fill=uuuuuu] (2.,9.5) circle (1.0pt);
+\draw[color=uuuuuu] (1.92,9.27) node {$D$};
+\draw [fill=xdxdff] (3.328,13.004) circle (1.0pt);
+\draw[color=xdxdff] (3.,13.27) node {$E$};
+\draw [fill=xdxdff] (1.256,10.988) circle (1.0pt);
+\draw[color=xdxdff] (1.,11.05) node {$F$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+Name a segment that is bisected in the above diagram: $\answer{AB}$
+
+\begin{question}
+Correct!  
+\begin{enumerate}
+\item Name a segment that is a perpendicular bisector of $\overline{AB}$: $\answer{FD}$
+\item Name a different segment that bisects $\overline{AB}$: $\answer{ED}$
+\item Name a different segment that is perpendicular to $\overleftrightarrow{AB}$: $\answer{EC}$
+\end{enumerate}
+
+\end{question}
+\end{question}
+
+\begin{question}  
+Three (or more) points that lie on the same line are said to be $\answer[format=string]{collinear}$.  
+\end{question}
+
+\begin{question}  
+Three (or more) lines that lie on the same point are said to be $\answer[format=string]{concurrent}$.  
+\end{question}
+
+%\begin{question}  
+%When three (or more) points all lie on the same line, we say they are \dots
+%\begin{multipleChoice}  
+%\choice{coplanar.}  
+%\choice[correct]{collinear.}  
+%\choice{conjoined.}
+%\choice{concurrent.}  
+%\choice{none of these.}
+%\end{multipleChoice}  
+%\end{question}
+%
+%\begin{question}  
+%When three (or more) lines all lie on the same point, we say they are \dots
+%\begin{multipleChoice}  
+%\choice{coplanar.}  
+%\choice{collinear.}  
+%\choice{conjoined.}
+%\choice[correct]{concurrent.}  
+%\choice{none of these.}
+%\end{multipleChoice}  
+%\end{question}
+
+%\begin{question}  
+%In a circle, the measure of an $\answer[format=string]{inscribed}$ angle is $\answer[format=string]{half}$ the measure of the corresponding central angle.  (Hint: For the second blank, answer with a word.)
+%\end{question}
+
+\begin{question}
+Consider the following diagram
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0,7) rectangle (9,12.5);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3.7,9.3) -- (3.9,9.5) -- (3.7,9.7) -- (3.5,9.5) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (5.868328157299975,9.289442719099991) -- (5.778885438199983,9.557770876399966) -- (5.510557280900008,9.468328157299975) -- (5.6,9.2) -- cycle; 
+\draw [shift={(5.,11.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-135.:0.6) arc (-135.:-112.5:0.6) -- cycle;
+\draw [shift={(5.,11.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-112.5:0.6) arc (-112.5:-90.:0.6) -- cycle;
+\draw [line width=0.8pt] (5.,11.)-- (5.,9.);
+\draw [line width=0.8pt] (5.,9.)-- (2.,8.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(--22.--1.*\x)/3.});
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(-26.--3.*\x)/-1.});
+\draw [line width=0.8pt] (5.,9.)-- (3.5,9.5);
+\draw [line width=0.8pt] (2.,8.)-- (3.5,9.5);
+\draw [line width=0.8pt] (2.6863603896932102,8.813639610306788) -- (2.813639610306789,8.686360389693212);
+\draw [line width=0.8pt] (3.5,9.5)-- (5.,11.);
+\draw [line width=0.8pt] (4.186360389693211,10.313639610306788) -- (4.313639610306789,10.186360389693212);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(--0.40987990654044726-0.9238795325112867*\x)/-0.3826834323650897});
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt,domain=-0.5:10.] plot(\x,{(-39.--3.*\x)/-3.});
+\draw [shift={(5.,11.)},line width=0.8pt,color=qqwuqq] (-135.:0.6) arc (-135.:-112.5:0.6);
+\draw[line width=0.8pt,color=qqwuqq] (4.699992074169415,10.551006409356624) -- (4.633323646207061,10.451230055880318);
+\draw [shift={(5.,11.)},line width=0.8pt,color=qqwuqq] (-112.5:0.6) arc (-112.5:-90.:0.6);
+\draw[line width=0.8pt,color=qqwuqq] (4.89465122611129,10.470375948582253) -- (4.871240387469355,10.352681714933867);
+\begin{scriptsize}
+\draw [fill=qqqqff] (2.,8.) circle (1.0pt);
+\draw[color=qqqqff] (1.82,8.27) node {$A$};
+\draw [fill=qqqqff] (5.,11.) circle (1.0pt);
+\draw[color=qqqqff] (5.22,11.09) node {$B$};
+\draw [fill=qqqqff] (5.,9.) circle (1.0pt);
+\draw[color=qqqqff] (5.18,8.89) node {$C$};
+\draw[color=black] (0.98,7.55) node {$k$};
+\draw[color=black] (4.52,11.93) node {$j$};
+\draw [fill=uuuuuu] (5.6,9.2) circle (1.0pt);
+\draw[color=uuuuuu] (5.84,9.11) node {$D$};
+\draw [fill=uuuuuu] (3.5,9.5) circle (1.0pt);
+\draw[color=uuuuuu] (3.52,9.85) node {$E$};
+\draw[color=black] (5.58,11.97) node {$m$};
+\draw[color=black] (1.64,11.13) node {$n$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+For $\triangle ABC$, 
+\begin{enumerate}
+\item line $n$ is a(n) $\answer[format=string]{perpendicular bisector}$, 
+\item line $m$ is a(n) $\answer[format=string]{angle bisector}$,
+\item segment $\overline{BD}$ is a(n) $\answer[format=string]{altitude}$, and
+\item segment $\overline{EC}$ is a(n) $\answer[format=string]{median}$. 
+\end{enumerate}
+\end{question}
+
+
+
+
+\end{document}
+
