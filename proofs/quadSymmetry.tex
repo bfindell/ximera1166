@@ -54,32 +54,40 @@ Use symmetry to prove properties of parallelograms.
 \end{image}
 
 Consider a $180^\circ$ rotation about $M$, the midpoint of diagonal $\overline{AC}$.  Show that this rotation maps the parallelogram onto itself.  
-\fixnote{The following proof is quite elegant, but some of the details are subtle, especially distinguishing between mapping the sides (i.e., segments) and the lines containing the sides.  Can any of this be omitted or abbreviated?  Which parts might students supply?}
+\begin{warning}
+The following proof is quite elegant, but some of the details are subtle.
+\end{warning}
 \begin{enumerate}
-\item The rotation maps $A$ to $C$ and $C$ to $A$ because a $180^\circ$ rotation about a point on a line takes the line to itself and preserves lengths.
+\item The rotation maps $A$ to $\answer{C}$ and $C$ to $\answer{A}$ because a $180^\circ$ rotation about a point on a line maps the line onto itself and preserves lengths.
 %\item Now a $180^\circ$ rotation about $M$ takes lines not containing $M$ to parallel lines.  
-\item The rotation maps $\overleftrightarrow{AB}$ to a parallel line through $C$ (the image of $A$), which by the uniqueness of parallels must 
-be $\overleftrightarrow{CD}$.  Similarly, the rotation maps 
-$\overleftrightarrow{CD}$ to $\overleftrightarrow{AB}$, 
-$\overleftrightarrow{AD}$ to $\overleftrightarrow{CB}$, and
-$\overleftrightarrow{CB}$ to $\overleftrightarrow{AD}$.
-\item Furthermore, the intersection of $\overleftrightarrow{AB}$ and $\overleftrightarrow{CB}$, which is $B$, must map to the intersection of their images, $\overleftrightarrow{CD}$ and $\overleftrightarrow{AD}$, and that intersection is $D$.  And likewise, $D$ must map to $B$.
-\item Because vertices are mapped to vertices, sides are mapped to opposite sides, angles are mapped to opposite angles, and thus the parallelogram is mapped onto itself.  
-\end{enumerate}
-
-Now this symmetry proves the following properties \emph{for free}:  
-
+\item The $180^\circ$ rotation maps $\overleftrightarrow{AB}$ to a parallel line through $\answer{C}$ (the image of $A$), which by the uniqueness of parallels must 
+be the line $\answer{CD}$.  Similarly, the rotation maps 
 \begin{itemize}
-\item opposite sides are congruent (sides are mapped to opposite sides), 
-\item opposite angles are congruent (angles are mapped to opposite angles), and 
-\item the diagonals bisect each other.
-
-\detail{The $180^\circ$ rotation about $M$ swaps $\overrightarrow{MB}$ 
-and $\overrightarrow{MD}$, so they must be opposite rays, and thus $B$, $M$, and $D$ are collinear. \\ Because the rotation preserves lengths, $MB=MD$, so that $M$ is also the midpoint of $\overline{BD}$, which means that the diagonals bisect each other.}
+\item $\overleftrightarrow{CD}$ to the line $\answer{AB}$, 
+\item $\overleftrightarrow{AD}$ to the line $\answer{CB}$, and
+\item $\overleftrightarrow{CB}$ to the line $\answer{AD}$.
 \end{itemize}
 
-\end{problem}
+\item Furthermore, the intersection of $\overleftrightarrow{AB}$ and $\overleftrightarrow{CB}$, which is $\answer{B}$, must map to the intersection of their images, lines 
+$\answer{CD}$ and $\answer{AD}$, and that intersection is $\answer{D}$.  Likewise, the rotation must map $D$ to $\answer{B}$.
 
+\item We have shown that vertices are mapped to opposite vertices.  From this, we can conclude that sides are mapped to opposite $\answer[format=string]{sides}$, angles are mapped to 
+opposite $\answer[format=string]{angles}$, and thus the parallelogram is mapped onto itself.  
+\end{enumerate}
+
+\begin{problem}
+Now this symmetry proves the following properties---almost \emph{for free}!  
+\begin{itemize}
+\item opposite sides are $\answer[format=string]{congruent}$ (sides are mapped to opposite sides), 
+\item opposite angles are $\answer[format=string]{congruent}$ (angles are mapped to opposite angles), and 
+\item the diagonals $\answer[format=string]{bisect}$ each other.
+\begin{quote}
+Detail: The $180^\circ$ rotation about $M$ swaps $B$ and $\answer{D}$, so $\overrightarrow{MB}$ 
+and ray $\answer{MD}$ must be opposite rays, and therefore $B$, $M$, and $\answer{D}$ are collinear. \\ Because the rotation preserves lengths, $MB=\answer{MD}$, so that $M$ is also the $\answer[format=string]{midpoint}$ of $\overline{BD}$, which means that the diagonals $\answer[format=string]{bisect}$ each other.
+\end{quote}
+\end{itemize}
+\end{problem}
+\end{problem}
 
 
 \end{document}

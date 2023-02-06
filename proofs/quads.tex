@@ -75,15 +75,14 @@ Complete the proof below:
 
 \end{problem}
 
-
+\newpage
 \begin{problem}
 
 Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$. 
-
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line width=0.8pt,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-5,-6) rectangle (5,4);
+\begin{tikzpicture}[scale= 0.8, line cap=round,line width=0.8pt,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-5,-5.3) rectangle (5,2.5);
 \draw (-3.,0.)-- (0.,-5.);
 \draw (-1.440,-2.424) -- (-1.595,-2.516);
 \draw (-1.405,-2.484) -- (-1.559,-2.576);
@@ -118,18 +117,21 @@ Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ 
 Theorem:  The points on a perpendicular bisector are exactly those that are equidistant from the endpoints of a segment.  
 \end{hint}
 
-Proof:  Because $B$ and $D$ are each $\answer[format=string]{equidistant}$ from $A$ and $C$, they each must lie on the perpendicular bisector of segment $\answer{AC}$, which implies that 
-$\overleftrightarrow{BD}$ is its perpendicular bisector.  
+Proof:  Because $B$ is $\answer[format=string]{equidistant}$ from $A$ and $C$, it must lie on the perpendicular bisector of segment $\answer{AC}$.  And because $D$ is
+ $\answer[format=string]{equidistant}$ from $A$ and $C$, it also must lie on the perpendicular bisector of segment $\answer{AC}$.  
+ Because two (distinct) points determine a line, $\overleftrightarrow{BD}$ must be the (unique) perpendicular bisector of $\answer{AC}$.  
 
 \end{problem}
+
+\newpage 
 
 \begin{problem}
 Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$. 
 
 \begin{image}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line width=0.8pt,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-5,-6) rectangle (5,4);
+\begin{tikzpicture}[scale = 0.8, line cap=round,line width=0.8pt,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-5,-5.3) rectangle (5,2.5);
 \draw (-3.,0.)-- (0.,-5.);
 \draw (-1.440,-2.424) -- (-1.595,-2.516);
 \draw (-1.405,-2.484) -- (-1.559,-2.576);
@@ -160,34 +162,42 @@ Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ 
 \end{tikzpicture}
 \end{image}
 
-A proof that makes use of triangle congruence:
-
+A flow-chart proof that makes use of triangle congruence:
 \begin{image}
 \tikzstyle{block} = [rectangle, draw, fill=blue!20, 
     text width=8em, text centered, rounded corners, minimum height=2em]
 \tikzstyle{Block} = [rectangle, draw, fill=green!20, 
     text width=10em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{reason} = [color=gray, text width = 8 em, font = {\footnotesize}, node distance = 0.5 cm, align=right, minimum height = 1em]
 \tikzstyle{implies} = [draw, -latex']
-
-\begin{tikzpicture}[node distance = 1.5cm, auto]
+\begin{tikzpicture}[scale=0.85, transform shape, node distance = 1.5cm, auto]
     % Place nodes
     \node [Block] (a) {$\triangle BAD \cong \triangle BCD$};
     \node [block, left of=a, node distance = 4cm] (init) {$AD=CD$};
+    \node [reason, below of=init] {Given};
     \node [block, right of=a, node distance = 4cm] (init2) {$BD=BD$};
+    \node [reason, below of=init2] {SDT};
     \node [block, below of=init2] (init3) {$AB=CB$};
+    \node [reason, below of=init3] {Given};
     \node [block, below of=a] (b) {$\angle ABD \cong \angle CBD$};
+    \node [reason, below of=b] {CPCTC};
     \node [block, left of=b, node distance = 4cm]  (c) {$BX=BX$};
+    \node [reason, below of=c] {SDT};
     \node [Block, below of=b] (d) {$\triangle ABX \cong \triangle CBX$};
     \node [block, below of=d] (e) {$AX=CX$};
+    \node [reason, below of=e] {CPCTC};
     \node [block, below of=e] (f) {$X$ is midpoint of $\overline{AC}$};
+    \node [reason, below of=f, node distance=0.66cm] {Def.};
     \node [block, right of=e, node distance = 4cm] (g) {$\angle BXA \cong \angle BXC$};    
+    \node [reason, below of=g] {CPCTC};
     \node [block, right of=g, text width=10em, node distance = 4cm] (h) {$\angle BXA$ and $\angle BXC$ form a linear pair};
-    \node [block, below of=g] (i) 
-    	{$\overline{AC}\perp\overline{BX}$ (and thus $\overleftrightarrow{BD}$)};
-
+    \node [reason, below of=h, node distance=0.66cm] {Given};
+    \node [reason, below of=b] {CPCTC};
+    \node [block, below of=g] (i) {$\overline{AC}\perp\overline{BX}$ (and thus $\overleftrightarrow{BD}$)};
+    \node [reason, below of=i, node distance=0.66cm] {Def.};
     \node [Block, text width=12em, below of=f] (m) 
-       {Summary: $\overleftrightarrow{BD}$ is the $\perp$ 
-       bisector of $\overline{AC}$.};    
+       {Summary: $\overleftrightarrow{BD}$ is the $\perp$ bisector of $\overline{AC}$.};    
+    \node [reason, below of=m, node distance=0.66cm] {Def.};
       % Draw edges
     \path [implies] (init) -- (a);
     \path [implies] (init2) -- (a);
@@ -205,13 +215,12 @@ A proof that makes use of triangle congruence:
     \path [implies] (i) -- (m);
 \end{tikzpicture}
 \end{image}
+In the proof above, SDT means ``same darn thing,'' and CPCTC means ``$\answer[format=string]{corresponding}$ parts of congruent triangles are $\answer[format=string]{congruent}$.''
 
-In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$. 
-\begin{problem}
-In the proof above, $\triangle ABX \cong \triangle CBX$ by $\answer[format=string]{SAS}$.  
+In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$, and $\triangle ABX \cong \triangle CBX$ by $\answer[format=string]{SAS}$.  
 
 \begin{feedback}[correct]
-For comparison, here is the same proof in a traditional format:
+For comparison, here is the same proof in a more common format:
 \begin{enumerate}
 \item $AB\cong CB$ and $AD\cong CD$ are given.  
 \item $\overline{BD}\cong \overline{BD}$, so $\triangle BAD \cong \triangle BCD$ by SSS.  
@@ -223,7 +232,6 @@ so $\overline{AC}\perp\overline{BX}$ (and thus $\overleftrightarrow{BD}$ as well
 \item Thus, $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$.
 \end{enumerate}
 \end{feedback}
-\end{problem}
 \end{problem}
 
 \end{document}
