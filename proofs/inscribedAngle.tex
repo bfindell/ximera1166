@@ -1,7 +1,9 @@
 \documentclass[handout,nooutcomes]{ximera}
 %\documentclass[space,handout,nooutcomes]{ximera}
 
+
 \input{../preamble.tex}
+%\usetikzlibrary {arrows.meta}
 
 \title{Inscribed Angle Proof}
 \author{Brad Findell}
@@ -18,7 +20,7 @@ In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. 
 \definecolor{qqwuqq}{rgb}{0.,0.3926,0.}
 \definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.7,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-4.5,-3.8) rectangle (13.5,3.8);
 %\draw [shift={(-3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0.:1.115) arc (0.:28.155:1.115) -- cycle;
 %\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-151.845:1.115) arc (-151.845:-123.690:1.115) -- cycle;
@@ -98,7 +100,7 @@ In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. 
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.3926,0.}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.7,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-4.5,-3.8) rectangle (13.5,3.8);
 \draw [shift={(-3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0.:1.115) arc (0.:28.155:1.115) -- cycle;
 \draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-151.845:1.115) arc (-151.845:-123.690:1.115) -- cycle;
@@ -183,7 +185,8 @@ In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. 
 \answer{x+(x+y)+y} = 180^\circ
 \]
 
-\item She divides that equation by $\answer{2}$ to conclude that $m\angle ABC = x+y = \answer{90}$ degrees.  
+\item She divides that equation by $\answer{2}$ to conclude that $m\angle ABC = x+y = \answer{90}$ degrees, confirming that it is a
+$\answer[format=string]{right}$ angle.  
 
 \end{enumerate}
 \end{problem}
@@ -192,22 +195,22 @@ In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. 
 \begin{problem}
 A special case of the relationship between an inscribed angle and the corresponding central angle.
 
-In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. Prove that $z=2x$.  
+In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. Prove that $z=\answer{2x}$.  
 
 \begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.3926,0.}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{tikzpicture}[scale=0.7,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-4.5,-3.8) rectangle (4.5,3.8);
 \draw [shift={(-3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0.:1.115) arc (0.:28.155:1.115) -- cycle;
 \draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-151.845:1.115) arc (-151.845:-123.690:1.115) -- cycle;
-\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-123.690:0.892) arc (-123.690:-61.845:0.892) -- cycle;
-\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq] (-123.690:0.669) arc (-123.690:-61.85:0.669);
-\draw [shift={(3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (118.155:0.892) arc (118.155:180.:0.892) -- cycle;
-\draw [shift={(3.6056,0.)},line width=0.8pt,color=qqwuqq] (118.155:0.669) arc (118.155:180.:0.669);
+%\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-123.690:0.892) arc (-123.690:-61.845:0.892) -- cycle;
+%\draw [shift={(2.,3.)},line width=0.8pt,color=qqwuqq] (-123.690:0.669) arc (-123.690:-61.85:0.669);
+%\draw [shift={(3.6056,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (118.155:0.892) arc (118.155:180.:0.892) -- cycle;
+%\draw [shift={(3.6056,0.)},line width=0.8pt,color=qqwuqq] (118.155:0.669) arc (118.155:180.:0.669);
 \draw [line width=0.8pt] (0.,0.) circle (3.606cm);
 \draw [line width=0.8pt] (-3.6056,0.)-- (2.,3.);
-\draw [line width=0.8pt] (2.,3.)-- (3.6056,0.);
+%\draw [line width=0.8pt] (2.,3.)-- (3.6056,0.);
 \draw [line width=0.8pt] (-3.6056,0.)-- (0.,0.);
 \draw [line width=0.8pt] (-1.8028,0.2006) -- (-1.8028,-0.2006);
 \draw [line width=0.8pt] (0.,0.)-- (3.6056,0.);
@@ -232,16 +235,189 @@ In the figure below, $\overline{AC}$ is a diameter of a circle with center $P$. 
 \end{tikzpicture}
 \end{image}
 
-Because $z$ is the measure of an angle exterior to $\triangle \answer{APB}$, it is equal to the sum of the measures of the \wordChoice{\choice{opposite}\choice{adjacent}\choice[correct]{remote interior}\choice{alternate interior}} angles.  In other words $z=2x$.  
+Because $z$ is the measure of an angle exterior to $\triangle \answer{APB}$, it is equal to the sum of the measures of the \wordChoice{\choice{opposite}\choice{adjacent}\choice[correct]{remote interior}\choice{alternate interior}} angles.  In other words $z=\answer{2x}$.  
 
 Alternatively, without using the exterior angle theorem, one might proceed as follows:
 \begin{enumerate}
 \item $\angle APB + x + x = 180^\circ$ because of the angle sum in $\triangle \answer{ABP}$.
 \item $\angle APB + z = 180^\circ$ because they form a linear pair. 
-\item Then $z = 2x$ by comparing the two equations. 
+\item Then $z = \answer{2x}$ by comparing the two equations. 
 \end{enumerate}
 
-\textbf{Note:} This handles the special case in which the center of the circle lies on one side of the inscribed angle.  For the general result, consider two cases:  (1) When the center of the circle is in the interior of the inscribed angle; and (2) When the center of the circle is not in the interior of the inscribed angle.
+
+\begin{problem}
+
+Correct!   Now that we have handled the special case in which the center of the circle lies on one side of the inscribed angle, we consider two other cases:  
+\begin{enumerate}
+\item When the center of the circle, $P$, is in the $\answer[format=string]{interior}$ of the inscribed angle (left figure); and 
+\item When the center of the circle is \emph{not} in the $\answer[format=string]{interior}$ of the inscribed angle (right figure).  
+\end{enumerate}
+
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[scale=0.7,line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\clip(-4.5,-3.8) rectangle (13.5,3.8);
+%\draw [shift={(-3.6055512754639896,0.)},line width=0.4pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:1.0) arc (0.:28.154966237010104:1.0) -- cycle;
+\draw [line width=0.8pt] (0.,0.) circle (3.6055512754639896cm);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.,3.);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (0.,0.)-- (2.991121161538481,-2.0132546279585926);
+%\draw (-2.5,0.6) node[anchor=north west] {$x$};
+%\draw (-2.2, 0.05) node[anchor=north west] {$y$};
+%\draw [shift={(-3.6055512754639896,0.)},->,line width=0.6pt,color=qqwuqq] (0.:1.0) arc (0.:28.154966237010104:1.0);
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw [line width=0.8pt] (0.,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw (-1.85,0.45) node[anchor=north west] {$z$};
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (0.,0.);
+%\draw [line width=0.8pt] (0.,0.)-- (3.6055512754639896,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=uuuuuu] (-3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+\draw [fill=xdxdff] (2.991121161538481,-2.0132546279585926) circle (1.2pt);
+\draw[color=qqqqff] (3.25,-2.1) node {$D$};
+%\draw [fill=uuuuuu] (3.6055512754639896,0.) circle (1.2pt);
+%\draw[color=qqqqff] (3.90,0) node {$C$};
+%\draw [fill=uuuuuu] (3.371865460227506,1.2769194642281683) circle (1.2pt);
+%\draw[color=qqqqff] (3.63,1.53) node {$E$};
+%\end{scriptsize}
+
+\begin{scope}[shift={(9,0)}]
+%\draw [shift={(-3.6055512754639896,0.)},line width=0.4pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:1.0) arc (0.:28.154966237010104:1.0) -- cycle;
+\draw [line width=0.8pt] (0.,0.) circle (3.6055512754639896cm);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.,3.);
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+%\draw [line width=0.8pt] (0.,0.)-- (2.991121161538481,-2.0132546279585926);
+%\draw (-2.5,0.6) node[anchor=north west] {$x$};
+%\draw (-2.2, 0.05) node[anchor=north west] {$y$};
+%\draw [shift={(-3.6055512754639896,0.)},->,line width=0.6pt,color=qqwuqq] (0.:1.0) arc (0.:28.154966237010104:1.0);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (3.371865460227506,1.2769194642281683);
+\draw [line width=0.8pt] (0.,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw (-1.85,0.45) node[anchor=north west] {$z$};
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (0.,0.);
+%\draw [line width=0.8pt] (0.,0.)-- (3.6055512754639896,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=uuuuuu] (-3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+%\draw [fill=xdxdff] (2.991121161538481,-2.0132546279585926) circle (1.2pt);
+%\draw[color=qqqqff] (3.25,-2.1) node {$D$};
+%\draw [fill=uuuuuu] (3.6055512754639896,0.) circle (1.2pt);
+%\draw[color=qqqqff] (3.90,0) node {$C$};
+\draw [fill=uuuuuu] (3.371865460227506,1.2769194642281683) circle (1.2pt);
+\draw[color=qqqqff] (3.63,1.53) node {$E$};
+%\end{scriptsize}
+\end{scope}
+
+\end{tikzpicture}
+\end{image}
+
+\begin{problem}
+Correct!  To prove these cases, we add segments and labels to the figures so that we can make use of the previous result: 
+
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[scale=0.7,line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\clip(-4.5,-3.8) rectangle (13.5,3.8);
+%\draw [shift={(-3.6055512754639896,0.)},line width=0.4pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:1.0) arc (0.:28.154966237010104:1.0) -- cycle;
+\draw [line width=0.8pt] (0.,0.) circle (3.6055512754639896cm);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.,3.);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (0.,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw (-2.5,0.6) node[anchor=north west] {$x$};
+\draw (-2.2, 0.05) node[anchor=north west] {$y$};
+%\draw [shift={(-3.6055512754639896,0.)},->,line width=0.6pt,color=qqwuqq] (0.:1.0) arc (0.:28.154966237010104:1.0);
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw [line width=0.8pt] (0.,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw (-1.85,0.45) node[anchor=north west] {$z$};
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.6055512754639896,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=uuuuuu] (-3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+\draw [fill=xdxdff] (2.991121161538481,-2.0132546279585926) circle (1.2pt);
+\draw[color=qqqqff] (3.25,-2.1) node {$D$};
+\draw [fill=uuuuuu] (3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (3.90,0) node {$C$};
+%\draw [fill=uuuuuu] (3.371865460227506,1.2769194642281683) circle (1.2pt);
+%\draw[color=qqqqff] (3.63,1.53) node {$E$};
+%\end{scriptsize}
+
+\begin{scope}[shift={(9,0)}]
+\draw [shift={(-3.6055512754639896,0.)},line width=0.4pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:1.0) arc (0.:28.154966237010104:1.0) -- cycle;
+\draw [line width=0.8pt] (0.,0.) circle (3.6055512754639896cm);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.,3.);
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+%\draw [line width=0.8pt] (0.,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw (-2.5,0.6) node[anchor=north west] {$x$};
+%\draw (-2.2, 0.05) node[anchor=north west] {$y$};
+\draw [shift={(-3.6055512754639896,0.)},->,line width=0.6pt,color=qqwuqq] (0.:1.0) arc (0.:28.154966237010104:1.0);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (3.371865460227506,1.2769194642281683);
+\draw [line width=0.8pt] (0.,0.)-- (3.371865460227506,1.2769194642281683);
+\draw (-1.8,0.45) node[anchor=north west] {$z$};
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.6055512754639896,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=uuuuuu] (-3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+%\draw [fill=xdxdff] (2.991121161538481,-2.0132546279585926) circle (1.2pt);
+%\draw[color=qqqqff] (3.25,-2.1) node {$D$};
+\draw [fill=uuuuuu] (3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (3.90,0) node {$C$};
+\draw [fill=uuuuuu] (3.371865460227506,1.2769194642281683) circle (1.2pt);
+\draw[color=qqqqff] (3.63,1.53) node {$E$};
+%\end{scriptsize}
+\end{scope}
+
+\end{tikzpicture}
+\end{image}
+
+\begin{warning}
+In the following sentences, there are two correct ways of naming the angles, but only one of them is accepted by Ximera. Apologies. 
+\end{warning}
+
+In both figures, $\angle BAC = \answer{x}$, so $\angle \answer[format=string]{BPC} = \answer{2x}$.  
+
+On the left, $\angle CAD = \answer{y}$, so $\angle \answer[format=string]{CPD} = \answer{2y}$. 
+
+In the right figure, $\angle CAE = \answer{z}$, so $\angle \answer[format=string]{CPE} = \answer{2z}$.  
+
+Putting these results together:
+
+ $\angle BPD = \angle BPC \wordChoice{\choice[correct]{+}\choice{-}\choice{\times}\choice{\div}} \angle \answer[format=string]{CPD} 
+ = \answer{2x + 2y} = 2 \angle \answer[format=string]{BAD}$, and 
+
+ $\angle BPD = \angle BPC \wordChoice{\choice{+}\choice[correct]{-}\choice{\times}\choice{\div}} \angle \answer[format=string]{CPE} 
+ = \answer{2x - 2z} = 2 \angle \answer[format=string]{BAE}$.  
+
+\end{problem}
+\end{problem}
+ 
+
 \end{problem}
 
 \end{document}

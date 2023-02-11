@@ -77,6 +77,9 @@ Complete the proof below:
 
 \newpage
 \begin{problem}
+Kites can often be found behind basic constructions because of important 
+\wordChoice{\choice{definitions}\choice{measurements}\choice[correct]{properties}}
+of their \wordChoice{\choice{sides}\choice[correct]{diagonals}\choice{angles}}.  
 
 Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$. 
 \begin{image}
@@ -121,6 +124,8 @@ Proof:  Because $B$ is $\answer[format=string]{equidistant}$ from $A$ and $C$, i
  $\answer[format=string]{equidistant}$ from $A$ and $C$, it also must lie on the perpendicular bisector of segment $\answer{AC}$.  
  Because two (distinct) points determine a line, $\overleftrightarrow{BD}$ must be the (unique) perpendicular bisector of $\answer{AC}$.  
 
+\begin{problem}
+Correct!  It helps to think of a kite can as formed by two $\answer[format=string]{isosceles}$ triangles with a common base. 
 \end{problem}
 
 \newpage 
@@ -173,17 +178,19 @@ A flow-chart proof that makes use of triangle congruence:
 \begin{tikzpicture}[scale=0.85, transform shape, node distance = 1.5cm, auto]
     % Place nodes
     \node [Block] (a) {$\triangle BAD \cong \triangle BCD$};
+    \node [reason, below of=a, node distance=0.66cm] {???};
     \node [block, left of=a, node distance = 4cm] (init) {$AD=CD$};
     \node [reason, below of=init] {Given};
     \node [block, right of=a, node distance = 4cm] (init2) {$BD=BD$};
-    \node [reason, below of=init2] {SDT};
+    \node [reason, below of=init2] {Equality};
     \node [block, below of=init2] (init3) {$AB=CB$};
     \node [reason, below of=init3] {Given};
     \node [block, below of=a] (b) {$\angle ABD \cong \angle CBD$};
     \node [reason, below of=b] {CPCTC};
     \node [block, left of=b, node distance = 4cm]  (c) {$BX=BX$};
-    \node [reason, below of=c] {SDT};
+    \node [reason, below of=c] {Equality};
     \node [Block, below of=b] (d) {$\triangle ABX \cong \triangle CBX$};
+    \node [reason, below of=d, node distance=0.66cm] {???};
     \node [block, below of=d] (e) {$AX=CX$};
     \node [reason, below of=e] {CPCTC};
     \node [block, below of=e] (f) {$X$ is midpoint of $\overline{AC}$};
@@ -215,23 +222,57 @@ A flow-chart proof that makes use of triangle congruence:
     \path [implies] (i) -- (m);
 \end{tikzpicture}
 \end{image}
-In the proof above, SDT means ``same darn thing,'' and CPCTC means ``$\answer[format=string]{corresponding}$ parts of congruent triangles are $\answer[format=string]{congruent}$.''
-
-In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$, and $\triangle ABX \cong \triangle CBX$ by $\answer[format=string]{SAS}$.  
+In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$, and $\triangle ABX \cong \triangle CBX$ by $\answer[format=string]{SAS}$, and CPCTC means ``$\answer[format=string]{corresponding}$ parts of congruent triangles are $\answer[format=string]{congruent}$.''
 
 \begin{problem}
 For comparison, here is the same proof in a more common format:
 \begin{enumerate}
 \item $AB\cong CB$ and $AD\cong CD$ are given.  
-\item $\overline{BD}\cong \overline{BD}$, so $\triangle BAD \cong \triangle BCD$ by $\answer[format=string]{SSS}$.  
+\item $\overline{BD}\cong \overline{BD}$, so $\triangle BAD \cong \triangle BCD$ by SSS.  
 \item $\angle ABD \cong \angle CBD$ by CPCTC. 
 \item $\overline{BX}\cong \overline{BX}$, so that $\triangle ABX \cong \triangle CBX$ by SAS.  
-\item $\angle BXA \cong \angle BXC$ by CPCTC, and they are a $\answer[format=string]{linear pair}$, 
+\item $\angle BXA \cong \angle BXC$ by CPCTC, and they are a linear pair, 
 so $\overline{AC}\perp\overline{BX}$ (and thus $\overleftrightarrow{BD}$ as well). 
 \item $\overline{AX}\cong \overline{CX}$ by CPCTC, so $X$ is the midpoint of $\overline{AC}$.
 \item Thus, $\overleftrightarrow{BD}$ is the perpendicular bisector of $\overline{AC}$.
 \end{enumerate}
+
+Observe also that from congruent triangles along the way, we can conclude that 
+$\angle ABD\cong \angle \answer[format=string]{CBD}$ and $\angle ADB \cong \angle \answer[format=string]{CDB}$, 
+which proves that the major diagonal $\overline{BD}$ $\answer[format=string]{bisects}$ the angles at those vertices---yet 
+another reason that kites can be seen behind our basic constructions.  
+
+\end{problem}
+
 \end{problem}
 \end{problem}
+
+\begin{problem}
+You just completed two proofs that a diagonal of a kite is the perpendicular bisector of the other diagonal.  The first proof was about equidistant points; the second involved congruent triangles.  
+
+Do the proofs apply to a rhombus? What about a square?  (Select all correct answers.)
+\begin{selectAll}
+\choice{The first proof applies to a rhombus but not a square.}
+\choice{The first proof applies to a square but not a rhombus.}
+\choice[correct]{The first proof applies to both a rhombus and a square.}
+\choice{The first proof would require some modification for either one.}
+\choice{The second proof applies to a rhombus but not a square.}
+\choice{The second proof applies to a square but not a rhombus.}
+\choice[correct]{The second proof applies to a both rhombus and a square.}
+\choice{The second proof would require some modification for either one.}
+\choice{Both proofs need to be completely rewritten.}
+\end{selectAll}
+\begin{problem}
+Correct!  These are good reasons to prefer $\answer[format=string]{inclusive}$ definitions, so that a $\answer[format=string]{rhombus}$ is a special case of a kite and a 
+$\answer[format=string]{square}$ is a special case of a rhombus.  
+
+Even better: This theorem about kites applies to \emph{both} diagonals of a rhombus, so that we can conclude that the diagonals of a rhombus 
+$\answer[format=string]{bisect}$ \emph{each other}!  
+
+\end{problem}
+\end{problem}
+
+
+
 
 \end{document}
