@@ -1,0 +1,122 @@
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+
+\input{../preamble.tex}
+%\usetikzlibrary {arrows.meta}
+
+\title{Inscribed Angle Proof}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Proofs updated. 
+\end{abstract}
+\maketitle
+
+
+
+\begin{problem}
+Correct!  To prove these cases, we add segments and labels to the figures so that we can make use of the previous result: 
+
+\begin{image}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[scale=0.7,line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\clip(-4.5,-3.8) rectangle (13.5,3.8);
+%\draw [shift={(-3.6055512754639896,0.)},line width=0.4pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:1.0) arc (0.:28.154966237010104:1.0) -- cycle;
+\draw [line width=0.8pt] (0.,0.) circle (3.6055512754639896cm);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.,3.);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+\draw [line width=0.8pt] (0.,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw (-2.5,0.6) node[anchor=north west] {$x$};
+\draw (-2.2, 0.05) node[anchor=north west] {$y$};
+%\draw [shift={(-3.6055512754639896,0.)},->,line width=0.6pt,color=qqwuqq] (0.:1.0) arc (0.:28.154966237010104:1.0);
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw [line width=0.8pt] (0.,0.)-- (3.371865460227506,1.2769194642281683);
+%\draw (-1.85,0.45) node[anchor=north west] {$z$};
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.6055512754639896,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=uuuuuu] (-3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+\draw [fill=xdxdff] (2.991121161538481,-2.0132546279585926) circle (1.2pt);
+\draw[color=qqqqff] (3.25,-2.1) node {$D$};
+\draw [fill=uuuuuu] (3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (3.90,0) node {$C$};
+%\draw [fill=uuuuuu] (3.371865460227506,1.2769194642281683) circle (1.2pt);
+%\draw[color=qqqqff] (3.63,1.53) node {$E$};
+%\end{scriptsize}
+
+\begin{scope}[shift={(9,0)}]
+\draw [shift={(-3.6055512754639896,0.)},line width=0.4pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:1.0) arc (0.:28.154966237010104:1.0) -- cycle;
+\draw [line width=0.8pt] (0.,0.) circle (3.6055512754639896cm);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.,3.);
+%\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw [line width=0.8pt] (0.,0.)-- (2.,3.);
+%\draw [line width=0.8pt] (0.,0.)-- (2.991121161538481,-2.0132546279585926);
+\draw (-2.5,0.6) node[anchor=north west] {$x$};
+%\draw (-2.2, 0.05) node[anchor=north west] {$y$};
+\draw [shift={(-3.6055512754639896,0.)},->,line width=0.6pt,color=qqwuqq] (0.:1.0) arc (0.:28.154966237010104:1.0);
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (3.371865460227506,1.2769194642281683);
+\draw [line width=0.8pt] (0.,0.)-- (3.371865460227506,1.2769194642281683);
+\draw (-1.8,0.45) node[anchor=north west] {$z$};
+\draw [line width=0.8pt] (-3.6055512754639896,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.6055512754639896,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.24,-0.28) node {$P$};
+\draw [fill=qqqqff] (2.,3.) circle (1.2pt);
+\draw[color=qqqqff] (2.25,3.3) node {$B$};
+\draw [fill=uuuuuu] (-3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.9,0) node {$A$};
+%\draw [fill=xdxdff] (2.991121161538481,-2.0132546279585926) circle (1.2pt);
+%\draw[color=qqqqff] (3.25,-2.1) node {$D$};
+\draw [fill=uuuuuu] (3.6055512754639896,0.) circle (1.2pt);
+\draw[color=qqqqff] (3.90,0) node {$C$};
+\draw [fill=uuuuuu] (3.371865460227506,1.2769194642281683) circle (1.2pt);
+\draw[color=qqqqff] (3.63,1.53) node {$E$};
+%\end{scriptsize}
+\end{scope}
+
+\end{tikzpicture}
+\end{image}
+
+\begin{warning}
+In the following sentences, there are two correct ways of naming the angles, but only one of them is accepted by Ximera. Apologies. 
+\end{warning}
+
+
+\begin{prompt}
+    \begin{validator}[(ux==’BPC’) || (ux==’CPB’)]
+In both figures, $\angle BAC = x$, so $\angle \answer[format=string,id=ux]{BPC} = 2x$.  
+\end{validator}
+\end{prompt}
+
+In both figures, $\angle BAC = \answer{x}$, so $\angle \answer[format=string]{BPC} = \answer{2x}$.  
+
+On the left, $\angle CAD = \answer{y}$, so $\angle \answer[format=string]{CPD} = \answer{2y}$. 
+
+On the right, $\angle CAE = \answer{z}$, so $\angle \answer[format=string]{CPE} = \answer{2z}$.  
+
+Putting these results together:
+
+ $\angle BPD = \angle BPC$ \wordChoice{\choice[correct]{$+$}\choice{$-$}\choice{$\times$}\choice{$\div$}}$ \angle \answer[format=string]{CPD} 
+ = \answer{2x + 2y} = 2 \angle \answer[format=string]{BAD}$, and 
+
+ $\angle BPD = \angle BPC$ \wordChoice{\choice{$+$}\choice[correct]{$-$}\choice{$\times$}\choice{$\div$}} $\angle \answer[format=string]{CPE} 
+ = \answer{2x - 2z} = 2 \angle \answer[format=string]{BAE}$.  
+
+In summary, given an inscribed angle and a corresponding central angle, we have shown, in three mutually exclusive cases, that the central angle is 
+\wordChoice{\choice{equal to}\choice[correct]{twice}\choice{half}\choice{less than}} the inscribed angle.  
+ 
+
+\end{problem}
+
+\end{document}
