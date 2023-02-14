@@ -5,7 +5,7 @@
 \input{../preamble.tex}
 %\usetikzlibrary {arrows.meta}
 
-\title{Inscribed Angle Proof}
+\title{Validator Testing}
 \author{Brad Findell}
 \begin{document}
 \begin{abstract}
@@ -88,16 +88,16 @@ Correct!  To prove these cases, we add segments and labels to the figures so tha
 \end{tikzpicture}
 \end{image}
 
-\begin{warning}
-In the following sentences, there are two correct ways of naming the angles, but only one of them is accepted by Ximera. Apologies. 
-\end{warning}
-
-
+Testing the validator here: 
 \begin{prompt}
-    \begin{validator}[(ux==’BPC’) || (ux==’CPB’)]
+    \begin{validator}[(ux==BPC) || (ux==CPB)]
 In both figures, $\angle BAC = x$, so $\angle \answer[format=string,id=ux]{BPC} = 2x$.  
 \end{validator}
 \end{prompt}
+
+\begin{warning}
+In the following sentences, there are two correct ways of naming the angles, but only one of them is accepted by Ximera. Apologies. 
+\end{warning}
 
 In both figures, $\angle BAC = \answer{x}$, so $\angle \answer[format=string]{BPC} = \answer{2x}$.  
 
