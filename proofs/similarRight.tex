@@ -29,6 +29,8 @@ Adapted from Ohio's 2017 Geometry released item 17.
 \draw [line width=0.8pt] (0.,3.)-- (2.,0.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (1.3846,0.9231);
 \begin{scriptsize}
+\draw[color=white] (-2,0) circle (1pt);
+\draw[color=white] (4,0) circle (1pt);
 \draw [fill=qqqqff] (0.,0.) circle (1.2pt);
 \draw[color=qqqqff] (-0.25,0.15) node {$A$};
 \draw [fill=qqqqff] (2.,0.) circle (1.2pt);
@@ -66,17 +68,19 @@ A different proof, also adapted from Ohio's 2017 Geometry released item 17.
 \definecolor{qqwuqq}{rgb}{0.,0.39215,0.}
 \definecolor{uuuuuu}{rgb}{0.2667,0.2667,0.2667}
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.8]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 %\clip(-0.75,-1) rectangle (2.9,3.5);
-%\clip(-2,-1) rectangle (4,3.5);
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0.,0.) -- (0.,0.25) -- (0.25,0.25) -- (0.25,0.) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2457,1.1314) -- (1.0373,0.9925) -- (1.1762,0.7842) -- (1.3846,0.9231) -- cycle; 
-\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.1762,0.7842) -- (1.3152,0.5758) -- (1.5235,0.7147) -- (1.3846,0.9231) -- cycle; 
+\clip(-3,-.1) rectangle (5,3.3);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0.,0.) -- (0.,0.25) -- (0.25,0.25) -- (0.25,0.) -- cycle;
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.2457,1.1314) -- (1.0373,0.9925) -- (1.1762,0.7842) -- (1.3846,0.9231) -- cycle;
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (1.1762,0.7842) -- (1.3152,0.5758) -- (1.5235,0.7147) -- (1.3846,0.9231) -- cycle;
 \draw [line width=0.8pt] (0.,0.)-- (2.,0.);
 \draw [line width=0.8pt] (0.,3.)-- (0.,0.);
 \draw [line width=0.8pt] (0.,3.)-- (2.,0.);
 \draw [line width=0.8pt,dash pattern=on 3pt off 3pt] (0.,0.)-- (1.3846,0.9231);
 \begin{scriptsize}
+\draw[color=white] (-2,0) circle (1pt);
+\draw[color=white] (4,0) circle (1pt);
 \draw [fill=qqqqff] (0.,0.) circle (1.2pt);
 \draw[color=qqqqff] (-0.25,0.15) node {$A$};
 \draw [fill=qqqqff] (2.,0.) circle (1.2pt);
