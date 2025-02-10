@@ -105,9 +105,9 @@ Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ 
 \draw [fill=qqqqff] (3.,0.) circle (1.2pt);
 \draw[color=qqqqff] (3.22,0.21) node {$C$};
 \draw [fill=qqqqff] (0.,2.) circle (1.2pt);
-\draw[color=qqqqff] (0.14,2.29) node {$B$};
+\draw[color=qqqqff] (0.2,2.29) node {$B$};
 \draw [fill=qqqqff] (0.,-5.) circle (1.2pt);
-\draw[color=qqqqff] (-0.26,-5.09) node {$D$};
+\draw[color=qqqqff] (-0.28,-5.15) node {$D$};
 %\draw [fill=qqqqff] (0.,0) circle (1.2pt);
 %\draw[color=qqqqff] (-0.26,-.26) node {$X$};
 \draw[color=qqqqff] (-5,0) circle (0.2pt);
@@ -157,9 +157,9 @@ Quadrilateral $ABCD$ is a kite as marked.  Prove that $\overleftrightarrow{BD}$ 
 \draw [fill=qqqqff] (3.,0.) circle (1.2pt);
 \draw[color=qqqqff] (3.22,0.21) node {$C$};
 \draw [fill=qqqqff] (0.,2.) circle (1.2pt);
-\draw[color=qqqqff] (0.14,2.29) node {$B$};
+\draw[color=qqqqff] (0.2,2.29) node {$B$};
 \draw [fill=qqqqff] (0.,-5.) circle (1.2pt);
-\draw[color=qqqqff] (-0.26,-5.09) node {$D$};
+\draw[color=qqqqff] (-0.28,-5.15) node {$D$};
 \draw [fill=qqqqff] (0.,0) circle (1.2pt);
 \draw[color=qqqqff] (-0.26,-.26) node {$X$};
 \draw[color=qqqqff] (-5,0) circle (0.2pt);
@@ -228,7 +228,7 @@ In the proof above, $\triangle BAD \cong \triangle BCD$ by $\answer[format=strin
 \begin{problem}
 For comparison, here is the same proof in a more common format:
 \begin{enumerate}
-\item $AB\cong CB$ and $AD\cong CD$ are given.  
+\item $\overline{AB}\cong CB$ and $\overline{AD}\cong CD$ are given.  
 \item $\overline{BD}\cong \overline{BD}$, so $\triangle BAD \cong \triangle BCD$ by SSS.  
 \item $\angle ABD \cong \angle CBD$ by CPCTC. 
 \item $\overline{BX}\cong \overline{BX}$, so that $\triangle ABX \cong \triangle CBX$ by SAS.  
@@ -264,7 +264,7 @@ Do the proofs apply to a rhombus? What about a square?  (Select all correct answ
 \end{selectAll}
 \begin{problem}
 Correct!  These are good reasons to prefer $\answer[format=string]{inclusive}$ definitions, so that a $\answer[format=string]{rhombus}$ is a special case of a kite and a 
-$\answer[format=string]{square}$ is a special case of a rhombus.  
+$\answer[format=string]{square}$ is a special case of a rhombus.  With inclusive definitions, theorems remain true for special cases.  
 
 Even better: This theorem about kites applies to \emph{both} diagonals of a rhombus, so that we can conclude that the diagonals of a rhombus 
 $\answer[format=string]{bisect}$ \emph{each other}!  
@@ -272,6 +272,86 @@ $\answer[format=string]{bisect}$ \emph{each other}!
 \end{problem}
 \end{problem}
 
+
+
+\begin{problem}
+
+The figure below is sometimes called a \emph{dart} (or \emph{arrowhead}).  Is it a kite?  
+
+\begin{multipleChoice}
+\choice{Yes.}
+\choice{No.}
+\choice[correct]{It depends.}
+\end{multipleChoice}
+
+\begin{image}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[scale = 0.8, line cap=round,line width=0.8pt,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-5,-5.3) rectangle (5,2.5);
+\draw (-3.,0.)-- (0.,-5.);
+\draw (-1.440,-2.424) -- (-1.595,-2.516);
+\draw (-1.405,-2.484) -- (-1.559,-2.576);
+\draw (0.,-5.)-- (3.,0.);
+\draw (1.405,-2.484) -- (1.559,-2.576);
+\draw (1.440,-2.424) -- (1.595,-2.516);
+\draw (3.,0.)-- (0.,-2.);
+\draw (1.450,-0.925) -- (1.550,-1.075);
+\draw (0.,-2.)-- (-3.,0.);
+\draw (-1.450,-0.925) -- (-1.550,-1.075);
+\draw[dashed] (0.,-2.)-- (0.,0.);
+\draw (0.,-2.)-- (0.,-5.);
+\draw[dashed] (-3.,0.)-- (3.,0.);
+\draw (0.,-2.)-- (3.,0.);
+%\begin{scriptsize}
+\draw [fill=qqqqff] (-3.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-3.24,0.31) node {$A$};
+\draw [fill=qqqqff] (3.,0.) circle (1.2pt);
+\draw[color=qqqqff] (3.22,0.21) node {$C$};
+\draw [fill=qqqqff] (0.,-2.) circle (1.2pt);
+\draw[color=qqqqff] (0.2,-2.29) node {$B$};
+\draw [fill=qqqqff] (0.,-5.) circle (1.2pt);
+\draw[color=qqqqff] (-0.28,-5.15) node {$D$};
+\draw [fill=qqqqff] (0.,0) circle (1.2pt);
+\draw[color=qqqqff] (-0.26,-.26) node {$X$};
+\draw[color=qqqqff] (-5,0) circle (0.2pt);
+\draw[color=qqqqff] (8,0) circle (0.2pt);
+%\end{scriptsize}
+\end{tikzpicture}
+\end{image}
+
+\begin{problem}
+Correct!  Some definitions require a kite to be a \emph{convex} polygon, which is to say that it contains every segment connecting two points on the polygon.  A dart can be seen as \emph{concave} (i.e., non-convex) kite from the fact that diagonal $\overline{AC}$ (for example) is not contained in the kite.  
+
+What about the theorem that a diagonal of a kite is the perpendicular bisector of the other diagonal?  Does it work for a dart?  
+
+\begin{multipleChoice}
+\choice{Yes.}
+\choice{No.}
+\choice[correct]{Yes, with some modification.}
+\end{multipleChoice}
+
+\begin{problem}
+Correct!  We need to allow a diagonal outside the figure, and we need to extend the other diagonal so that it intersects the first.  Then the theorem could be, ``The line containing one diagonal of a kite is the perpendicular bisector of the other diagonal.''
+
+Consider again the two proofs about the diagonals of a kite. The first proof was about equidistant points; the second involved congruent triangles.  
+
+Do the proofs apply to a dart?  (Select all correct answers.)
+\begin{selectAll}
+\choice[correct]{The first proof applies to a dart.}
+\choice{The first proof does not apply to a dart.}
+\choice{The first proof would require some modification.}
+\choice[correct]{The second proof applies to a dart.}
+\choice{The second proof does not apply to a dart.}
+\choice{The second proof would require some modification.}
+\choice{Both proofs need to be completely rewritten.}
+\end{selectAll}
+\begin{feedback}
+While the second proof requires careful checking because of the overlapping triangles, it still works!  Because this theorem and the proofs still work, it makes sense to have a definition of kite that includes darts.  
+
+\end{feedback}
+\end{problem}
+\end{problem}
+\end{problem}
 
 
 
