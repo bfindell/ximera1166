@@ -1,0 +1,48 @@
+\documentclass[handout,nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Median with Areas}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Exploring areas and medians. 
+\end{abstract}
+\maketitle
+
+
+
+
+\begin{problem}
+Explore the following GeoGebra sketch.  
+\begin{center}  
+\geogebra{gehma87x}{720}{460}  
+\end{center}
+In the sketch above, points $D$, $E$, and $F$ are $\answer[format=string]{midpoints}$ of segments $AB$, $BC$, $CA$, respectively.  Point $G$ is an arbitrary point used to form six triangles with the bisected sides of $\triangle ABC$.  
+
+What invariants do you notice as you move points $A$, $B$, $C$, and $G$?  
+
+\begin{multipleChoice}
+\choice{The sum of the areas is always the same.}
+\choice[correct]{The six areas are equal in pairs.}
+\choice{The six areas are equal in triples.}
+\choice{None of the above.}
+\end{multipleChoice}
+
+\begin{problem}
+Correct! 
+
+This makes sense from the way the six triangle are formed.  For example, $t_1 = t_2$ because segment $\answer{GD}$ is a $\answer[format=string]{median}$ of $\triangle \answer{AGB}$.
+\begin{problem}
+Correct!  A similar argument can be made for why $t_3 = t_4$ and $t_5 = t_6$.
+
+Furthermore, when $G$ is near the $\answer[format=string]{centroid}$, which is defined as the point of concurrency of the medians, all six areas appear to be almost 
+\wordChoice{\choice{constant}\choice{integers}\choice[correct]{equal}\choice{unbounded}}, which suggests a theorem about the areas of the triangles formed by the medians of a given triangle. 
+
+\end{problem}
+\end{problem}
+\end{problem}
+
+
+\end{document}
